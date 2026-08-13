@@ -1,0 +1,6 @@
+{
+  "name": "simral-tamrakar-portfolio",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
