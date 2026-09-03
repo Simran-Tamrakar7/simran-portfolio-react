@@ -1,16 +1,17 @@
 # CV / contact links
 
-Source of truth: `personalInfo` in `src/data/portfolioData.js`.
+Source of truth: `src/data/portfolioData.js` (`personalInfo`, `experiences`, `projectsData`, skills, education).
 
 | Field | Value |
 | --- | --- |
 | Title | QA Engineer |
-| Phone | `+9779843707272` (`tel:` link) |
-| Email | `simrantamrakar77@gmail.com` (`mailto:`) |
+| Phone | `+9779843707272` |
+| Email | `simrantamrakar77@gmail.com` |
 | Github | `https://github.com/Simran-Tamrakar7` |
 | Portfolio | `https://simral-tamrakar-portfolio.vercel.app/` |
-| LinkedIn | `https://www.linkedin.com/in/simran-tamrakar-1aa84b349/` |
 
-Interactive CV header mirrors the paper CV: **phone | email | Github | Portfolio** (all clickable).
+Interactive CV sections: Summary, Education, Experience, **Projects / Applications Tested**, Leadership, Skills.
 
-Downloadable stub PDF: regenerate with `python3 generate_cv_pdf.py`.
+Applications listed: Bizlevate & v2, PrimeSales 360, Salesmania, TADA, TREMS, CQNoval, ESpOT, Telescope (description TBD), Ryze (`https://ryzebiz.com`).
+
+Regenerate downloadable stub: `python3 generate_cv_pdf.py`.

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { personalInfo, experiences, skillCategories, educationList, extraActivities, languagesList } from '../data/portfolioData';
+import { personalInfo, experiences, skillCategories, educationList, extraActivities, languagesList, projectsData } from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
   const [isGenerating, setIsGenerating] = useState(false);
@@ -109,7 +109,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={sectionTitle}>Professional Summary</h3>
               <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.55' }}>
-                {personalInfo.aboutParagraphs[0]} {personalInfo.aboutParagraphs[1]}
+                {personalInfo.professionalSummary}
               </p>
             </div>
 
@@ -144,6 +144,26 @@ export default function ResumeModal({ isOpen, onClose }) {
                         <li key={idx} style={{ marginBottom: '0.35rem' }}>{bullet}</li>
                       ))}
                     </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem' }}>
+              <h3 style={sectionTitle}>Projects / Applications Tested</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                {projectsData.map((project) => (
+                  <div key={project.id} style={{ pageBreakInside: 'avoid', fontSize: '0.85rem', lineHeight: '1.45' }}>
+                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{project.title}</span>
+                    {project.link ? (
+                      <>
+                        {' — '}
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="cv-inline-link">
+                          {project.link.replace(/^https?:\/\//, '')}
+                        </a>
+                      </>
+                    ) : null}
+                    <span style={{ color: 'var(--text-secondary)' }}> — {project.summary}</span>
                   </div>
                 ))}
               </div>

@@ -29,6 +29,17 @@ export function ProjectModal({ project, onClose }) {
           <span className="project-category-badge">{project.categoryBadge}</span>
           <h2 className="modal-project-title">{project.title}</h2>
           <span className="modal-role-badge">Role: {project.role}</span>
+          {project.link ? (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-inline-link"
+              style={{ display: 'inline-block', marginTop: '0.5rem', fontSize: '0.9rem' }}
+            >
+              {project.link.replace(/^https?:\/\//, '')} ↗
+            </a>
+          ) : null}
         </div>
 
         <div className="modal-body-section">

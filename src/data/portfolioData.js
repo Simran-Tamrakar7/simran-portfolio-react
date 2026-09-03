@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Simran Tamrakar",
   title: "QA Engineer",
-  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management across Agile/Scrum and enterprise HRM, ERP, sales, and banking applications.",
+  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management across Agile/Scrum and enterprise HRM/ERP/sales applications.",
   email: "simrantamrakar77@gmail.com",
   phone: "+9779843707272",
   phoneDisplay: "+977 9843707272",
@@ -10,15 +10,15 @@ export const personalInfo = {
   portfolio: "https://simral-tamrakar-portfolio.vercel.app/",
   status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: End-to-End Software Quality Assurance",
+  professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
   aboutParagraphs: [
-    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation.",
-    "Hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications — from test planning and requirement analysis through release validation.",
-    "Currently at Infocom Solutions as Associate QA Engineer, designing and executing functional, regression, integration, and API test cases, tracking defects through resolution, and collaborating with developers to ship reliable product quality."
+    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
+    "Currently Associate QA Engineer at Infocom Solutions — designing and executing functional, regression, integration, and API tests across HRM, sales, and ERP apps, tracking defects in JIRA, and documenting workflow/approval logic for regression coverage."
   ],
   stats: [
-    { number: "100+", label: "Test Cases / Module Sprint" },
-    { number: "Zero P0", label: "Critical Bugs Leaked to Prod" },
-    { number: "100%", label: "End-to-End QA Ownership" }
+    { number: "9+", label: "Applications Tested" },
+    { number: "HRM / ERP / Sales", label: "Enterprise Domains" },
+    { number: "Agile / Scrum", label: "Delivery Model" }
   ]
 };
 
@@ -90,11 +90,12 @@ export const experiences = [
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
-      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
-      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
+      "Designed and executed functional, regression, integration, and API test cases across HRM, sales, and ERP applications to ensure product quality and reliability.",
+      "Identified, documented, and tracked defects using JIRA, collaborating with developers through resolution and verification.",
+      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards.",
+      "Documented test workflows and approval logic across sales and travel/expense modules to support QA coverage and regression planning (e.g., distributor order approval hierarchy, TADA workflow stages)."
     ],
-    tags: ["Functional Testing", "Regression", "API Testing", "Defect Tracking", "Release Validation"]
+    tags: ["HRM", "Sales", "ERP", "API Testing", "JIRA", "Release Validation"]
   },
   {
     id: 2,
@@ -114,111 +115,199 @@ export const experiences = [
 export const projectsData = [
   {
     id: "bizlevate",
-    title: "Bizlevate HRMS",
-    categoryKey: "hrms",
-    categoryBadge: "Flagship Enterprise QA",
-    summary: "Complete HRMS suite covering Attendance, Leave, Payroll, Employee Lifecycle, Claims, KYC, Dashboard, HR Administration, and Approval workflows.",
+    title: "Bizlevate & Bizlevate v2",
+    categoryKey: "hrm",
+    categoryBadge: "HRM",
+    summary: "HRM system covering Employee Management, Attendance, Leave, Payroll, Onboarding/Offboarding, and Appraisal. Tested workflows across modules; documented functional comparisons to support regression coverage.",
     keyContributions: [
-      "End-to-End QA ownership across 7 core HRMS modules",
-      "Authored 100+ manual & boundary test scenarios per sprint",
-      "Postman API validation for leave & payroll calculations"
+      "Workflow testing across core HRM modules",
+      "Functional comparison docs for Bizlevate vs v2",
+      "Regression coverage support for HR workflows"
     ],
-    tags: ["End-to-End QA", "API Testing", "Bug Tracking", "HRMS"],
+    tags: ["HRM", "Regression", "Workflow QA"],
     role: "Associate QA Engineer",
     modules: [
-      "Attendance & Shift Management (Roster views, overtime rules, geo-fencing)",
-      "Leave Management (Multi-tier approvals, policy calculations, leave balances)",
-      "Payroll Processing (Tax computations, allowance breakdowns, automated payslips)",
-      "Employee Lifecycle (Onboarding tasks, document KYC, Offboarding clearances)",
-      "Performance Appraisal (Quarterly reviews, goal tracking, feedback cycles)",
-      "HR Admin Dashboard (User tables, dynamic filtering, role-based access)"
+      "Employee Management",
+      "Attendance",
+      "Leave",
+      "Payroll",
+      "Onboarding / Offboarding",
+      "Appraisal"
     ],
     detailedContributions: [
-      "Designed manual test suites covering 100+ edge cases across approval workflows and tax calculations.",
-      "Executed Postman API testing to verify endpoint authorization and financial calculation responses.",
-      "Logged and tracked defects in ClickUp and Asana, conducting daily re-tests and pre-release sign-offs.",
-      "Reviewed SRS specifications to identify ambiguous requirements before code implementation."
+      "Tested workflows across HRM modules for Bizlevate and Bizlevate v2.",
+      "Documented functional comparisons to support regression coverage."
     ],
-    techStack: ["Postman", "ClickUp", "Asana", "Manual QA", "Chrome DevTools", "SQL", "GenAI Tools"]
+    techStack: ["Manual QA", "JIRA", "Regression Testing"]
   },
   {
     id: "primesales",
-    title: "PrimeSales360 & TADA",
-    categoryKey: "tada sales",
-    categoryBadge: "ERP & Expense QA",
-    summary: "Comprehensive sales automation and travel expense management system (TADA) featuring reimbursement rules, multi-tier approvals, and sales order processing.",
+    title: "PrimeSales 360",
+    categoryKey: "sales mobile",
+    categoryBadge: "Field Sales",
+    summary: "Field sales app for Sales Executives/Officers (SESO). Tested shop/route management, order flow, floor stock, and live services.",
     keyContributions: [
-      "End-to-end QA validation of TADA reimbursement formulas",
-      "API payload & status code validation using Postman",
-      "Regression testing of multi-level manager approvals"
+      "Shop and route management QA",
+      "Order flow and floor stock testing",
+      "Live services validation"
     ],
-    tags: ["TADA QA", "Expense Claims", "Postman API", "Defect Lifecycle"],
+    tags: ["Mobile", "Sales", "SESO"],
     role: "Associate QA Engineer",
     modules: [
-      "TADA (Travel & Expense Management: Daily allowance, travel receipts, distance claims)",
-      "Expense Claim Reimbursements & Multi-level Manager Approvals",
-      "Sales Order Dashboard & Financial Reports",
-      "Payroll & Compensation Synchronization"
+      "Shop / route management",
+      "Order flow",
+      "Floor stock",
+      "Live services"
     ],
     detailedContributions: [
-      "Led end-to-end testing execution for TADA expense approval workflows.",
-      "Validated complex financial formulas for daily allowance rates and distance reimbursements.",
-      "Executed API integration testing using Postman to verify backend data payloads and response codes.",
-      "Tracked and managed defects in ClickUp & Jira, ensuring zero critical bugs during client releases."
+      "Tested shop/route management, order flow, floor stock, and live services for SESO users."
     ],
-    techStack: ["Postman API", "ClickUp", "Jira", "Manual QA", "Chrome DevTools", "SQL"]
+    techStack: ["Manual QA", "Mobile Testing", "JIRA"]
   },
   {
     id: "salesmania",
-    title: "SalesMania",
+    title: "Salesmania",
     categoryKey: "sales",
-    categoryBadge: "Distributor QA",
-    summary: "Sales order processing, inventory stock movement, and distributor operations management software.",
+    categoryBadge: "Approvals",
+    summary: "Supervisor approval app for ASM/DCM roles. Tested expense, travel, and approval workflows; identified validation and field-level defects.",
     keyContributions: [
-      "Inventory stock reduction & order pipeline QA",
-      "Distributor portal access control & cross-browser QA",
-      "Authored step-by-step reproducible defect logs"
+      "Expense and travel approval workflow QA",
+      "ASM/DCM role validation",
+      "Field-level defect identification"
     ],
-    tags: ["Inventory QA", "Distributor Portal", "Mobile Testing", "Bug Reporting"],
-    role: "QA Engineer Intern",
-    modules: [
-      "Inventory Stock Control & Movement Tracking",
-      "Distributor Portal & Bulk Order Placement",
-      "Product Catalogue & Pricing Tier Management",
-      "Real-time Sales Analytics & Exportable Reports"
-    ],
-    detailedContributions: [
-      "Performed functional, regression, and cross-browser testing across desktop and mobile browsers.",
-      "Verified distributor access controls and inventory deduction logic upon order submission.",
-      "Documented reproducible bug reports with step-by-step logs, reducing developer resolution time by 30%."
-    ],
-    techStack: ["Manual QA", "Mobile Testing", "ClickUp", "Asana", "Cross-Browser Testing"]
-  },
-  {
-    id: "hrmcomparison",
-    title: "HRM QA Test & Feature Matrix",
-    categoryKey: "analysis hrms",
-    categoryBadge: "QA Test Strategy",
-    summary: "Comprehensive QA test strategy and feature comparison matrix evaluating workflow coverage and gap analysis across HRMS versions.",
-    keyContributions: [
-      "Formulated 20+ page QA matrix across Leave & Attendance",
-      "Mapped boundary test cases for shift roster scheduling",
-      "Identified risk areas and prioritized backlog testing"
-    ],
-    tags: ["QA Test Strategy", "Gap Analysis", "Feature Matrix", "Risk Assessment"],
+    tags: ["Approvals", "Sales", "Defects"],
     role: "Associate QA Engineer",
     modules: [
-      "Leave & Attendance Module Gap Analysis",
-      "UI/UX Usability Pattern Benchmarking",
-      "Role & Permissions Hierarchy Evaluation",
-      "Data Export & Integration Capabilities"
+      "Expense workflows",
+      "Travel workflows",
+      "Supervisor approval chains"
     ],
     detailedContributions: [
-      "Structured a 20+ page comparative matrix evaluating test coverage and user pain points.",
-      "Highlighted crucial workflow gaps in roster scheduling and shift swapping.",
-      "Presented strategic recommendations directly to engineering leads to prioritize test coverage."
+      "Tested expense, travel, and approval workflows for ASM/DCM roles.",
+      "Identified validation and field-level defects."
     ],
-    techStack: ["QA Matrix", "Requirement Analysis", "Workflow Flowcharts", "ClickUp"]
+    techStack: ["Manual QA", "JIRA", "UI Testing"]
+  },
+  {
+    id: "tada",
+    title: "TADA",
+    categoryKey: "tada sales",
+    categoryBadge: "Travel & Expense",
+    summary: "Travel and expense management system. Tested and mapped 8-stage workflow logic to support edge-case coverage.",
+    keyContributions: [
+      "Mapped 8-stage TADA workflow logic",
+      "Edge-case coverage for approvals",
+      "Regression planning support"
+    ],
+    tags: ["TADA", "Workflow", "Expense"],
+    role: "Associate QA Engineer",
+    modules: [
+      "8-stage travel/expense workflow",
+      "Approval stages",
+      "Edge-case scenarios"
+    ],
+    detailedContributions: [
+      "Tested and mapped 8-stage workflow logic to support edge-case coverage."
+    ],
+    techStack: ["Manual QA", "Workflow Mapping", "JIRA"]
+  },
+  {
+    id: "trems",
+    title: "TREMS",
+    categoryKey: "banking",
+    categoryBadge: "Banking / Finance",
+    summary: "Banking/financial dashboard application included in QA testing coverage.",
+    keyContributions: [
+      "Dashboard QA coverage",
+      "Banking/financial UI validation"
+    ],
+    tags: ["Banking", "Dashboard"],
+    role: "Associate QA Engineer",
+    modules: ["Financial dashboard views", "Reporting surfaces"],
+    detailedContributions: [
+      "Performed QA on banking/financial dashboard application flows."
+    ],
+    techStack: ["Manual QA", "JIRA"]
+  },
+  {
+    id: "cqnoval",
+    title: "CQNoval",
+    categoryKey: "erp",
+    categoryBadge: "ERP",
+    summary: "Integrated ERP solution (Flutter-based) for finance, HR, procurement, and inventory management, with dashboards and reporting.",
+    keyContributions: [
+      "Finance / HR / procurement / inventory QA",
+      "Dashboard and reporting checks",
+      "Flutter mobile/web coverage"
+    ],
+    tags: ["ERP", "Flutter", "Finance"],
+    role: "Associate QA Engineer",
+    modules: [
+      "Finance",
+      "HR",
+      "Procurement",
+      "Inventory",
+      "Dashboards & reporting"
+    ],
+    detailedContributions: [
+      "Tested integrated ERP flows across finance, HR, procurement, and inventory, including dashboards and reporting."
+    ],
+    techStack: ["Manual QA", "Flutter App Testing", "JIRA"]
+  },
+  {
+    id: "espot",
+    title: "ESpOT (Espot Club)",
+    categoryKey: "mobile",
+    categoryBadge: "Social / Mobile",
+    summary: "Social/networking mobile app tested as part of QA engagements.",
+    keyContributions: [
+      "Mobile functional QA",
+      "Social/networking flow checks"
+    ],
+    tags: ["Mobile", "Social"],
+    role: "QA Engineer",
+    modules: ["Mobile app flows", "Networking features"],
+    detailedContributions: [
+      "Executed QA on social/networking mobile app flows."
+    ],
+    techStack: ["Manual QA", "Mobile Testing"]
+  },
+  {
+    id: "telescope",
+    title: "Telescope",
+    categoryKey: "other",
+    categoryBadge: "Application QA",
+    // ponytail: CV left Telescope description blank — keep honest stub until you fill product/testing detail.
+    summary: "Application included in QA portfolio — product scope and test focus to be detailed.",
+    keyContributions: [
+      "Included in applications-tested list"
+    ],
+    tags: ["QA"],
+    role: "QA Engineer",
+    modules: ["Scope TBD"],
+    detailedContributions: [
+      "Placeholder pending product/testing description."
+    ],
+    techStack: ["Manual QA"]
+  },
+  {
+    id: "ryze",
+    title: "Ryze",
+    categoryKey: "ecommerce",
+    categoryBadge: "E-commerce",
+    summary: "E-commerce website for Ryze monitors (ryzebiz.com).",
+    keyContributions: [
+      "E-commerce site QA",
+      "Product/storefront validation"
+    ],
+    tags: ["E-commerce", "Web"],
+    role: "QA Engineer",
+    link: "https://ryzebiz.com",
+    modules: ["Storefront", "Product pages"],
+    detailedContributions: [
+      "Tested e-commerce website flows for Ryze monitors."
+    ],
+    techStack: ["Manual QA", "Web Testing"]
   }
 ];
 
@@ -327,28 +416,27 @@ export const extraActivities = [
     role: "Teaching Fellowship",
     org: "Deerwalk Teaching Fellowship Program",
     date: "August 2024",
-    desc: "Conducted computer literacy and foundational IT sessions for students, fostering technical awareness."
+    desc: "Conducted computer literacy and foundational IT sessions for students."
   },
   {
     badge: "Event Logistics",
     role: "Event Logistics",
     org: "Deerwalk Job Fair",
     date: "March 2023 & March 2024",
-    desc: "Facilitated company onboarding, student registration, and event operations for technology recruitment fairs."
+    desc: "Facilitated company onboarding, student registration, and event operations."
   },
   {
     badge: "Leadership",
     role: "President",
     org: "DWIT Social Service Club",
     date: "July 2022 – July 2023",
-    desc: "Led community initiatives, blood donation drives, educational outreach, and coordinated student volunteers."
+    desc: "Led community initiatives and coordinated student volunteers."
   }
 ];
 
 export const languagesList = [
   { name: "Nepali", level: "Native", fillPercentage: "100%" },
-  { name: "English", level: "Fluent", fillPercentage: "95%" },
-  { name: "Hindi", level: "Fluent", fillPercentage: "90%" }
+  { name: "English", level: "Fluent", fillPercentage: "95%" }
 ];
 
 export const certificationsList = [

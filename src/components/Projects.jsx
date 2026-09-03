@@ -5,20 +5,24 @@ export function Projects({ onOpenModal }) {
   const [filter, setFilter] = useState('all');
 
   const filterButtons = [
-    { label: 'All Projects', value: 'all' },
-    { label: 'HRMS Systems', value: 'hrms' },
-    { label: 'FinTech & TADA', value: 'tada' },
-    { label: 'Sales & ERP', value: 'sales' },
-    { label: 'Analysis & Docs', value: 'analysis' },
+    { label: 'All Apps', value: 'all' },
+    { label: 'HRM', value: 'hrm' },
+    { label: 'Sales', value: 'sales' },
+    { label: 'TADA', value: 'tada' },
+    { label: 'ERP', value: 'erp' },
+    { label: 'Mobile', value: 'mobile' },
+    { label: 'Other', value: 'banking' },
   ];
 
   const filteredProjects = projectsData.filter(proj => {
     if (filter === 'all') return true;
+    if (filter === 'banking') return /banking|ecommerce|other/.test(proj.categoryKey);
     return proj.categoryKey.includes(filter);
   });
 
   const getCount = (value) => {
     if (value === 'all') return projectsData.length;
+    if (value === 'banking') return projectsData.filter(proj => /banking|ecommerce|other/.test(proj.categoryKey)).length;
     return projectsData.filter(proj => proj.categoryKey.includes(value)).length;
   };
 
@@ -26,9 +30,9 @@ export function Projects({ onOpenModal }) {
     <section id="projects" className="section-padding projects-section">
       <div className="container">
         <div className="section-header center reveal-up">
-          <span className="section-subtitle">PORTFOLIO SHOWCASE</span>
-          <h2 className="section-title">Featured Projects & Systems</h2>
-          <p className="section-description">Deep-dive into enterprise applications where I've led business analysis, QA, and UI/UX improvements.</p>
+          <span className="section-subtitle">APPLICATIONS TESTED</span>
+          <h2 className="section-title">Projects & Applications</h2>
+          <p className="section-description">Enterprise HRM, sales, ERP, travel/expense, banking, mobile, and e-commerce applications covered in QA.</p>
           <div className="title-bar"></div>
         </div>
 
