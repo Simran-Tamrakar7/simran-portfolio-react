@@ -91,9 +91,9 @@ export default function ResumeModal({ isOpen, onClose }) {
                   </h2>
                 </div>
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textAlign: 'right', display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                  <div>📧 {personalInfo.email}</div>
-                  <div>💼 linkedin.com/in/simran-tamrakar-1aa84b349</div>
-                  <div>💻 github.com/Simran-Tamrakar7</div>
+                  <div>📧 <a href={`mailto:${personalInfo.email}`} className="cv-inline-link">{personalInfo.email}</a></div>
+                  <div>💼 <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="cv-inline-link">linkedin.com/in/simran-tamrakar-1aa84b349</a></div>
+                  <div>💻 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="cv-inline-link">github.com/Simran-Tamrakar7</a></div>
                   <div>📍 Kathmandu, Nepal</div>
                 </div>
               </div>
