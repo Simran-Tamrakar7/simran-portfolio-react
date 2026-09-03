@@ -13,7 +13,7 @@ export function About() {
               About <span className="gradient-text">me</span>
             </h2>
             <p className="about-lead-text">
-              I'm a QA Associate and Business Analyst passionate about software quality, automated workflows, and artificial intelligence. I love creating comprehensive SRS documentation, conducting thorough QA testing, and building intuitive solutions to improve software excellence.
+              I'm a QA Engineer passionate about software quality across web, mobile, and API layers. I design test cases, run regression and release validation, analyze requirements, and manage defects through resolution in Agile/Scrum teams.
             </p>
 
             <div className="stats-row">

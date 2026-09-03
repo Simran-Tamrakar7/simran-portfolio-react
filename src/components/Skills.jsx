@@ -5,18 +5,15 @@ export function Skills() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filterTabs = ['All', 'QA & Testing', 'Product & BA', 'UI/UX Design', 'AI & Prompting', 'Tools & Dev'];
+  const filterTabs = ['All', 'Manual Testing', 'Automation & API', 'Tools', 'Methodologies'];
 
   const filteredCategories = skillCategories.filter(cat => {
-    // Check filter tab
     let matchesTab = true;
-    if (activeFilter === 'QA & Testing') matchesTab = cat.title.toLowerCase().includes('quality assurance') || cat.title.toLowerCase().includes('testing');
-    else if (activeFilter === 'Product & BA') matchesTab = cat.title.toLowerCase().includes('product') || cat.title.toLowerCase().includes('business');
-    else if (activeFilter === 'UI/UX Design') matchesTab = cat.title.toLowerCase().includes('ui/ux');
-    else if (activeFilter === 'AI & Prompting') matchesTab = cat.title.toLowerCase().includes('ai');
-    else if (activeFilter === 'Tools & Dev') matchesTab = cat.title.toLowerCase().includes('tools') || cat.title.toLowerCase().includes('programming');
+    if (activeFilter === 'Manual Testing') matchesTab = cat.title.toLowerCase().includes('manual');
+    else if (activeFilter === 'Automation & API') matchesTab = cat.title.toLowerCase().includes('automation') || cat.title.toLowerCase().includes('api');
+    else if (activeFilter === 'Tools') matchesTab = cat.title.toLowerCase().includes('tools');
+    else if (activeFilter === 'Methodologies') matchesTab = cat.title.toLowerCase().includes('method');
 
-    // Check search query
     let matchesSearch = true;
     if (searchQuery.trim() !== '') {
       const q = searchQuery.toLowerCase();

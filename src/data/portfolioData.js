@@ -1,16 +1,19 @@
 export const personalInfo = {
   name: "Simran Tamrakar",
-  title: "QA Associate & Quality Assurance Specialist (HRMS, ERP & API Testing)",
-  tagline: "Driving end-to-end software quality assurance, manual test execution, and Postman API verification — leveraging complementary skills in requirement analysis and AI tools.",
+  title: "QA Engineer",
+  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management across Agile/Scrum and enterprise HRM, ERP, sales, and banking applications.",
   email: "simrantamrakar77@gmail.com",
+  phone: "+9779843707272",
+  phoneDisplay: "+977 9843707272",
   github: "https://github.com/Simran-Tamrakar7",
   linkedin: "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/",
-  status: "Available for QA Associate & Quality Assurance Roles",
+  portfolio: "https://simral-tamrakar-portfolio.vercel.app/",
+  status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: End-to-End Software Quality Assurance",
   aboutParagraphs: [
-    "Quality Assurance is my primary specialty. I specialize in end-to-end software quality assurance — authoring structured test plans, executing manual, regression, and API test suites, and managing the complete defect lifecycle across web, mobile, and API systems.",
-    "To maximize my effectiveness as a QA Specialist, I leverage complementary cross-disciplinary skills: analyzing software requirements (BA support), evaluating UI/UX usability, and utilizing AI prompts to generate comprehensive edge-case scenarios.",
-    "Currently at Bizlevate and Infocom Solutions, I own quality assurance for enterprise applications including the flagship Bizlevate HRMS (Attendance, Leave, Payroll, Onboarding, Offboarding, Appraisal) and the TADA Travel & Expense Management Platform. I collaborate closely with developers to uncover edge cases early, validate API contracts in Postman, and ensure zero P0 critical bugs reach production."
+    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation.",
+    "Hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications — from test planning and requirement analysis through release validation.",
+    "Currently at Infocom Solutions as Associate QA Engineer, designing and executing functional, regression, integration, and API test cases, tracking defects through resolution, and collaborating with developers to ship reliable product quality."
   ],
   stats: [
     { number: "100+", label: "Test Cases / Module Sprint" },
@@ -82,32 +85,29 @@ export const fourPillars = [
 export const experiences = [
   {
     id: 1,
-    role: "QA Associate",
-    company: "Infocom Solutions Pvt. Ltd. (Bizlevate & Enterprise Products)",
+    role: "Associate QA Engineer",
+    company: "Infocom Solutions Pvt. Ltd.",
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Lead end-to-end software quality assurance and manual test execution for the flagship Bizlevate HRMS across 7 core modules: Attendance, Leave, Payroll, Employee Lifecycle, Onboarding, Offboarding, and Performance Appraisal.",
-      "Own quality assurance delivery for enterprise software products spanning HRMS, ERP (SalesMania), and Travel & Expense Management (TADA).",
-      "Perform rigorous API testing in Postman to validate endpoint contracts, response payloads, HTTP status codes, and database sync.",
-      "Design, maintain, and execute comprehensive test plans, manual test cases, boundary edge-case scenarios, and regression test suites.",
-      "Log, prioritize, and triage high-severity defects in ClickUp, Asana, and Jira, collaborating closely with developers during daily standups and sprint planning to maintain zero P0 critical bugs in production.",
-      "Utilize GenAI prompt engineering to accelerate test case generation, edge-case discovery, and defect reproduction steps."
+      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
+      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
+      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
     ],
-    tags: ["Quality Assurance", "Manual Testing", "API Testing (Postman)", "Bizlevate HRMS", "ClickUp / Jira / Asana", "Defect Triage", "Regression Suite"]
+    tags: ["Functional Testing", "Regression", "API Testing", "Defect Tracking", "Release Validation"]
   },
   {
     id: 2,
-    role: "QA Intern",
+    role: "QA Engineer Intern",
     company: "Infocom Solutions Pvt. Ltd.",
     period: "March 2025 – August 2025",
     current: false,
     bullets: [
-      "Gained rigorous hands-on experience in functional, UI, regression, and smoke testing across web and mobile platforms.",
-      "Authored clear, reproducible bug reports with steps, screenshots, and browser network logs to streamline developer resolution.",
-      "Executed test suites for key enterprise software platforms including Bizlevate HRMS, PrimeSales360, and SalesMania."
+      "Executed functional, regression, and UI testing to identify and document software defects.",
+      "Created and maintained test cases based on functional requirements and user stories.",
+      "Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality."
     ],
-    tags: ["Functional Testing", "UI Testing", "Bug Reporting", "PrimeSales360", "SalesMania", "Cross-Browser Testing"]
+    tags: ["Functional Testing", "UI Testing", "Test Cases", "Bug Verification"]
   }
 ];
 
@@ -124,7 +124,7 @@ export const projectsData = [
       "Postman API validation for leave & payroll calculations"
     ],
     tags: ["End-to-End QA", "API Testing", "Bug Tracking", "HRMS"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     modules: [
       "Attendance & Shift Management (Roster views, overtime rules, geo-fencing)",
       "Leave Management (Multi-tier approvals, policy calculations, leave balances)",
@@ -153,7 +153,7 @@ export const projectsData = [
       "Regression testing of multi-level manager approvals"
     ],
     tags: ["TADA QA", "Expense Claims", "Postman API", "Defect Lifecycle"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     modules: [
       "TADA (Travel & Expense Management: Daily allowance, travel receipts, distance claims)",
       "Expense Claim Reimbursements & Multi-level Manager Approvals",
@@ -180,7 +180,7 @@ export const projectsData = [
       "Authored step-by-step reproducible defect logs"
     ],
     tags: ["Inventory QA", "Distributor Portal", "Mobile Testing", "Bug Reporting"],
-    role: "QA Intern",
+    role: "QA Engineer Intern",
     modules: [
       "Inventory Stock Control & Movement Tracking",
       "Distributor Portal & Bulk Order Placement",
@@ -206,7 +206,7 @@ export const projectsData = [
       "Identified risk areas and prioritized backlog testing"
     ],
     tags: ["QA Test Strategy", "Gap Analysis", "Feature Matrix", "Risk Assessment"],
-    role: "QA Associate / BA",
+    role: "Associate QA Engineer",
     modules: [
       "Leave & Attendance Module Gap Analysis",
       "UI/UX Usability Pattern Benchmarking",
@@ -225,87 +225,57 @@ export const projectsData = [
 export const skillCategories = [
   {
     icon: "🛡️",
-    title: "Testing Methodologies & QA Types (Primary Core)",
+    title: "Manual Testing",
     highlight: true,
     skills: [
-      "Manual Web & Mobile Testing",
-      "Functional & System Testing",
-      "Regression & Smoke Testing",
-      "Sanity & Integration Testing",
-      "User Acceptance Testing (UAT)",
-      "Black Box & Exploratory Testing",
-      "Ad-hoc & Boundary Value Analysis",
-      "Compatibility Testing (Cross-Browser / Cross-Platform)",
-      "Postman API Testing",
-      "UI/UX & Basic Performance Testing (JMeter)"
-    ]
-  },
-  {
-    icon: "🛠️",
-    title: "Defect Management & QA Tools (Primary Tools)",
-    highlight: true,
-    skills: [
-      "ClickUp",
-      "Asana",
-      "Jira",
-      "Trello",
-      "Postman API",
-      "Chrome DevTools (Network & Recorder)",
-      "Git / GitHub / GitLab",
-      "Cypress (E2E Testing - Intermediate)",
-      "Playwright (E2E Testing - Beginner)",
-      "JMeter (Performance Testing)",
-      "SQL / MySQL",
-      "htop (Server Monitoring)"
-    ]
-  },
-  {
-    icon: "📊",
-    title: "Requirements & BA Support (Complementary Skill)",
-    skills: [
-      "SRS Requirement Review",
-      "Test Plan Creation",
-      "Test Case Design & Matrix",
-      "Bug Reporting & RCA (Root Cause Analysis)",
-      "Process Mapping & Flowcharts",
-      "Agile Project Management / Scrum",
-      "Lean Processes & User Story Verification"
-    ]
-  },
-  {
-    icon: "🎨",
-    title: "UI/UX & Usability Testing (Complementary Skill)",
-    skills: [
-      "Usability QA",
+      "Functional Testing",
+      "Regression Testing",
+      "Smoke Testing",
+      "Sanity Testing",
+      "UAT Testing",
+      "Web & Mobile Application Testing",
+      "Test Case Design",
+      "Test Case Documentation",
+      "Test Plan",
+      "Test Strategy",
+      "Requirement Analysis",
+      "RTM",
+      "Bug Reporting",
+      "Defect Lifecycle Management",
       "Cross-Browser Testing",
-      "Mobile Device Testing",
-      "Wireframing Review (Figma)",
-      "Responsive UI Verification",
-      "Heuristic Evaluations"
+      "Cross-Device Testing"
     ]
   },
   {
     icon: "⚡",
-    title: "AI & Emerging Technologies (Complementary Skill)",
+    title: "Automation and API Testing",
+    highlight: true,
     skills: [
-      "Prompt Engineering",
-      "AI-Assisted Test Scenario Generation",
-      "ChatGPT for QA Scenarios & Edge Cases",
-      "v0.dev Prototyping Audit",
-      "AI Bug Step Extraction"
+      "Playwright",
+      "Cypress",
+      "Postman",
+      "API Testing",
+      "JMeter"
     ]
   },
   {
-    icon: "📜",
-    title: "Quality Standards & Technical Foundations",
+    icon: "🛠️",
+    title: "Tools and Platforms",
     skills: [
-      "ISO 9001 Quality Standards (Foundational)",
-      "Internal Auditing Principles",
-      "CAPA Development (Corrective/Preventive Action)",
-      "Kaizen & Continuous Improvement (CI)",
-      "Python (Intermediate)",
-      "HTML5 / CSS3",
-      "JavaScript"
+      "JIRA",
+      "ClickUp",
+      "Git",
+      "Android Studio",
+      "ADB",
+      "MS Office"
+    ]
+  },
+  {
+    icon: "📊",
+    title: "Methodologies",
+    skills: [
+      "Agile",
+      "Scrum"
     ]
   }
 ];
@@ -345,20 +315,8 @@ export const softSkills = [
 export const educationList = [
   {
     year: "2020 – 2025",
-    degree: "B.Sc. Computer Science and Information Technology (CSIT)",
-    school: "Deerwalk Institute of Technology",
-    location: "Kathmandu, Nepal"
-  },
-  {
-    year: "2019 – 2020",
-    degree: "+2 Science",
-    school: "Kathmandu Secondary School",
-    location: "Kathmandu, Nepal"
-  },
-  {
-    year: "Until 2018",
-    degree: "Secondary Education Examination (SEE / Schooling)",
-    school: "KMC School (Kathmandu Model School)",
+    degree: "B.Sc. CSIT",
+    school: "Deerwalk Institute of Technology, Tribhuvan University",
     location: "Kathmandu, Nepal"
   }
 ];
@@ -366,31 +324,31 @@ export const educationList = [
 export const extraActivities = [
   {
     badge: "Mentorship",
-    role: "Teaching Fellow",
+    role: "Teaching Fellowship",
     org: "Deerwalk Teaching Fellowship Program",
     date: "August 2024",
     desc: "Conducted computer literacy and foundational IT sessions for students, fostering technical awareness."
   },
   {
     badge: "Event Logistics",
-    role: "Volunteer",
-    org: "DWIT Job Fair",
+    role: "Event Logistics",
+    org: "Deerwalk Job Fair",
     date: "March 2023 & March 2024",
-    desc: "Facilitated company onboarding, student registration, and event operations for tech recruitment fairs."
+    desc: "Facilitated company onboarding, student registration, and event operations for technology recruitment fairs."
   },
   {
     badge: "Leadership",
     role: "President",
     org: "DWIT Social Service Club",
     date: "July 2022 – July 2023",
-    desc: "Led community initiatives, blood donation drives, educational outreach, and team coordination across student volunteers."
+    desc: "Led community initiatives, blood donation drives, educational outreach, and coordinated student volunteers."
   }
 ];
 
 export const languagesList = [
-  { name: "English", level: "Professional Working Proficiency", fillPercentage: "90%" },
-  { name: "Nepali", level: "Native / Bilingual Proficiency", fillPercentage: "100%" },
-  { name: "Hindi", level: "Professional Working Proficiency", fillPercentage: "85%" }
+  { name: "Nepali", level: "Native", fillPercentage: "100%" },
+  { name: "English", level: "Fluent", fillPercentage: "95%" },
+  { name: "Hindi", level: "Fluent", fillPercentage: "90%" }
 ];
 
 export const certificationsList = [
