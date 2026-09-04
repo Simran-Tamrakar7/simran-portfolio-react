@@ -10,6 +10,13 @@ export function Footer() {
         <div className="footer-left">
           <a href="#hero" className="footer-logo">Simran<span className="highlight">.</span></a>
           <p>QA Engineer — Manual, API & Mobile Testing</p>
+          <p style={{ marginTop: '0.35rem' }}>
+            <a href={personalInfo.portfolioAbout} className="cv-inline-link">About</a>
+            {' · '}
+            <a href={personalInfo.githubRepos.react} target="_blank" rel="noopener noreferrer" className="cv-inline-link">React repo</a>
+            {' · '}
+            <a href={personalInfo.githubRepos.classic} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Classic repo</a>
+          </p>
         </div>
         <div className="footer-right">
           <div className="footer-socials">

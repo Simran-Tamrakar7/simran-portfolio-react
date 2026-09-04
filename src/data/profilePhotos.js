@@ -11,6 +11,14 @@
 
 export const profilePhotos = [
   {
+    id: 'avatar',
+    url: '/images/profile/simran-avatar.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Portrait avatar from the classic simran-portfolio site.',
+    alt: 'Portrait of Simran Tamrakar'
+  },
+  {
     id: 'temple-wheels',
     url: '/images/profile/simran-temple.jpg',
     title: 'Patan Golden Temple',

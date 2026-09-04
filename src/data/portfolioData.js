@@ -8,12 +8,25 @@ export const personalInfo = {
   github: "https://github.com/Simran-Tamrakar7",
   linkedin: "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/",
   portfolio: "https://simral-tamrakar-portfolio.vercel.app/",
+  portfolioAbout: "https://simral-tamrakar-portfolio.vercel.app/#about",
+  domain: "simrantamrakar.com.np",
+  githubRepos: {
+    react: "https://github.com/Simran-Tamrakar7/simran-portfolio-react",
+    classic: "https://github.com/Simran-Tamrakar7/simran-portfolio"
+  },
   status: "Available for QA Engineer Roles",
-  aboutHeading: "Primary Focus: End-to-End Software Quality Assurance",
+  aboutHeading: "Quality as a craft, not a gate.",
+  aboutLead: "I work at the seam between building and verifying — writing automation that catches real bugs, shipping small products, and documenting paths so others can learn faster than I did. This site merges my classic static portfolio with the React QA showcase.",
   professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
   aboutParagraphs: [
     "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
     "Currently Associate QA Engineer at Infocom Solutions — designing and executing functional, regression, integration, and API tests across HRM, sales, and ERP apps, tracking defects in JIRA, and documenting workflow/approval logic for regression coverage."
+  ],
+  aboutFacts: [
+    { label: "Based in", value: "Kathmandu, Nepal" },
+    { label: "Currently", value: "Infocom Solutions [ISPL]" },
+    { label: "Studied at", value: "Deerwalk Institute of Technology" },
+    { label: "Focus", value: "QA · Automation · Web" }
   ],
   stats: [
     { number: "9+", label: "Applications Tested" },
@@ -308,6 +321,97 @@ export const projectsData = [
       "Tested e-commerce website flows for Ryze monitors."
     ],
     techStack: ["Manual QA", "Web Testing"]
+  },
+  {
+    id: "pathwise",
+    title: "Pathwise",
+    categoryKey: "build live",
+    categoryBadge: "Flagship · Live",
+    summary: "A learning OS for craft skills — manuals, chaptered paths, and a Today hub. Built with Next.js and Tailwind; strong focus on Playwright, Cypress, API testing, and career-ready tracks.",
+    keyContributions: [
+      "Live learning product on Vercel",
+      "Playwright / Cypress / API testing focus",
+      "Chaptered learning paths"
+    ],
+    tags: ["Next.js", "Tailwind", "Learning"],
+    role: "Builder",
+    link: "https://pathwise-learn.vercel.app",
+    github: "https://github.com/Simran-Tamrakar7/Pathwise",
+    modules: ["Today hub", "Chaptered paths", "Craft manuals"],
+    detailedContributions: [
+      "Built and shipped Pathwise as a learning OS with strong QA/automation focus."
+    ],
+    techStack: ["Next.js", "Tailwind", "Playwright", "Cypress"]
+  },
+  {
+    id: "lifeos",
+    title: "LifeOS",
+    categoryKey: "build",
+    categoryBadge: "Build",
+    summary: "Premium personal productivity operating system in TypeScript.",
+    keyContributions: ["TypeScript productivity OS"],
+    tags: ["TypeScript"],
+    role: "Builder",
+    github: "https://github.com/Simran-Tamrakar7/lifeos",
+    modules: ["Productivity workflows"],
+    detailedContributions: ["Built a personal productivity operating system in TypeScript."],
+    techStack: ["TypeScript"]
+  },
+  {
+    id: "kasthakarobar",
+    title: "Kasthakarobar",
+    categoryKey: "build ecommerce",
+    categoryBadge: "Ecommerce",
+    summary: "Ecommerce storefront work — product flows, UI, and checkout shape.",
+    keyContributions: ["Storefront / checkout flow work"],
+    tags: ["JavaScript", "HTML"],
+    role: "Builder",
+    github: "https://github.com/Simran-Tamrakar7/Kasthakarobar",
+    modules: ["Product flows", "Checkout UI"],
+    detailedContributions: ["Worked ecommerce product flows, UI, and checkout shape."],
+    techStack: ["JavaScript", "HTML"]
+  },
+  {
+    id: "ledger",
+    title: "Ledger App",
+    categoryKey: "build",
+    categoryBadge: "Build",
+    summary: "TypeScript ledger application for tracking money cleanly.",
+    keyContributions: ["Money tracking ledger"],
+    tags: ["TypeScript"],
+    role: "Builder",
+    github: "https://github.com/Simran-Tamrakar7/ledger-app",
+    modules: ["Ledger entries"],
+    detailedContributions: ["Built a TypeScript ledger for clean money tracking."],
+    techStack: ["TypeScript"]
+  },
+  {
+    id: "bizlevate-manual",
+    title: "Bizlevate HRMS Manual",
+    categoryKey: "build hrm",
+    categoryBadge: "QA · Docs",
+    summary: "Training manuals and testing work around an HRMS product — documentation meets verification.",
+    keyContributions: ["HRMS training manuals", "QA documentation"],
+    tags: ["QA", "Docs", "Python"],
+    role: "QA Engineer",
+    github: "https://github.com/Simran-Tamrakar7/Bizlevate-1-HRMS-Manual",
+    modules: ["Training manuals", "Verification notes"],
+    detailedContributions: ["Documented HRMS training manuals tied to testing work."],
+    techStack: ["QA", "Docs", "Python"]
+  },
+  {
+    id: "student-mgmt",
+    title: "Student Management System",
+    categoryKey: "build",
+    categoryBadge: "Academic",
+    summary: "Academic project — full student records flow for Project-II.",
+    keyContributions: ["Student records flow"],
+    tags: ["HTML", "Academic"],
+    role: "Builder",
+    github: "https://github.com/Simran-Tamrakar7/Student_Management_System",
+    modules: ["Student records"],
+    detailedContributions: ["Built full student records flow for academic Project-II."],
+    techStack: ["HTML"]
   }
 ];
 

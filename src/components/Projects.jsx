@@ -10,19 +10,17 @@ export function Projects({ onOpenModal }) {
     { label: 'Sales', value: 'sales' },
     { label: 'TADA', value: 'tada' },
     { label: 'ERP', value: 'erp' },
+    { label: 'Builds', value: 'build' },
     { label: 'Mobile', value: 'mobile' },
-    { label: 'Other', value: 'banking' },
   ];
 
   const filteredProjects = projectsData.filter(proj => {
     if (filter === 'all') return true;
-    if (filter === 'banking') return /banking|ecommerce|other/.test(proj.categoryKey);
     return proj.categoryKey.includes(filter);
   });
 
   const getCount = (value) => {
     if (value === 'all') return projectsData.length;
-    if (value === 'banking') return projectsData.filter(proj => /banking|ecommerce|other/.test(proj.categoryKey)).length;
     return projectsData.filter(proj => proj.categoryKey.includes(value)).length;
   };
 
@@ -32,7 +30,7 @@ export function Projects({ onOpenModal }) {
         <div className="section-header center reveal-up">
           <span className="section-subtitle">APPLICATIONS TESTED</span>
           <h2 className="section-title">Projects & Applications</h2>
-          <p className="section-description">Enterprise HRM, sales, ERP, travel/expense, banking, mobile, and e-commerce applications covered in QA.</p>
+          <p className="section-description">Enterprise apps tested at Infocom plus selected builds merged from the classic portfolio (Pathwise, LifeOS, and more).</p>
           <div className="title-bar"></div>
         </div>
 

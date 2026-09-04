@@ -35,9 +35,20 @@ export function ProjectModal({ project, onClose }) {
               target="_blank"
               rel="noopener noreferrer"
               className="cv-inline-link"
+              style={{ display: 'inline-block', marginTop: '0.5rem', fontSize: '0.9rem', marginRight: '1rem' }}
+            >
+              Live site ↗
+            </a>
+          ) : null}
+          {project.github ? (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv-inline-link"
               style={{ display: 'inline-block', marginTop: '0.5rem', fontSize: '0.9rem' }}
             >
-              {project.link.replace(/^https?:\/\//, '')} ↗
+              GitHub ↗
             </a>
           ) : null}
         </div>
