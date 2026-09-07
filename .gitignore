@@ -15,6 +15,7 @@ node_modules/
 # Production build outputs
 dist/
 build/
+.vite/
 
 # IDE / OS files
 .DS_Store
