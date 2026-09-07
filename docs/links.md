@@ -1,21 +1,18 @@
-# Merged portfolios
+# Links & CV data
 
-This React app (`simran-portfolio-react`) merges content from both portfolio repos.
+Source of truth for CV text: `simran-tamrakar-cv.md`  
+App data mirror: `src/data/portfolioData.js` (`personalInfo`, `experiences`, skills, education, languages).
 
-| | URL |
+| Field | Value |
 | --- | --- |
-| Local (current design) | http://localhost:5173/ |
-| Local About | http://localhost:5173/#about |
-| Old Vercel production | https://simral-tamrakar-portfolio.vercel.app/ |
-| Old Vercel About | https://simral-tamrakar-portfolio.vercel.app/#about |
-| React repo | https://github.com/Simran-Tamrakar7/simran-portfolio-react |
-| Classic repo | https://github.com/Simran-Tamrakar7/simran-portfolio |
+| Title | QA Engineer |
+| Phone | `+9779843707272` |
+| Email | `simrantamrakar77@gmail.com` |
+| Github | `https://github.com/Simran-Tamrakar7` |
+| Portfolio | `https://simran-tamrakar-portfolio.vercel.app/` |
+| Local | `http://localhost:5173/` |
+| Older Vercel alias | `https://simral-tamrakar-portfolio.vercel.app/` |
 
-Merged into `#about`:
+Languages: Nepali (Native), English (Fluent), Hindi (Fluent).
 
-- Classic about copy (“Quality as a craft…”) and Kathmandu / ISPL / Deerwalk facts
-- Avatar + icons from the classic `assets/` folder
-- Builder projects (Pathwise, LifeOS, Kasthakarobar, Ledger, Bizlevate manual, Student Management) with GitHub / live links
-- Existing QA applications-tested list from the React CV sync
-
-Contact / CV links remain in `personalInfo` (`docs/links.md`).
+Interactive CV header: **phone | email | Github | Portfolio** (all clickable).

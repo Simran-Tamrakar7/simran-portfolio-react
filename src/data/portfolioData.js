@@ -1,14 +1,14 @@
 export const personalInfo = {
   name: "Simran Tamrakar",
   title: "QA Engineer",
-  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management across Agile/Scrum and enterprise HRM/ERP/sales applications.",
+  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management across Agile/Scrum and enterprise HRM, ERP, sales, and banking applications.",
   email: "simrantamrakar77@gmail.com",
   phone: "+9779843707272",
-  phoneDisplay: "+977 9843707272",
+  phoneDisplay: "+9779843707272",
   github: "https://github.com/Simran-Tamrakar7",
   linkedin: "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/",
-  portfolio: "https://simral-tamrakar-portfolio.vercel.app/",
-  portfolioAbout: "https://simral-tamrakar-portfolio.vercel.app/#about",
+  portfolio: "https://simran-tamrakar-portfolio.vercel.app/",
+  portfolioAbout: "https://simran-tamrakar-portfolio.vercel.app/#about",
   domain: "simrantamrakar.com.np",
   githubRepos: {
     react: "https://github.com/Simran-Tamrakar7/simran-portfolio-react",
@@ -17,10 +17,10 @@ export const personalInfo = {
   status: "Available for QA Engineer Roles",
   aboutHeading: "Quality as a craft, not a gate.",
   aboutLead: "I work at the seam between building and verifying — writing automation that catches real bugs, shipping small products, and documenting paths so others can learn faster than I did. This site merges my classic static portfolio with the React QA showcase.",
-  professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
+  professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
   aboutParagraphs: [
-    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM/ERP/sales applications.",
-    "Currently Associate QA Engineer at Infocom Solutions — designing and executing functional, regression, integration, and API tests across HRM, sales, and ERP apps, tracking defects in JIRA, and documenting workflow/approval logic for regression coverage."
+    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
+    "Currently Associate QA Engineer at Infocom Solutions — designing and executing functional, regression, integration, and API test cases, tracking defects with developers through resolution, and supporting release validation."
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
@@ -103,12 +103,11 @@ export const experiences = [
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Designed and executed functional, regression, integration, and API test cases across HRM, sales, and ERP applications to ensure product quality and reliability.",
-      "Identified, documented, and tracked defects using JIRA, collaborating with developers through resolution and verification.",
-      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards.",
-      "Documented test workflows and approval logic across sales and travel/expense modules to support QA coverage and regression planning (e.g., distributor order approval hierarchy, TADA workflow stages)."
+      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
+      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
+      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
     ],
-    tags: ["HRM", "Sales", "ERP", "API Testing", "JIRA", "Release Validation"]
+    tags: ["Functional Testing", "Regression", "API Testing", "Defect Tracking", "Release Validation"]
   },
   {
     id: 2,
@@ -520,27 +519,28 @@ export const extraActivities = [
     role: "Teaching Fellowship",
     org: "Deerwalk Teaching Fellowship Program",
     date: "August 2024",
-    desc: "Conducted computer literacy and foundational IT sessions for students."
+    desc: "Conducted computer literacy and foundational IT sessions for students, fostering technical awareness."
   },
   {
     badge: "Event Logistics",
     role: "Event Logistics",
     org: "Deerwalk Job Fair",
     date: "March 2023 & March 2024",
-    desc: "Facilitated company onboarding, student registration, and event operations."
+    desc: "Facilitated company onboarding, student registration, and event operations for technology recruitment fairs."
   },
   {
     badge: "Leadership",
     role: "President",
     org: "DWIT Social Service Club",
     date: "July 2022 – July 2023",
-    desc: "Led community initiatives and coordinated student volunteers."
+    desc: "Led community initiatives, blood donation drives, educational outreach, and coordinated student volunteers."
   }
 ];
 
 export const languagesList = [
   { name: "Nepali", level: "Native", fillPercentage: "100%" },
-  { name: "English", level: "Fluent", fillPercentage: "95%" }
+  { name: "English", level: "Fluent", fillPercentage: "95%" },
+  { name: "Hindi", level: "Fluent", fillPercentage: "90%" }
 ];
 
 export const certificationsList = [

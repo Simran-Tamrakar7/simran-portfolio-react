@@ -6,13 +6,14 @@ QA Engineer portfolio built with React + Vite.
 
 | | URL |
 | --- | --- |
-| **Local (new / current design)** | http://localhost:5173/ |
+| **Local (current design)** | http://localhost:5173/ |
 | **Local About** | http://localhost:5173/#about |
-| **Old Vercel (production)** | https://simral-tamrakar-portfolio.vercel.app/ |
-| **Old Vercel About** | https://simral-tamrakar-portfolio.vercel.app/#about |
+| **Portfolio (Vercel)** | https://simran-tamrakar-portfolio.vercel.app/ |
+| **Portfolio About** | https://simran-tamrakar-portfolio.vercel.app/#about |
+| **Older Vercel alias** | https://simral-tamrakar-portfolio.vercel.app/ |
 | **GitHub** | https://github.com/Simran-Tamrakar7/simran-portfolio-react |
 
-> Note: the Vercel production URL may still show an older deploy until redeployed from latest `main`. Localhost always has the newest design.
+CV source of truth: `simran-tamrakar-cv.md` → mirrored in `src/data/portfolioData.js`.
 
 ## Run locally
 
@@ -36,9 +37,5 @@ Output: `dist/`
 - `src/App.jsx` — page shell
 - `src/components/` — Hero, About, Projects, Contact, CV modal, …
 - `src/data/portfolioData.js` — CV / contact / projects content
-- `docs/links.md` — contact + merged-repo notes
-
-## Related
-
-Classic static portfolio (source merged into this app’s About / Projects):  
-https://github.com/Simran-Tamrakar7/simran-portfolio
+- `simran-tamrakar-cv.md` — latest CV markdown
+- `docs/links.md` — contact + repo notes
