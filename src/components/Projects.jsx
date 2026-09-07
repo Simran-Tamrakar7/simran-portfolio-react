@@ -8,10 +8,10 @@ export function Projects({ onOpenModal }) {
     { label: 'All Apps', value: 'all' },
     { label: 'HRM', value: 'hrm' },
     { label: 'Sales', value: 'sales' },
-    { label: 'TADA', value: 'tada' },
     { label: 'ERP', value: 'erp' },
-    { label: 'Builds', value: 'build' },
+    { label: 'Banking', value: 'banking' },
     { label: 'Mobile', value: 'mobile' },
+    { label: 'E-commerce', value: 'ecommerce' },
   ];
 
   const filteredProjects = projectsData.filter(proj => {
@@ -29,8 +29,8 @@ export function Projects({ onOpenModal }) {
       <div className="container">
         <div className="section-header center reveal-up">
           <span className="section-subtitle">APPLICATIONS TESTED</span>
-          <h2 className="section-title">Projects & Applications</h2>
-          <p className="section-description">Enterprise apps tested at Infocom plus selected builds merged from the classic portfolio (Pathwise, LifeOS, and more).</p>
+          <h2 className="section-title">Featured Projects & Applications Tested</h2>
+          <p className="section-description">App and web platforms where I've led QA, client coordination, and project management across the testing lifecycle.</p>
           <div className="title-bar"></div>
         </div>
 

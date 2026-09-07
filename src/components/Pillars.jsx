@@ -23,7 +23,7 @@ export function Pillars() {
         <div className="section-header center reveal-up">
           <span className="section-subtitle">FOUR CORE CAPABILITIES</span>
           <h2 className="section-title">What I Bring To The Table</h2>
-          <p className="section-description">A unique blend of analytical rigor, user-centric design, rigorous QA standards, and cutting-edge GenAI workflows.</p>
+          <p className="section-description">A blend of QA rigor, requirement analysis, usability judgment, and AI-assisted acceleration.</p>
           <div className="title-bar"></div>
         </div>
 

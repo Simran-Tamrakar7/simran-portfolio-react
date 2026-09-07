@@ -36,7 +36,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div>
             <span className="section-subtitle">Official Curriculum Vitae</span>
             <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: 0 }}>
-              {personalInfo.name} — QA Engineer CV
+              {personalInfo.name} — Interactive CV
             </h2>
           </div>
           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>

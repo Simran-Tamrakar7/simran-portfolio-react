@@ -30,7 +30,7 @@ export function CtaBanner({ onOpenResume, onShowToast }) {
               LET'S BUILD HIGH-QUALITY PRODUCTS
             </span>
             <h2 style={{ fontSize: '2rem', fontWeight: '800', fontFamily: 'var(--font-heading)', color: 'var(--text-primary)', marginBottom: '0.75rem' }}>
-              Looking for a QA Engineer?
+              Looking for a QA Associate?
             </h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.6' }}>
               I bring manual, API, web, and mobile testing experience with solid defect management across Agile/Scrum and enterprise applications.

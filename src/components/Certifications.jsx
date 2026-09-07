@@ -9,10 +9,10 @@ export default function Certifications() {
         {/* Specializations & Education Section */}
         <div>
           <div className="section-header center reveal-up">
-            <span className="section-subtitle">QA SPECIALIZATIONS & EDUCATION</span>
-            <h2 className="section-title">Core QA Competencies & Academic Degree</h2>
+            <span className="section-subtitle">SPECIALIZATIONS & EDUCATION</span>
+            <h2 className="section-title">Specializations & Education</h2>
             <p className="section-description">
-              Combining a 4-year B.Sc. Computer Science & IT degree with hands-on enterprise QA testing specializations and AI-assisted workflows.
+              Primary QA specialization, complementary AI-assisted workflows, and a B.Sc. CSIT foundation from Deerwalk Institute of Technology.
             </p>
             <div className="title-bar"></div>
           </div>

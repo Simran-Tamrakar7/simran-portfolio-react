@@ -69,11 +69,16 @@ export function Hero({ onCopyEmail, onOpenResume }) {
           </h1>
 
           <h2 className="hero-title">
-            QA Engineer <span className="divider">|</span> Manual, API & Mobile Testing
+            {personalInfo.heroRoles.map((role, idx) => (
+              <React.Fragment key={role}>
+                {idx > 0 && <span className="divider"> | </span>}
+                <span>{role}</span>
+              </React.Fragment>
+            ))}
           </h2>
 
           <p className="hero-tagline">
-            "{personalInfo.tagline}"
+            {personalInfo.tagline}
           </p>
 
           <div className="hero-cta">
@@ -141,24 +146,37 @@ export function Hero({ onCopyEmail, onOpenResume }) {
               </div>
               <div className="card-body-content">
                 <div className="lifecycle-chip-grid">
-                  <div className="lifecycle-chip active"><span className="chip-num">01</span> Requirements & BA</div>
-                  <div className="lifecycle-chip active"><span className="chip-num">02</span> UI/UX Prototyping</div>
-                  <div className="lifecycle-chip active"><span className="chip-num">03</span> End-to-End QA</div>
-                  <div className="lifecycle-chip active"><span className="chip-num">04</span> GenAI Workflows</div>
+                  {personalInfo.lifecycleChips.map((chip) => (
+                    <div key={chip} className="lifecycle-chip active">
+                      <span className="chip-num">{chip.slice(0, 2)}</span> {chip.slice(3)}
+                    </div>
+                  ))}
                 </div>
                 <div className="code-preview-box" style={{ minHeight: '130px' }}>
-                  {testState.logs.map((logLine, idx) => (
-                    <p
-                      key={idx}
-                      className="code-line"
-                      style={{
-                        fontSize: '0.8rem',
-                        color: logLine.includes('SUCCESS') ? '#10b981' : logLine.includes('PASS') ? 'var(--accent-teal)' : 'var(--text-secondary)'
-                      }}
-                    >
-                      {logLine}
-                    </p>
-                  ))}
+                  {testState.completed || testState.running ? (
+                    testState.logs.map((logLine, idx) => (
+                      <p
+                        key={idx}
+                        className="code-line"
+                        style={{
+                          fontSize: '0.8rem',
+                          color: logLine.includes('SUCCESS') ? '#10b981' : logLine.includes('PASS') ? 'var(--accent-teal)' : 'var(--text-secondary)'
+                        }}
+                      >
+                        {logLine}
+                      </p>
+                    ))
+                  ) : (
+                    <>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>// Core Focus</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--accent-teal)' }}>const productStrategy = {'{'}</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>  discovery: "{personalInfo.productStrategy.discovery}",</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>  design: "{personalInfo.productStrategy.design}",</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>  quality: "{personalInfo.productStrategy.quality}",</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>  acceleration: "{personalInfo.productStrategy.acceleration}"</p>
+                      <p className="code-line" style={{ fontSize: '0.8rem', color: 'var(--accent-teal)' }}>{'};'}</p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

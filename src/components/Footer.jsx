@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container footer-container">
         <div className="footer-left">
           <a href="#hero" className="footer-logo">Simran<span className="highlight">.</span></a>
-          <p>QA Engineer — Manual, API & Mobile Testing</p>
+          <p>{personalInfo.title}</p>
           <p style={{ marginTop: '0.35rem' }}>
             <a href={personalInfo.portfolioAbout} className="cv-inline-link">About</a>
             {' · '}
