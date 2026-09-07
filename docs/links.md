@@ -1,12 +1,15 @@
 # Merged portfolios
 
-This React app (`simran-portfolio-react`) is the live site and merges content from:
+This React app (`simran-portfolio-react`) merges content from both portfolio repos.
 
-| Source | URL |
+| | URL |
 | --- | --- |
-| React portfolio (this repo) | https://github.com/Simran-Tamrakar7/simran-portfolio-react |
-| Classic static portfolio | https://github.com/Simran-Tamrakar7/simran-portfolio |
-| Live About | https://simral-tamrakar-portfolio.vercel.app/#about |
+| Local (current design) | http://localhost:5173/ |
+| Local About | http://localhost:5173/#about |
+| Old Vercel production | https://simral-tamrakar-portfolio.vercel.app/ |
+| Old Vercel About | https://simral-tamrakar-portfolio.vercel.app/#about |
+| React repo | https://github.com/Simran-Tamrakar7/simran-portfolio-react |
+| Classic repo | https://github.com/Simran-Tamrakar7/simran-portfolio |
 
 Merged into `#about`:
 
