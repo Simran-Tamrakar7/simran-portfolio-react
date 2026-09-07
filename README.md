@@ -10,7 +10,6 @@ QA Engineer portfolio built with React + Vite.
 | **Local About** | http://localhost:5173/#about |
 | **Portfolio (Vercel)** | https://simran-tamrakar-portfolio.vercel.app/ |
 | **Portfolio About** | https://simran-tamrakar-portfolio.vercel.app/#about |
-| **Older Vercel alias** | https://simral-tamrakar-portfolio.vercel.app/ |
 | **GitHub** | https://github.com/Simran-Tamrakar7/simran-portfolio-react |
 
 CV source of truth: `simran-tamrakar-cv.md` → mirrored in `src/data/portfolioData.js`.

@@ -11,7 +11,6 @@ App data mirror: `src/data/portfolioData.js` (`personalInfo`, `experiences`, ski
 | Github | `https://github.com/Simran-Tamrakar7` |
 | Portfolio | `https://simran-tamrakar-portfolio.vercel.app/` |
 | Local | `http://localhost:5173/` |
-| Older Vercel alias | `https://simral-tamrakar-portfolio.vercel.app/` |
 
 Languages: Nepali (Native), English (Fluent), Hindi (Fluent).
 
