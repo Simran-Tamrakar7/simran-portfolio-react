@@ -55,8 +55,8 @@ export function CtaBanner({ onOpenResume, onShowToast }) {
               <span>📋</span> Copy Email
             </button>
             <a
-              href="/Simran_Tamrakar_QA_CV.pdf"
-              download="Simran_Tamrakar_QA_CV.pdf"
+              href="/SimranTamrakar.pdf"
+              download="SimranTamrakar.pdf"
               className="btn btn-outline"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
             >

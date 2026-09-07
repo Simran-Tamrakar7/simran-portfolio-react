@@ -1,41 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { personalInfo, experiences, skillCategories, educationList, extraActivities, languagesList } from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
-  const [isGenerating, setIsGenerating] = useState(false);
-
   if (!isOpen) return null;
 
   const handleDownloadPDF = () => {
-    setIsGenerating(true);
-    const element = document.getElementById('printable-cv-document');
-
-    if (window.html2pdf && element) {
-      const opt = {
-        margin: [0.35, 0.4, 0.4, 0.4],
-        filename: 'Simran_Tamrakar_QA_CV.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, logging: false, backgroundColor: '#ffffff' },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-        pagebreak: { mode: ['css', 'legacy'] }
-      };
-
-      window.html2pdf()
-        .set(opt)
-        .from(element)
-        .save()
-        .then(() => {
-          setIsGenerating(false);
-        })
-        .catch(err => {
-          console.error('PDF generation error:', err);
-          setIsGenerating(false);
-          window.print();
-        });
-    } else {
-      setIsGenerating(false);
-      window.print();
-    }
+    // Official CV PDF: public/SimranTamrakar.pdf (same content as uploaded SimranTamrakar.pdf)
+    const link = document.createElement('a');
+    link.href = '/SimranTamrakar.pdf';
+    link.download = 'SimranTamrakar.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   };
 
   const handlePrint = () => {
@@ -68,9 +44,8 @@ export default function ResumeModal({ isOpen, onClose }) {
               className="btn btn-primary"
               style={{ padding: '0.45rem 1rem', fontSize: '0.85rem', gap: '0.4rem' }}
               onClick={handleDownloadPDF}
-              disabled={isGenerating}
             >
-              {isGenerating ? '⏳ Generating PDF...' : '📥 Download CV PDF'}
+              📥 Download CV PDF
             </button>
             <button
               className="btn btn-secondary"
@@ -192,10 +167,9 @@ export default function ResumeModal({ isOpen, onClose }) {
           <button
             className="btn btn-primary"
             onClick={handleDownloadPDF}
-            disabled={isGenerating}
             style={{ gap: '0.4rem' }}
           >
-            {isGenerating ? '⏳ Generating PDF...' : '📥 Download CV PDF'}
+            📥 Download CV PDF
           </button>
         </div>
       </div>

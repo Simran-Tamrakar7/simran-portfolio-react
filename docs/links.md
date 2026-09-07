@@ -15,3 +15,5 @@ App data mirror: `src/data/portfolioData.js` (`personalInfo`, `experiences`, ski
 Languages: Nepali (Native), English (Fluent), Hindi (Fluent).
 
 Interactive CV header: **phone | email | Github | Portfolio** (all clickable).
+
+Official downloadable PDF: `public/SimranTamrakar.pdf` (also mirrored as `Simran_Tamrakar_QA_CV.pdf`).
