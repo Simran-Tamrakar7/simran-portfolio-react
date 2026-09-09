@@ -1,6 +1,6 @@
 # Simran Tamrakar — Portfolio (React)
 
-QA Associate | Business Analyst | UI/UX & AI-Assisted Workflows portfolio built with React + Vite.
+QA Engineer portfolio built with React + Vite.
 
 ## Links
 

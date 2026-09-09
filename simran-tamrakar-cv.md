@@ -2,8 +2,8 @@
 name: Simran Tamrakar
 header:
   - text: |
-      <span style="font-size: 1.2em; font-weight: bold;">QA Associate | Business Analyst | UI/UX & AI-Assisted Workflows</span>
-  - text: <span class="iconify" data-icon="tabler:phone"></span> +9779843707272
+      <span style="font-size: 1.2em; font-weight: bold;">QA Engineer</span>
+  - text: <span class="iconify" data-icon="tabler:phone"></span> +977 9843707272
     newLine: true
   - text: <span class="iconify" data-icon="tabler:mail"></span> simrantamrakar77@gmail.com
     link: mailto:simrantamrakar77@gmail.com
@@ -15,11 +15,11 @@ header:
 
 ## Professional Summary
 
-Driving end-to-end software quality assurance, manual test execution, and API verification — with complementary strengths in requirement analysis and AI-assisted workflows.
+QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.
 
 ## Education
 
-**Deerwalk Institute of Technology**
+**Deerwalk Institute of Technology, Tribhuvan University**
   ~ Kathmandu, Nepal
 
 B.Sc. Computer Science & Information Technology
@@ -39,24 +39,21 @@ SEE / Schooling
 
 ## Experience
 
-**QA Associate**
-  ~ Infocom Solutions Pvt. Ltd. (Bizlevate & Enterprise Products)
+**Associate QA Engineer**
+  ~ Infocom Solutions Pvt. Ltd.
   ~ 08/2025 – Present
 
-- Lead end-to-end QA and manual test execution for Bizlevate HRMS across 7 modules: Attendance, Leave, Payroll, Employee Lifecycle, Onboarding, Offboarding, and Performance Appraisal.
-- Own QA delivery across HRMS, ERP (Salesmania), and the TADA travel & expense platform.
-- Perform API testing in Postman — endpoint contracts, payloads, status codes, database sync.
-- Design and execute test plans, manual test cases, boundary/edge-case scenarios, and regression suites.
-- Log and triage defects in ClickUp, Asana, and Jira; collaborate with developers in standups and sprint planning to keep P0 defects out of production.
-- Use AI prompt engineering to accelerate test case generation and defect reproduction steps.
+- Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.
+- Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.
+- Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards.
 
-**QA Intern**
+**QA Engineer Intern**
   ~ Infocom Solutions Pvt. Ltd.
   ~ 03/2025 – 08/2025
 
-- Gained hands-on experience in functional, UI, regression, and smoke testing across web and mobile platforms.
-- Authored reproducible bug reports with steps, screenshots, and network logs.
-- Executed test suites for Bizlevate HRMS, PrimeSales 360, and Salesmania.
+- Executed functional, regression, and UI testing to identify and document software defects.
+- Created and maintained test cases based on functional requirements and user stories.
+- Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality.
 
 ## Featured Projects & Applications Tested
 
@@ -70,8 +67,7 @@ SEE / Schooling
 
 ## Specializations
 
-- **Software Quality Assurance & API Testing** — Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & TADA.
-- **AI-Assisted QA & Prompt Engineering** — Prompt design, rapid UI evaluation, AI-generated test scenarios, LLM-assisted defect reproduction.
+- **Software Quality Assurance & API Testing** — Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & related enterprise apps.
 
 ## Leadership and Extra Curricular Activities
 

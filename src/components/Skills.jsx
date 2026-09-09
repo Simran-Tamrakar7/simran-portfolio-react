@@ -5,16 +5,14 @@ export function Skills() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filterTabs = ['All', 'Testing & QA', 'Tools', 'BA', 'UI/UX', 'AI', 'Foundations'];
+  const filterTabs = ['All', 'Testing & QA', 'Tools', 'Domain', 'Foundations'];
 
   const filteredCategories = skillCategories.filter(cat => {
     const title = cat.title.toLowerCase();
     let matchesTab = true;
     if (activeFilter === 'Testing & QA') matchesTab = title.includes('testing methodologies') || title.includes('qa types');
     else if (activeFilter === 'Tools') matchesTab = title.includes('tools') || title.includes('defect');
-    else if (activeFilter === 'BA') matchesTab = title.includes('requirements') || title.includes('ba');
-    else if (activeFilter === 'UI/UX') matchesTab = title.includes('ui/ux') || title.includes('usability');
-    else if (activeFilter === 'AI') matchesTab = title.includes('ai');
+    else if (activeFilter === 'Domain') matchesTab = title.includes('domain');
     else if (activeFilter === 'Foundations') matchesTab = title.includes('foundations');
 
     let matchesSearch = true;
@@ -55,7 +53,7 @@ export function Skills() {
             </div>
             <div>
               <span style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--accent-amber)', display: 'block' }}>30% Faster</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Defect Resolution via GenAI</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Defect Resolution Turnaround</span>
             </div>
           </div>
         </div>

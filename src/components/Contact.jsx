@@ -23,7 +23,7 @@ export function Contact({ onShowToast }) {
           <div className="contact-header center">
             <span className="section-subtitle">GET IN TOUCH</span>
             <h2 className="contact-headline">Let's Build Something Great Together</h2>
-            <p className="contact-subtext">Whether you're hiring for QA Associate, requirements/BA support, UI/UX usability QA, or AI-assisted workflows — I'd love to connect.</p>
+            <p className="contact-subtext">Whether you're hiring a QA Engineer for manual, API, web, or mobile testing — I'd love to connect. Reach me at +977 9843707272.</p>
           </div>
 
           <div className="contact-cards-grid">

@@ -12,7 +12,7 @@ export default function Certifications() {
             <span className="section-subtitle">SPECIALIZATIONS & EDUCATION</span>
             <h2 className="section-title">Specializations & Education</h2>
             <p className="section-description">
-              Primary QA specialization, complementary AI-assisted workflows, and a B.Sc. CSIT foundation from Deerwalk Institute of Technology.
+              Software quality assurance & API testing specialization, plus a B.Sc. CSIT from Deerwalk Institute of Technology, Tribhuvan University.
             </p>
             <div className="title-bar"></div>
           </div>

@@ -69,12 +69,12 @@ export function InteractiveQASuite() {
     <section id="qa-suite" className="section-padding qa-suite-section">
       <div className="container">
         <div className="section-header text-center reveal-up">
-          <span className="section-subtitle">INTERACTIVE QA & BA PLAYGROUND</span>
+          <span className="section-subtitle">INTERACTIVE QA PLAYGROUND</span>
           <h2 className="section-title">
             Test Automation & <span className="gradient-text">API Testing Suite</span>
           </h2>
           <p className="section-description">
-            Explore live API verification, defect triage workflows, and Gherkin requirement specifications in real-time.
+            Explore live API verification, defect triage workflows, and Gherkin test specifications in real-time.
           </p>
         </div>
 
@@ -96,7 +96,7 @@ export function InteractiveQASuite() {
             className={`tab-btn ${activeTab === 'gherkin' ? 'active' : ''}`}
             onClick={() => setActiveTab('gherkin')}
           >
-            <span>📄</span> Gherkin BA Specs
+            <span>📄</span> Gherkin Test Specs
           </button>
         </div>
 

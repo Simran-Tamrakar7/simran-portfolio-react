@@ -5,12 +5,15 @@ App data mirror: `src/data/portfolioData.js` (`personalInfo`, pillars, experienc
 
 | Field | Value |
 | --- | --- |
-| Title | QA Associate \| Business Analyst \| UI/UX & AI-Assisted Workflows |
-| Phone | `+9779843707272` |
+| Title | QA Engineer |
+| Current role | Associate QA Engineer |
+| Intern role | QA Engineer Intern |
+| Phone | `+977 9843707272` |
 | Email | `simrantamrakar77@gmail.com` |
 | Github | `https://github.com/Simran-Tamrakar7` |
 | Portfolio | `https://simran-tamrakar-portfolio.vercel.app/` |
 | Local | `http://localhost:5173/` |
+| Education | Deerwalk Institute of Technology, Tribhuvan University |
 
 Languages: English (Professional Working), Nepali (Native/Bilingual), Hindi (Professional Working).
 

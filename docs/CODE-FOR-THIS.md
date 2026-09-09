@@ -1,14 +1,14 @@
 # CODE-FOR-THIS — Portfolio content map
 
-Where profile copy lives so updates stay one-place:
+CV is the source of truth. Portfolio positioning is **QA Engineer** (not BA / UI-UX / AI headline).
 
 | Content | Source |
 | --- | --- |
-| Name, title, hero roles, tagline, contact, stats, about | `src/data/portfolioData.js` → `personalInfo` |
-| Four pillars (QA / BA / UI-UX / AI) | `fourPillars` |
-| Experience | `experiences` |
+| Name, title, hero, tagline, contact, stats, about | `src/data/portfolioData.js` → `personalInfo` |
+| Four QA pillars | `fourPillars` (manual, API, defects, release) |
+| Experience | `experiences` (Associate QA Engineer / QA Engineer Intern) |
 | Featured apps tested | `projectsData` |
-| Skills matrix | `skillCategories`, `coreValues`, `softSkills` |
+| Skills matrix | `skillCategories` (no ISO/CAPA/Kaizen/htop/Trello/Chrome DevTools) |
 | Impact + QA gates | `impactMetrics`, `qaGovernanceGates` |
 | Education / activities / languages | `educationList`, `extraActivities`, `languagesList` |
 | Specializations cards | `certificationsList` |

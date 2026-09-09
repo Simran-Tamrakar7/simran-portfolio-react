@@ -11,6 +11,11 @@ export function Footer() {
           <a href="#hero" className="footer-logo">Simran<span className="highlight">.</span></a>
           <p>{personalInfo.title}</p>
           <p style={{ marginTop: '0.35rem' }}>
+            <a href={`tel:${personalInfo.phone}`} className="cv-inline-link">{personalInfo.phoneDisplay}</a>
+            {' · '}
+            <a href={`mailto:${personalInfo.email}`} className="cv-inline-link">{personalInfo.email}</a>
+          </p>
+          <p style={{ marginTop: '0.35rem' }}>
             <a href={personalInfo.portfolioAbout} className="cv-inline-link">About</a>
             {' · '}
             <a href={personalInfo.githubRepos.react} target="_blank" rel="noopener noreferrer" className="cv-inline-link">React repo</a>

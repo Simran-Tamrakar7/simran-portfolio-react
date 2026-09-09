@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: "Simran Tamrakar",
-  title: "QA Associate | Business Analyst | UI/UX & AI-Assisted Workflows",
-  heroRoles: ["QA Associate", "Business Analyst", "UI/UX & AI-Assisted Workflows"],
-  tagline: "Driving end-to-end software quality assurance, manual test execution, and API verification — with complementary strengths in requirement analysis and AI-assisted workflows.",
+  title: "QA Engineer",
+  heroRoles: ["QA Engineer"],
+  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
   email: "simrantamrakar77@gmail.com",
   phone: "+9779843707272",
-  phoneDisplay: "+9779843707272",
+  phoneDisplay: "+977 9843707272",
   github: "https://github.com/Simran-Tamrakar7",
   linkedin: "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/",
   portfolio: "https://simran-tamrakar-portfolio.vercel.app/",
@@ -15,50 +15,50 @@ export const personalInfo = {
     react: "https://github.com/Simran-Tamrakar7/simran-portfolio-react",
     classic: "https://github.com/Simran-Tamrakar7/simran-portfolio"
   },
-  status: "Available for QA Associate & Quality Assurance Roles",
-  aboutHeading: "Primary Focus: End-to-End Software Quality Assurance",
-  aboutLead: "Quality assurance is my core specialty — authoring structured test plans, executing manual, regression, and API test suites, and owning the full defect lifecycle across web, mobile, and API layers.",
-  professionalSummary: "Driving end-to-end software quality assurance, manual test execution, and API verification — with complementary strengths in requirement analysis and AI-assisted workflows.",
+  status: "Available for QA Engineer Roles",
+  aboutHeading: "Primary Focus: Software Quality Assurance",
+  aboutLead: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management.",
+  professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
   aboutParagraphs: [
-    "Quality assurance is my core specialty — authoring structured test plans, executing manual, regression, and API test suites, and owning the full defect lifecycle across web, mobile, and API layers.",
-    "I complement this with adjacent skills: reviewing software requirements, evaluating UI/UX usability, and using AI tools to accelerate edge-case scenario generation.",
-    "At Infocom Solutions, I own QA for Bizlevate HRMS (Attendance, Leave, Payroll, Onboarding, Offboarding, Appraisal) and the TADA travel and expense platform — working closely with developers to surface edge cases early, validate API contracts in Postman, and keep critical (P0) defects out of production."
+    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management.",
+    "Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
+    "At Infocom Solutions, I design and execute test cases, track defects with developers through resolution, and support release validation across HRM, ERP, sales, and banking applications."
   ],
   aboutHighlights: [
     {
-      title: "Business Requirements & Specs",
-      desc: "SRS documentation, feature comparison matrices, and process flowcharts for enterprise software."
+      title: "Manual & Functional Testing",
+      desc: "Functional, regression, integration, UI, and UAT testing across web and mobile applications."
     },
     {
-      title: "Admin Dashboard & UI/UX Design",
-      desc: "High-density data tables, calendar/roster views, and admin panels in Figma."
+      title: "API Testing",
+      desc: "Postman-based API verification for endpoint contracts, payloads, and status codes."
     },
     {
-      title: "Comprehensive QA Ownership",
-      desc: "Manual, functional, regression, API (Postman), mobile, and UAT testing, with defect tracking in ClickUp."
+      title: "Defect Management",
+      desc: "Documenting and tracking defects with clear reproduction steps through resolution and verification."
     },
     {
-      title: "AI-Assisted Workflow Acceleration",
-      desc: "ChatGPT, v0.dev, Bolt.new, and Lovable.dev for rapid UI prototyping and prompt-engineered test suites."
+      title: "Release Validation",
+      desc: "Test planning, requirement analysis, and release validation so features meet business and quality standards."
     }
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
     { label: "Currently", value: "Infocom Solutions [ISPL]" },
-    { label: "Studied at", value: "Deerwalk Institute of Technology" },
-    { label: "Focus", value: "QA · BA · UI/UX · AI Workflows" }
+    { label: "Studied at", value: "Deerwalk Institute of Technology, Tribhuvan University" },
+    { label: "Focus", value: "QA Engineer · Manual · API · Mobile" }
   ],
   productStrategy: {
-    discovery: "SRS & Feature Mapping",
-    design: "Admin Panels & Roster Views",
-    quality: "End-to-End Test Ownership",
-    acceleration: "GenAI-Assisted Prototyping"
+    discovery: "Requirement Analysis",
+    design: "Test Case Design",
+    quality: "Manual & API Testing",
+    acceleration: "Release Validation"
   },
   lifecycleChips: [
-    "01 Requirements & BA",
-    "02 UI/UX Prototyping",
-    "03 End-to-End QA",
-    "04 GenAI Workflows"
+    "01 Manual Testing",
+    "02 API Testing",
+    "03 Regression & UAT",
+    "04 Defect Management"
   ],
   stats: [
     { number: "100+", label: "Test Cases / Module Sprint" },
@@ -72,57 +72,58 @@ export const fourPillars = [
     id: "qa",
     number: "01",
     iconBg: "bg-teal",
-    title: "Quality Assurance & Testing",
-    description: "CORE FOCUS: End-to-end quality ownership across web, mobile, and API layers.",
+    title: "Manual & Functional Testing",
+    description: "Core QA execution across web and mobile applications.",
     badge: "Core Focus",
     highlight: true,
     list: [
-      "Functional, Regression, Smoke, Sanity & UAT Testing",
-      "Postman API testing — status codes & payload contract checks",
-      "Boundary Value Analysis & edge-case test design",
-      "Defect tracking & RCA lifecycle in ClickUp, Asana & Jira"
+      "Functional, regression, smoke, sanity & UAT testing",
+      "UI testing and cross-browser / cross-device checks",
+      "Boundary value analysis & edge-case design",
+      "Black box and exploratory testing"
     ]
   },
   {
-    id: "ba",
+    id: "api",
     number: "02",
     iconBg: "bg-blue",
-    title: "Requirements & BA Support",
-    description: "Reviewing SRS requirements to remove ambiguity and produce testable specifications.",
-    badge: "Complementary Skill",
+    title: "API Testing",
+    description: "Contract and payload verification with Postman.",
+    badge: "Core Focus",
+    highlight: true,
     list: [
-      "SRS review & QA input",
-      "Feature comparison matrices & business flow validation",
-      "Process mapping, workflow diagrams & state-transition testing",
-      "Agile/Scrum sprint alignment & cross-team collaboration"
+      "Postman API testing",
+      "Status code and payload checks",
+      "Integration testing support",
+      "Release validation for API-backed features"
     ]
   },
   {
-    id: "design",
+    id: "defects",
     number: "03",
     iconBg: "bg-purple",
-    title: "UI/UX & Usability Testing",
-    description: "Evaluating interfaces for accessibility, responsiveness, and usability.",
-    badge: "Complementary Skill",
+    title: "Defect Management",
+    description: "Clear bug reports from discovery through verification.",
+    badge: "Core Focus",
     list: [
-      "HR admin dashboard & user management usability QA",
-      "Cross-browser & cross-device responsive UI testing",
-      "Figma mockup review & visual inconsistency detection",
-      "Heuristic evaluations"
+      "Defect tracking in ClickUp, Asana & Jira",
+      "Reproducible steps, screenshots & logs",
+      "Collaboration with developers through resolution",
+      "Regression verification after fixes"
     ]
   },
   {
-    id: "ai",
+    id: "release",
     number: "04",
     iconBg: "bg-amber",
-    title: "AI-Assisted QA Workflows",
-    description: "Using GenAI to accelerate scenario generation and bug triage.",
-    badge: "Complementary Skill",
+    title: "Test Planning & Release Validation",
+    description: "Aligning test coverage with requirements and release gates.",
+    badge: "Core Focus",
     list: [
-      "Prompt engineering for automated test scenario generation",
-      "AI-assisted screenshot-to-bug-step extraction",
-      "Rapid prototype review via v0.dev & Bolt.new",
-      "Faster test matrix creation with ChatGPT"
+      "Test plan and test case design",
+      "Requirement analysis for testable acceptance",
+      "Agile/Scrum sprint collaboration",
+      "Smoke, sanity & UAT sign-off support"
     ]
   }
 ];
@@ -130,32 +131,29 @@ export const fourPillars = [
 export const experiences = [
   {
     id: 1,
-    role: "QA Associate",
-    company: "Infocom Solutions Pvt. Ltd. (Bizlevate & Enterprise Products)",
+    role: "Associate QA Engineer",
+    company: "Infocom Solutions Pvt. Ltd.",
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Lead end-to-end QA and manual test execution for Bizlevate HRMS across 7 modules: Attendance, Leave, Payroll, Employee Lifecycle, Onboarding, Offboarding, and Performance Appraisal.",
-      "Own QA delivery across HRMS, ERP (Salesmania), and the TADA travel & expense platform.",
-      "Perform API testing in Postman — endpoint contracts, payloads, status codes, database sync.",
-      "Design and execute test plans, manual test cases, boundary/edge-case scenarios, and regression suites.",
-      "Log and triage defects in ClickUp, Asana, and Jira; collaborate with developers in standups and sprint planning to keep P0 defects out of production.",
-      "Use AI prompt engineering to accelerate test case generation and defect reproduction steps."
+      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
+      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
+      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
     ],
-    tags: ["Quality Assurance", "Manual Testing", "API Testing (Postman)", "Bizlevate HRMS", "ClickUp/Jira/Asana", "Defect Triage", "Regression Suites"]
+    tags: ["Quality Assurance", "Manual Testing", "API Testing", "Regression", "Defect Tracking"]
   },
   {
     id: 2,
-    role: "QA Intern",
+    role: "QA Engineer Intern",
     company: "Infocom Solutions Pvt. Ltd.",
     period: "March 2025 – August 2025",
     current: false,
     bullets: [
-      "Gained hands-on experience in functional, UI, regression, and smoke testing across web and mobile platforms.",
-      "Authored reproducible bug reports with steps, screenshots, and network logs.",
-      "Executed test suites for Bizlevate HRMS, PrimeSales 360, and Salesmania."
+      "Executed functional, regression, and UI testing to identify and document software defects.",
+      "Created and maintained test cases based on functional requirements and user stories.",
+      "Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality."
     ],
-    tags: ["Functional Testing", "UI Testing", "Bug Reporting", "PrimeSales 360", "Salesmania", "Cross-Browser Testing"]
+    tags: ["Functional Testing", "UI Testing", "Bug Reporting", "Test Cases"]
   }
 ];
 
@@ -172,7 +170,7 @@ export const projectsData = [
       "Client coordination across the testing lifecycle"
     ],
     tags: ["HRM", "Regression", "Workflow QA"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Employee Management", "Attendance", "Leave", "Payroll", "Onboarding / Offboarding", "Appraisal"],
     detailedContributions: [
       "Led QA across Bizlevate HRMS modules and v2 comparisons.",
@@ -188,7 +186,7 @@ export const projectsData = [
     summary: "Field sales app for Sales Executives/Officers (SESO).",
     keyContributions: ["Shop/route and order flow QA", "Floor stock validation", "Live services testing"],
     tags: ["Mobile", "Sales", "SESO"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Shop / route management", "Order flow", "Floor stock", "Live services"],
     detailedContributions: ["Tested field sales flows for SESO roles across shop, route, order, and stock paths."],
     techStack: ["Manual QA", "Mobile Testing", "ClickUp"]
@@ -201,7 +199,7 @@ export const projectsData = [
     summary: "Supervisor approval app for ASM/DCM roles.",
     keyContributions: ["Expense and travel approval QA", "ASM/DCM role validation", "Field-level defect discovery"],
     tags: ["Approvals", "Sales", "Defects"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Expense workflows", "Travel workflows", "Supervisor approval chains"],
     detailedContributions: ["Tested supervisor approval workflows for ASM/DCM roles."],
     techStack: ["Manual QA", "UI Testing", "Jira"]
@@ -214,7 +212,7 @@ export const projectsData = [
     summary: "Banking/financial dashboard application.",
     keyContributions: ["Dashboard QA", "Financial UI validation"],
     tags: ["Banking", "Dashboard"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Financial dashboard views", "Reporting surfaces"],
     detailedContributions: ["Performed QA on banking/financial dashboard application flows."],
     techStack: ["Manual QA", "ClickUp"]
@@ -227,7 +225,7 @@ export const projectsData = [
     summary: "Mobile/web ERP application for finance, HR, procurement, and inventory.",
     keyContributions: ["Finance / HR / procurement / inventory QA", "Mobile and web coverage"],
     tags: ["ERP", "Mobile", "Finance"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Finance", "HR", "Procurement", "Inventory"],
     detailedContributions: ["Tested CQNoval ERP flows across finance, HR, procurement, and inventory on mobile and web."],
     techStack: ["Manual QA", "Mobile Testing"]
@@ -240,7 +238,7 @@ export const projectsData = [
     summary: "Mobile/web application covered in QA testing engagements.",
     keyContributions: ["Mobile/web functional QA"],
     tags: ["Mobile", "Web"],
-    role: "QA Associate",
+    role: "QA Engineer",
     modules: ["Mobile app flows", "Web flows"],
     detailedContributions: ["Executed QA on ESpOT mobile and web application flows."],
     techStack: ["Manual QA", "Mobile Testing"]
@@ -253,7 +251,7 @@ export const projectsData = [
     summary: "E-commerce website for Ryze monitors — product catalog and reseller network (ryzebiz.com).",
     keyContributions: ["Product catalog QA", "Reseller network flow checks"],
     tags: ["E-commerce", "Web"],
-    role: "QA Associate",
+    role: "QA Engineer",
     link: "https://ryzebiz.com",
     modules: ["Product catalog", "Reseller network", "Storefront"],
     detailedContributions: ["Tested e-commerce flows for Ryze monitors including catalog and reseller network."],
@@ -287,50 +285,24 @@ export const skillCategories = [
       "ClickUp",
       "Asana",
       "Jira",
-      "Trello",
       "Postman",
-      "Chrome DevTools",
       "Git/GitHub/GitLab",
       "Cypress (E2E — Beginner)",
       "Playwright (E2E — Beginner)",
       "JMeter",
-      "SQL/MySQL",
+      "Basic SQL",
       "Android Studio & ADB"
     ]
   },
   {
-    icon: "📊",
-    title: "Requirements & BA Support",
+    icon: "🏢",
+    title: "Domain Knowledge",
+    highlight: true,
     skills: [
-      "SRS Review",
-      "Test Plan & Test Case Design",
-      "Bug Reporting & RCA",
-      "Process Mapping & Flowcharts",
-      "Agile/Scrum",
-      "Feature Comparison Matrices"
-    ]
-  },
-  {
-    icon: "🎨",
-    title: "UI/UX & Usability Testing",
-    skills: [
-      "Usability QA",
-      "Cross-Browser Testing",
-      "Mobile Device Testing",
-      "Figma Wireframe Review",
-      "Responsive UI Verification",
-      "Heuristic Evaluations"
-    ]
-  },
-  {
-    icon: "⚡",
-    title: "AI & Emerging Technologies",
-    skills: [
-      "Prompt Engineering",
-      "AI-Assisted Test Scenario Generation",
-      "ChatGPT/Claude for QA",
-      "v0.dev/Bolt.new Prototyping Audit",
-      "AI Bug Step Extraction"
+      "HRMS",
+      "ERP",
+      "Sales & Distribution Systems",
+      "Banking/FinTech Dashboards"
     ]
   },
   {
@@ -339,7 +311,8 @@ export const skillCategories = [
     skills: [
       "Python (Intermediate)",
       "HTML5/CSS3",
-      "JavaScript"
+      "JavaScript",
+      "Basic SQL"
     ]
   }
 ];
@@ -353,7 +326,7 @@ export const coreValues = [
   {
     icon: "🌱",
     title: "Continuous Growth",
-    desc: "Learning new automation tools (Cypress, Playwright) and AI-driven QA workflows."
+    desc: "Learning automation tools (Cypress, Playwright) and strengthening API testing workflows."
   },
   {
     icon: "🤝",
@@ -380,7 +353,7 @@ export const educationList = [
   {
     year: "2020 – 2025",
     degree: "B.Sc. Computer Science & Information Technology",
-    school: "Deerwalk Institute of Technology",
+    school: "Deerwalk Institute of Technology, Tribhuvan University",
     location: "Kathmandu, Nepal"
   },
   {
@@ -439,19 +412,9 @@ export const certificationsList = [
     description: "Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & TADA."
   },
   {
-    id: "genai-competency",
-    title: "AI-Assisted QA & Prompt Engineering",
-    issuer: "Complementary Specialization",
-    year: "Active Practice",
-    badge: "Complementary Specialization",
-    icon: "⚡",
-    skills: ["Prompt Structuring", "ChatGPT for QA", "v0.dev Audit", "Edge-Case Generation"],
-    description: "Prompt design, rapid UI evaluation, AI-generated test scenarios, LLM-assisted defect reproduction."
-  },
-  {
     id: "csit-degree",
     title: "B.Sc. Computer Science & Information Technology",
-    issuer: "Deerwalk Institute of Technology",
+    issuer: "Deerwalk Institute of Technology, Tribhuvan University",
     year: "2020 – 2025",
     badge: "Academic Degree",
     icon: "🎓",
@@ -463,7 +426,7 @@ export const certificationsList = [
 export const impactMetrics = [
   { value: "Zero P0", label: "Critical Bugs Leaked", detail: "No critical defects leaked to production across HRMS & TADA releases, backed by boundary value analysis, sanity testing, and UAT sign-off gates." },
   { value: "100+", label: "Test Cases / Module", detail: "Test cases designed per module sprint, covering positive/negative scenarios, multi-tier approval workflows, and edge cases ahead of developer handoff." },
-  { value: "30%", label: "Faster Defect Resolution", detail: "Driven by reproducible ClickUp bug reports (steps, logs, screenshots) and AI-assisted triage templates." },
+  { value: "30%", label: "Faster Defect Resolution", detail: "Driven by reproducible bug reports (steps, logs, screenshots) and clear collaboration with developers." },
   { value: "100%", label: "API Endpoint QA", detail: "Status codes, response times, schema validation, and financial payload checks for TADA & Payroll." }
 ];
 
@@ -613,7 +576,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    quote: "Working with Simran is a breeze for developers. Her bug reports are always 100% reproducible, complete with step-by-step notes, Chrome DevTools network logs, and exact API contract payload mismatches. It saves us hours of triage.",
+    quote: "Working with Simran is a breeze for developers. Her bug reports are always 100% reproducible, complete with step-by-step notes, screenshots, and exact API contract payload mismatches. It saves us hours of triage.",
     author: "Lead Full-Stack Developer",
     org: "Enterprise Software Division",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
@@ -621,11 +584,11 @@ export const testimonials = [
   },
   {
     id: 3,
-    quote: "Simran bridges requirement gaps effortlessly. By combining her Business Analysis background with AI prompt engineering, she helps translate ambiguous client specifications into clear, testable acceptance criteria.",
+    quote: "Simran helps translate ambiguous requirements into clear, testable acceptance criteria and keeps release validation focused on business and quality standards.",
     author: "Agile Scrum Master",
     org: "ERP & TADA Platforms",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
-    tag: "BA & Requirement Specifications"
+    tag: "Requirement Analysis & Release Validation"
   }
 ];
 
