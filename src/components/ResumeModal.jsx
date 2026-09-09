@@ -169,7 +169,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             onClick={handleDownloadPDF}
             style={{ gap: '0.4rem' }}
           >
-            📥 Download CV PDF
+            Download CV
           </button>
         </div>
       </div>
