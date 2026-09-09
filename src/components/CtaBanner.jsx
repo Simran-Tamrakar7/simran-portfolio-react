@@ -1,21 +1,16 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
+import { Download, FileText, Linkedin } from './icons';
 
-export function CtaBanner({ onOpenResume, onShowToast }) {
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(personalInfo.email).then(() => {
-      if (onShowToast) onShowToast('Email copied to clipboard! 📋');
-    });
-  };
-
+export function CtaBanner({ onOpenResume }) {
   return (
     <section className="cta-banner-section section-padding">
-      <div className="container">
+      <div className="container section-container">
         <div
           className="glass-card reveal-up card-padded"
           style={{
             borderRadius: 'var(--radius-lg)',
-            background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.12) 0%, rgba(168, 85, 247, 0.1) 100%)',
+            background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.12) 0%, rgba(59, 130, 246, 0.08) 100%)',
             border: '1px solid rgba(45, 212, 191, 0.3)',
             display: 'flex',
             flexWrap: 'wrap',
@@ -37,37 +32,28 @@ export function CtaBanner({ onOpenResume, onShowToast }) {
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem 1.25rem', alignItems: 'center' }}>
+            <a href="#contact" className="btn btn-primary">
+              Contact Me
+            </a>
+            <a
+              href="/SimranTamrakar.pdf"
+              download="SimranTamrakar.pdf"
+              className="btn btn-secondary"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+            >
+              <Download size={18} /> Download CV
+            </a>
             <a
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+              className="btn-text-link"
             >
-              <span>💼</span> Connect on LinkedIn
+              <Linkedin size={18} /> LinkedIn
             </a>
-            <button
-              onClick={handleCopyEmail}
-              className="btn btn-secondary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
-            >
-              <span>📋</span> Copy Email
-            </button>
-            <a
-              href="/SimranTamrakar.pdf"
-              download="SimranTamrakar.pdf"
-              className="btn btn-outline"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
-            >
-              <span>📥</span> Download CV PDF
-            </a>
-            <button
-              onClick={onOpenResume}
-              className="btn btn-outline"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
-            >
-              <span>📄</span> View CV
+            <button onClick={onOpenResume} className="btn-text-link">
+              <FileText size={18} /> View CV
             </button>
           </div>
         </div>

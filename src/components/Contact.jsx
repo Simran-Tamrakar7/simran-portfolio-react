@@ -60,15 +60,15 @@ export function Contact({ onShowToast }) {
               <span className="c-action">Follow ↗</span>
             </a>
 
-            <a href={personalInfo.portfolio} target="_blank" rel="noopener noreferrer" className="contact-method-card">
+            <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="contact-method-card">
               <div className="c-icon bg-blue">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               </div>
               <div className="c-info">
-                <span className="c-label">Portfolio</span>
-                <span className="c-value">Live site</span>
+                <span className="c-label">LinkedIn</span>
+                <span className="c-value">simran-tamrakar</span>
               </div>
-              <span className="c-action">Open ↗</span>
+              <span className="c-action">Connect ↗</span>
             </a>
           </div>
 

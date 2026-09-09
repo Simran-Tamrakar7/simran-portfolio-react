@@ -16,7 +16,7 @@ export const profilePhotos = [
     title: 'Simran Tamrakar',
     tag: 'Kathmandu, Nepal',
     description: 'Portrait avatar from the classic simran-portfolio site.',
-    alt: 'Portrait of Simran Tamrakar'
+    alt: 'Simran Tamrakar, QA Engineer'
   },
   {
     id: 'temple-wheels',
@@ -24,7 +24,7 @@ export const profilePhotos = [
     title: 'Patan Golden Temple',
     tag: 'Kathmandu, Nepal',
     description: 'Standing at Patan Golden Temple (Hiranya Varna Mahavihar) in Nepal surrounded by traditional Buddhist prayer wheels.',
-    alt: 'Simran Tamrakar at Patan Golden Temple'
+    alt: 'Simran Tamrakar, QA Engineer, at Patan Golden Temple'
   },
   {
     id: 'scarf-portrait',
@@ -32,6 +32,6 @@ export const profilePhotos = [
     title: 'Simran Tamrakar',
     tag: 'Kathmandu, Nepal',
     description: 'Warm Ghibli-inspired portrait of Simran with spectacles and cozy winter scarf.',
-    alt: 'Simran Tamrakar Portrait'
+    alt: 'Simran Tamrakar, QA Engineer'
   }
 ];

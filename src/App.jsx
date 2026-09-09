@@ -68,7 +68,6 @@ export default function App() {
         <EducationExtra />
         <CtaBanner
           onOpenResume={() => setIsResumeOpen(true)}
-          onShowToast={showToast}
         />
         <Contact onShowToast={showToast} />
       </main>

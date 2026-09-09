@@ -27,7 +27,7 @@ export function Pillars() {
           <div className="title-bar"></div>
         </div>
 
-        <div className="pillars-grid">
+        <div className="pillars-grid capability-grid">
           {fourPillars.map((pillar) => (
             <div
               key={pillar.id}

@@ -45,7 +45,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               style={{ padding: '0.45rem 1rem', fontSize: '0.85rem', gap: '0.4rem' }}
               onClick={handleDownloadPDF}
             >
-              📥 Download CV PDF
+              Download CV
             </button>
             <button
               className="btn btn-secondary"

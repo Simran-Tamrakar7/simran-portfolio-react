@@ -261,7 +261,6 @@ export const projectsData = [
 
 export const skillCategories = [
   {
-    icon: "🛡️",
     title: "Testing Methodologies & QA Types",
     highlight: true,
     skills: [
@@ -278,7 +277,6 @@ export const skillCategories = [
     ]
   },
   {
-    icon: "🛠️",
     title: "Defect Management & QA Tools",
     highlight: true,
     skills: [
@@ -295,7 +293,6 @@ export const skillCategories = [
     ]
   },
   {
-    icon: "🏢",
     title: "Domain Knowledge",
     highlight: true,
     skills: [
@@ -306,7 +303,6 @@ export const skillCategories = [
     ]
   },
   {
-    icon: "📜",
     title: "Foundations",
     skills: [
       "Python (Intermediate)",
@@ -319,34 +315,30 @@ export const skillCategories = [
 
 export const coreValues = [
   {
-    icon: "🎯",
     title: "Quality Focus",
     desc: "Comprehensive testing, boundary analysis, zero-defect releases."
   },
   {
-    icon: "🌱",
     title: "Continuous Growth",
     desc: "Learning automation tools (Cypress, Playwright) and strengthening API testing workflows."
   },
   {
-    icon: "🤝",
     title: "Team Collaboration",
     desc: "Cross-functional work with developers, PMs, and stakeholders in Agile/Scrum."
   },
   {
-    icon: "🚀",
     title: "Proven Results",
     desc: "Consistent on-time delivery with zero P0 defect leaks."
   }
 ];
 
 export const softSkills = [
-  { icon: "🧠", name: "Quick Learner" },
-  { icon: "🤝", name: "Team Player" },
-  { icon: "🎯", name: "Problem Solving" },
-  { icon: "💬", name: "Clear Communication" },
-  { icon: "🔄", name: "Adaptability" },
-  { icon: "🚀", name: "Entrepreneurial Mindset" }
+  { name: "Quick Learner" },
+  { name: "Team Player" },
+  { name: "Problem Solving" },
+  { name: "Clear Communication" },
+  { name: "Adaptability" },
+  { name: "Entrepreneurial Mindset" }
 ];
 
 export const educationList = [
@@ -407,7 +399,6 @@ export const certificationsList = [
     issuer: "Primary Specialization",
     year: "Active Practice",
     badge: "Primary Specialization",
-    icon: "🛡️",
     skills: ["Manual Testing", "Postman API Testing", "ClickUp/Asana/Jira", "UAT Sign-off"],
     description: "Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & TADA."
   },
@@ -417,7 +408,6 @@ export const certificationsList = [
     issuer: "Deerwalk Institute of Technology, Tribhuvan University",
     year: "2020 – 2025",
     badge: "Academic Degree",
-    icon: "🎓",
     skills: ["Software Engineering", "QA Fundamentals", "Database Systems", "API Architecture"],
     description: "Undergraduate degree in computer science and information technology."
   }

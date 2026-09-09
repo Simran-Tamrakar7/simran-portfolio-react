@@ -82,9 +82,8 @@ export function Hero({ onCopyEmail, onOpenResume }) {
           </p>
 
           <div className="hero-cta">
-            <a href="#projects" className="btn btn-primary">
-              <span>View Featured Projects</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="#contact" className="btn btn-primary">
+              Contact Me
             </a>
             <a
               href="/SimranTamrakar.pdf"
@@ -92,17 +91,19 @@ export function Hero({ onCopyEmail, onOpenResume }) {
               className="btn btn-secondary"
               style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
             >
-              <span>📥</span> Download CV PDF
+              Download CV
             </a>
-            <button className="btn btn-outline" onClick={onOpenResume}>
-              <span>📄 View Interactive CV</span>
+            <a href="#projects" className="btn-text-link">
+              View Featured Projects
+            </a>
+            <button className="btn-text-link" onClick={onOpenResume}>
+              View CV
             </button>
             <button
-              className="btn btn-outline"
+              className="btn-text-link"
               onClick={() => onCopyEmail(personalInfo.email, 'Email copied to clipboard!')}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              <span>Copy Email</span>
+              Copy Email
             </button>
           </div>
 

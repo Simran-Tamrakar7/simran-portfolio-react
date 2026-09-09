@@ -246,14 +246,14 @@ export function InteractiveQASuite() {
           </div>
         )}
 
-        {/* Tab 3: Gherkin BA Specs */}
+        {/* Tab 3: Gherkin Test Specs */}
         {activeTab === 'gherkin' && (
           <div className="glass-card card-padded reveal-up" style={{ borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
               {gherkinSpecs.map((spec) => (
                 <div key={spec.id} style={{ background: 'rgba(0,0,0,0.3)', padding: '1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
                   <span style={{ fontSize: '0.75rem', fontWeight: '700', color: 'var(--accent-purple)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    BA & SRS Requirement Specification
+                    Gherkin Test Specification
                   </span>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0.4rem 0 0.75rem 0', color: 'var(--text-primary)' }}>
                     {spec.feature}

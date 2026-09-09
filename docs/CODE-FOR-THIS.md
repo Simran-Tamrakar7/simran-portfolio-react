@@ -1,18 +1,21 @@
 # CODE-FOR-THIS — Portfolio content map
 
-CV is the source of truth. Portfolio positioning is **QA Engineer** (not BA / UI-UX / AI headline).
+CV is the source of truth. Portfolio positioning is **QA Engineer**.
+
+## Layout tokens
+- Container: max-width `1200px`, side padding `--space-6` / `--space-4` mobile (`.container` / `.section-container`)
+- Section vertical padding: `--space-12` / `--space-8` mobile
+- 4-up grids: `.metric-grid`, `.capability-grid`, `.ethos-grid`, `.pillars-grid`, `.impact-grid` → 4 / 2 / 1 columns
+- Metric color system: Option A — single teal accent (`.metric-card .value`)
+
+## Icons
+Lucide-style SVGs in `src/components/icons.jsx` (no emoji in Key Impact / Ethos / Specializations / LinkedIn CTA).
+
+## CTAs
+Primary: Contact Me, Download CV (`/SimranTamrakar.pdf`). Secondary text links: projects, View CV, Copy Email, LinkedIn.
 
 | Content | Source |
 | --- | --- |
-| Name, title, hero, tagline, contact, stats, about | `src/data/portfolioData.js` → `personalInfo` |
-| Four QA pillars | `fourPillars` (manual, API, defects, release) |
-| Experience | `experiences` (Associate QA Engineer / QA Engineer Intern) |
-| Featured apps tested | `projectsData` |
-| Skills matrix | `skillCategories` (no ISO/CAPA/Kaizen/htop/Trello/Chrome DevTools) |
-| Impact + QA gates | `impactMetrics`, `qaGovernanceGates` |
-| Education / activities / languages | `educationList`, `extraActivities`, `languagesList` |
-| Specializations cards | `certificationsList` |
-| Markdown CV mirror | `simran-tamrakar-cv.md` |
+| Profile copy | `src/data/portfolioData.js` |
+| Markdown CV | `simran-tamrakar-cv.md` |
 | Downloadable PDF | `public/SimranTamrakar.pdf` |
-
-UI sections consume the data modules above; avoid hardcoding career copy in components.
