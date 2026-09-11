@@ -18,7 +18,7 @@ export function Contact({ onShowToast }) {
 
   return (
     <section id="contact" className="section-padding contact-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="contact-box glass-card reveal-up">
           <div className="contact-header center">
             <span className="section-subtitle">GET IN TOUCH</span>

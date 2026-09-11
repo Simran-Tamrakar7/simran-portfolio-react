@@ -26,7 +26,7 @@ export function Projects({ onOpenModal }) {
 
   return (
     <section id="projects" className="section-padding projects-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="section-header center reveal-up">
           <span className="section-subtitle">APPLICATIONS TESTED</span>
           <h2 className="section-title">Featured Projects & Applications Tested</h2>

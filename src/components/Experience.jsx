@@ -4,7 +4,7 @@ import { experiences } from '../data/portfolioData';
 export function Experience() {
   return (
     <section id="experience" className="section-padding experience-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="section-header center reveal-up">
           <span className="section-subtitle">CAREER TIMELINE</span>
           <h2 className="section-title">Professional Experience</h2>

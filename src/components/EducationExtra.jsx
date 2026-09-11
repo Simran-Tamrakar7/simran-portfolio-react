@@ -4,7 +4,7 @@ import { educationList, extraActivities, languagesList } from '../data/portfolio
 export function EducationExtra() {
   return (
     <section id="education" className="section-padding edu-extra-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="grid-2col">
           {/* Education Column */}
           <div className="edu-column reveal-left">

@@ -44,7 +44,7 @@ export function Hero({ onCopyEmail, onOpenResume }) {
           '✔ [PASS] 200 OK — Auth & Authorization Tokens (14ms)',
           '✔ [PASS] Boundary Value Analysis — 100k Payload Intact',
           '✔ [PASS] UI Roster & Dashboard Cross-Browser Sanity',
-          '🚀 [SUCCESS] ZERO P0 Defect Leakage Verified!'
+          '[SUCCESS] ZERO P0 Defect Leakage Verified!'
         ]
       });
     }, 2400);

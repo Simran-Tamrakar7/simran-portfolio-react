@@ -9,7 +9,7 @@ export function About() {
 
   return (
     <section id="about" className="section-padding about-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="about-hero-layout">
           <div className="about-text-content reveal-left">
             <span className="section-subtitle">BACKGROUND & PHILOSOPHY</span>

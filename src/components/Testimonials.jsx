@@ -4,7 +4,7 @@ import { testimonials } from '../data/portfolioData';
 export function Testimonials() {
   return (
     <section id="testimonials" className="section-padding testimonials-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="section-header text-center reveal-up">
           <span className="section-subtitle">RECOMMENDATIONS & ENDORSEMENTS</span>
           <h2 className="section-title">

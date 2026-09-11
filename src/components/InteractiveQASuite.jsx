@@ -47,7 +47,7 @@ export function InteractiveQASuite() {
         logs: [
           '[01] 📝 Logging defect in ClickUp & Jira board...',
           '[02] 🔍 Root Cause Analysis: DevTools payload mismatch identified.',
-          '[03] ⚡ Developer Assigned: Hotfix patch committed to QA Staging.'
+          '[03] Developer Assigned: Hotfix patch committed to QA Staging.'
         ]
       });
     }, 1200);
@@ -58,8 +58,8 @@ export function InteractiveQASuite() {
         logs: [
           '[01] 📝 Logging defect in ClickUp & Jira board...',
           '[02] 🔍 Root Cause Analysis: DevTools payload mismatch identified.',
-          '[03] ⚡ Developer Assigned: Hotfix patch committed to QA Staging.',
-          '✔ [04] 🚀 Re-test Passed: Zero P0 defect leakage confirmed! Closed.'
+          '[03] Developer Assigned: Hotfix patch committed to QA Staging.',
+          '✔ [04] Re-test Passed: Zero P0 defect leakage confirmed! Closed.'
         ]
       });
     }, 1800);
@@ -67,7 +67,7 @@ export function InteractiveQASuite() {
 
   return (
     <section id="qa-suite" className="section-padding qa-suite-section">
-      <div className="container">
+      <div className="container section-container">
         <div className="section-header text-center reveal-up">
           <span className="section-subtitle">INTERACTIVE QA PLAYGROUND</span>
           <h2 className="section-title">
@@ -84,19 +84,19 @@ export function InteractiveQASuite() {
             className={`tab-btn ${activeTab === 'postman' ? 'active' : ''}`}
             onClick={() => setActiveTab('postman')}
           >
-            <span>📡</span> Postman API Inspector
+            Postman API Inspector
           </button>
           <button
             className={`tab-btn ${activeTab === 'bug-simulator' ? 'active' : ''}`}
             onClick={() => setActiveTab('bug-simulator')}
           >
-            <span>🐞</span> Interactive Bug Triage
+            Interactive Bug Triage
           </button>
           <button
             className={`tab-btn ${activeTab === 'gherkin' ? 'active' : ''}`}
             onClick={() => setActiveTab('gherkin')}
           >
-            <span>📄</span> Gherkin Test Specs
+            Gherkin Test Specs
           </button>
         </div>
 
@@ -219,7 +219,7 @@ export function InteractiveQASuite() {
                   />
                 </div>
                 <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-                  🚀 Log Bug & Trigger Triage Pipeline
+                  Log Bug & Trigger Triage Pipeline
                 </button>
               </div>
 
