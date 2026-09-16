@@ -9,12 +9,6 @@ export const personalInfo = {
   github: "https://github.com/Simran-Tamrakar7",
   linkedin: "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/",
   portfolio: "https://simran-tamrakar-portfolio.vercel.app/",
-  portfolioAbout: "https://simran-tamrakar-portfolio.vercel.app/#about",
-  domain: "simrantamrakar.com.np",
-  githubRepos: {
-    react: "https://github.com/Simran-Tamrakar7/simran-portfolio-react",
-    classic: "https://github.com/Simran-Tamrakar7/simran-portfolio"
-  },
   status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: Software Quality Assurance",
   aboutLead: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management.",

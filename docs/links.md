@@ -1,22 +1,27 @@
 # Links & CV data
 
+**Live portfolio (only):** https://simran-tamrakar-portfolio.vercel.app/
+
 Source of truth for CV text: `simran-tamrakar-cv.md`  
-App data mirror: `src/data/portfolioData.js` (`personalInfo`, pillars, experiences, projects, skills, education, languages, impact metrics).
+App data mirror: `src/data/portfolioData.js`
 
 | Field | Value |
 | --- | --- |
 | Title | QA Engineer |
-| Current role | Associate QA Engineer |
-| Intern role | QA Engineer Intern |
 | Phone | `+977 9843707272` |
 | Email | `simrantamrakar77@gmail.com` |
 | Github | `https://github.com/Simran-Tamrakar7` |
+| LinkedIn | `https://www.linkedin.com/in/simran-tamrakar-1aa84b349/` |
 | Portfolio | `https://simran-tamrakar-portfolio.vercel.app/` |
-| Local | `http://localhost:5173/` |
-| Education | Deerwalk Institute of Technology, Tribhuvan University |
 
-Languages: English (Professional Working), Nepali (Native/Bilingual), Hindi (Professional Working).
+Official downloadable PDF: `public/SimranTamrakar.pdf`
 
-Interactive CV header: **phone | email | Github | Portfolio** (all clickable).
+## Keep this Vercel URL in sync with GitHub
 
-Official downloadable PDF: `public/SimranTamrakar.pdf` (also mirrored as `Simran_Tamrakar_QA_CV.pdf`).
+This repo (`simran-portfolio-react`) must be connected to the Vercel project that owns `simran-tamrakar-portfolio.vercel.app`.
+
+1. Open https://vercel.com → project **simran-tamrakar-portfolio**
+2. **Settings → Git** → connect / reconnect `Simran-Tamrakar7/simran-portfolio-react`, production branch `main`
+3. **Deployments → Redeploy** latest `main` (or push to `main`)
+
+After that, every push to `main` updates https://simran-tamrakar-portfolio.vercel.app/ directly. Do not use temporary `*.vercel.app` preview URLs as the public link.

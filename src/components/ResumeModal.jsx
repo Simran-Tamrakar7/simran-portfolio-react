@@ -52,7 +52,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               style={{ padding: '0.45rem 0.85rem', fontSize: '0.85rem' }}
               onClick={handlePrint}
             >
-              🖨️ Print
+              Print
             </button>
             <button className="btn-icon" onClick={onClose} aria-label="Close modal">
               ✕
@@ -77,7 +77,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span aria-hidden="true">|</span>
                 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Github</a>
                 <span aria-hidden="true">|</span>
-                <a href={personalInfo.portfolio} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Portfolio</a>
+                <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="cv-inline-link">LinkedIn</a>
               </div>
             </div>
 

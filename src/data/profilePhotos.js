@@ -15,7 +15,7 @@ export const profilePhotos = [
     url: '/images/profile/simran-avatar.png',
     title: 'Simran Tamrakar',
     tag: 'Kathmandu, Nepal',
-    description: 'Portrait avatar from the classic simran-portfolio site.',
+    description: 'Portrait avatar for Simran Tamrakar.',
     alt: 'Simran Tamrakar, QA Engineer'
   },
   {
