@@ -9,7 +9,7 @@ export function Navbar({ theme, toggleTheme, onOpenResume }) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ['about', 'pillars', 'key-impact', 'case-studies', 'projects', 'experience', 'skills', 'education', 'contact'];
+      const sections = ['about', 'pillars', 'key-impact', 'case-studies', 'projects', 'experience', 'skills', 'github-projects', 'contact'];
       let current = 'hero';
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -31,7 +31,9 @@ export function Navbar({ theme, toggleTheme, onOpenResume }) {
     { name: 'Scope', href: '#key-impact', id: 'key-impact' },
     { name: 'Cases', href: '#case-studies', id: 'case-studies' },
     { name: 'Apps', href: '#projects', id: 'projects' },
+    { name: 'Experience', href: '#experience', id: 'experience' },
     { name: 'Skills', href: '#skills', id: 'skills' },
+    { name: 'Projects', href: '#github-projects', id: 'github-projects' },
   ];
 
   const closeMobile = () => setMobileMenuOpen(false);

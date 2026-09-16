@@ -10,7 +10,7 @@ export function KeyImpact() {
           <span className="section-subtitle">SCOPE & CONTRIBUTION</span>
           <h2 className="section-title">QA Scope & Experience</h2>
           <p className="section-description">
-            Domains, platforms, and workflows I've actually tested — scope over invented metrics.
+            Domains, platforms, and workflows I've worked with across real QA engagements.
           </p>
           <div className="title-bar"></div>
         </div>

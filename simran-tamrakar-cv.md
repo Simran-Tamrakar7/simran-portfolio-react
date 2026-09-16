@@ -23,7 +23,7 @@ QA Engineer with hands-on experience testing web and mobile applications across 
   ~ Kathmandu, Nepal
 
 B.Sc. Computer Science & Information Technology
-  ~ 2020 – 2025
+  ~ 2020 – 2024
 
 **Kathmandu Secondary School**
   ~ Kathmandu, Nepal
@@ -39,13 +39,13 @@ SEE / Schooling
 
 ## Experience
 
-**Associate QA Engineer**
+**QA Associate**
   ~ Infocom Solutions Pvt. Ltd.
   ~ 08/2025 – Present
 
-- Designed and executed functional, regression, integration, UI, and API test cases across HRM, ERP, sales, and finance applications.
-- Investigated and documented defects with clear reproduction steps, expected vs. actual results, and supporting evidence; collaborated with developers through resolution and retesting.
-- Supported test planning, requirement clarification, and release validation so features met agreed business and quality expectations.
+- Analyze requirements and business workflows and design test coverage for functional, regression, integration, UI, and API testing across HRM, ERP, sales, and finance applications.
+- Investigate and document defects with clear reproduction steps, expected vs. actual results, supporting evidence, and relevant technical information; collaborate with developers through resolution and retesting.
+- Support test planning, requirement clarification, regression validation, and release validation across web and mobile applications.
 
 **QA Engineer Intern**
   ~ Infocom Solutions Pvt. Ltd.
@@ -53,7 +53,7 @@ SEE / Schooling
 
 - Executed functional, regression, and UI testing to identify and document software defects.
 - Created and maintained test cases based on functional requirements and user stories.
-- Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality.
+- Collaborated with developers to reproduce defects, verify fixes, and improve product quality.
 
 ## Featured Projects & Applications Tested
 
@@ -63,7 +63,7 @@ SEE / Schooling
 - **TREMS** — Financial dashboard application
 - **CQNoval** — Mobile/web ERP for finance, HR, procurement, inventory
 - **ESpOT** — Mobile/web application
-- **Ryze (ryzebiz.com)** — E-commerce website for Ryze monitors
+- **E-commerce Platform** — Catalog, storefront, and reseller-related web flows
 
 ## Specializations
 

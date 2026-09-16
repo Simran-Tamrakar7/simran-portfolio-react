@@ -9,7 +9,7 @@ export function GithubProjects() {
           <span className="section-subtitle">AUTOMATION PRACTICE</span>
           <h2 className="section-title">QA Automation Projects</h2>
           <p className="section-description">
-            Real learning repos on GitHub — Cypress practice while Playwright skills are still being built.
+            Real Cypress learning repos on GitHub. A Playwright project will be added once there's a clean, real repo to show.
           </p>
           <div className="title-bar"></div>
         </div>

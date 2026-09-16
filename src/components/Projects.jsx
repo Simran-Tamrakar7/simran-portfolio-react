@@ -24,6 +24,8 @@ export function Projects({ onOpenModal }) {
     return projectsData.filter(proj => proj.categoryKey.includes(value)).length;
   };
 
+  const sharedRole = projectsData[0]?.role || 'QA Associate';
+
   return (
     <section id="projects" className="section-padding projects-section">
       <div className="container section-container">
@@ -31,7 +33,10 @@ export function Projects({ onOpenModal }) {
           <span className="section-subtitle">APPLICATIONS TESTED</span>
           <h2 className="section-title">Applications Tested</h2>
           <p className="section-description">
-            Product → role → what I tested. Quick scan for recruiters; open details for fuller QA contributions.
+            Product → what I tested. Open details for fuller QA contributions.
+          </p>
+          <p style={{ marginTop: '0.75rem', fontSize: '0.9rem', fontWeight: '600', color: 'var(--accent-teal)' }}>
+            Role across projects: {sharedRole}
           </p>
           <div className="title-bar"></div>
         </div>
@@ -54,9 +59,6 @@ export function Projects({ onOpenModal }) {
               <div className="project-card-header">
                 <span className="project-category-badge">{project.categoryBadge}</span>
                 <h3 className="project-title">{project.title}</h3>
-                <p style={{ fontSize: '0.8rem', color: 'var(--accent-teal)', fontWeight: '600', margin: '0.35rem 0 0' }}>
-                  My Role: {project.role}
-                </p>
               </div>
               <p className="project-summary">{project.summary}</p>
 
@@ -73,7 +75,7 @@ export function Projects({ onOpenModal }) {
 
               {project.whatITest?.length > 0 && (
                 <div style={{ marginBottom: '0.85rem' }}>
-                  <span className="contrib-label">What I Test:</span>
+                  <span className="contrib-label">Key Areas:</span>
                   <div className="pill-cloud" style={{ marginTop: '0.35rem' }}>
                     {project.whatITest.map((t) => (
                       <span key={t} className="pill">{t}</span>

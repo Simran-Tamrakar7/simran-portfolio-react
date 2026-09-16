@@ -20,4 +20,4 @@
 
 Contact links on site: phone, email, GitHub, LinkedIn only (no secondary portfolio/repo URLs).
 
-**Positioning:** Hero = Software Quality Assurance Engineer; employment title = Associate QA Engineer.
+**Positioning:** Hero = Software Quality Assurance Engineer; employment title = QA Associate; B.Sc. dates = 2020–2024; gallery = 1–2 professional photos.

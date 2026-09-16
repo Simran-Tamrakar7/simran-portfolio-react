@@ -12,17 +12,17 @@ export const personalInfo = {
   portfolio: "https://simran-tamrakar-portfolio.vercel.app/",
   status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: Software Quality Assurance",
-  aboutLead: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
+  aboutLead: "I'm a QA Engineer focused on understanding how products work, where they can fail, and how those risks can be validated before release.",
   professionalSummary: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently developing practical test automation skills with Playwright and Cypress.",
   aboutParagraphs: [
-    "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
-    "Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows.",
-    "Currently developing practical test automation skills with Playwright and Cypress, building on a strong foundation in manual and API testing."
+    "I'm a QA Engineer focused on understanding how products work, where they can fail, and how those risks can be validated before release.",
+    "My experience spans web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. I work across the QA lifecycle — from requirement analysis and test design to execution, defect investigation, retesting, and release validation.",
+    "I'm also building toward automation with Playwright and Cypress, with the goal of combining strong QA fundamentals with maintainable automated testing."
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
-    { label: "Current Role", value: "Associate QA Engineer" },
-    { label: "Studied at", value: "Deerwalk Institute of Technology, Tribhuvan University" },
+    { label: "Current Role", value: "QA Associate" },
+    { label: "Education", value: "B.Sc. Computer Science & Information Technology" },
     { label: "Focus", value: "Manual Testing · API Testing · Web & Mobile QA · Test Automation" }
   ],
   productStrategy: {
@@ -95,18 +95,10 @@ export const fourPillars = [
     list: []
   },
   {
-    id: "collab",
-    number: "07",
-    iconBg: "bg-purple",
-    title: "Cross-functional Collaboration",
-    description: "Comfortable working with developers, product teams, and stakeholders to clarify requirements, discuss defects, verify fixes, and support releases.",
-    list: []
-  },
-  {
     id: "growth",
-    number: "08",
+    number: "07",
     iconBg: "bg-amber",
-    title: "Continuous Growth",
+    title: "Automation Growth",
     description: "Currently strengthening automation skills with Playwright and Cypress while building on existing manual and API testing experience.",
     list: []
   }
@@ -115,14 +107,14 @@ export const fourPillars = [
 export const experiences = [
   {
     id: 1,
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     company: "Infocom Solutions Pvt. Ltd.",
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Design and execute functional, regression, integration, UI, and API test cases across HRM, ERP, sales, and finance applications.",
-      "Investigate and document defects with clear reproduction steps, expected vs. actual results, and supporting evidence; collaborate with developers through resolution and retesting.",
-      "Support test planning, requirement clarification, and release validation so features meet agreed business and quality expectations."
+      "Analyze requirements and business workflows and design test coverage for functional, regression, integration, UI, and API testing across HRM, ERP, sales, and finance applications.",
+      "Investigate and document defects with clear reproduction steps, expected vs. actual results, supporting evidence, and relevant technical information; collaborate with developers through resolution and retesting.",
+      "Support test planning, requirement clarification, regression validation, and release validation across web and mobile applications."
     ],
     tags: ["Manual Testing", "API Testing", "Regression", "Defect Tracking", "Release Validation"]
   },
@@ -135,7 +127,7 @@ export const experiences = [
     bullets: [
       "Executed functional, regression, and UI testing to identify and document software defects.",
       "Created and maintained test cases based on functional requirements and user stories.",
-      "Collaborated with developers to reproduce bugs, verify fixes, and improve product quality."
+      "Collaborated with developers to reproduce defects, verify fixes, and improve product quality."
     ],
     tags: ["Functional Testing", "UI Testing", "Bug Reporting", "Test Cases"]
   }
@@ -154,7 +146,7 @@ export const projectsData = [
       "API validation and release support"
     ],
     tags: ["HRM", "Regression", "Workflow QA", "API"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
     whatITest: ["Employee Management", "Attendance", "Leave", "Payroll", "Approval Workflows", "Roles & Permissions", "Mobile App", "Web App", "API"],
     modules: ["Employee Management", "Attendance", "Leave", "Payroll", "Onboarding / Offboarding", "Appraisal"],
@@ -181,7 +173,7 @@ export const projectsData = [
       "API and frontend/backend discrepancy investigation"
     ],
     tags: ["Mobile", "Sales", "Regression", "API"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
     whatITest: ["Orders", "Shop Visits", "Routes", "Inventory", "TADA", "Expenses", "Attendance", "Reports", "Role-based Access"],
     modules: ["Shop / route management", "Order flow", "Inventory", "TADA / expenses", "Attendance", "Reporting"],
@@ -207,7 +199,7 @@ export const projectsData = [
       "Field-level defect discovery"
     ],
     tags: ["Approvals", "Sales", "Roles"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "Regression", "UI"],
     whatITest: ["Expense Approvals", "Travel Approvals", "ASM/DCM Roles", "Approval Chains"],
     modules: ["Expense workflows", "Travel workflows", "Supervisor approval chains"],
@@ -229,7 +221,7 @@ export const projectsData = [
       "Reporting surface checks"
     ],
     tags: ["Finance", "Dashboard"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "UI"],
     whatITest: ["Financial Dashboard", "Reporting Surfaces"],
     modules: ["Financial dashboard views", "Reporting surfaces"],
@@ -249,7 +241,7 @@ export const projectsData = [
       "Mobile and web coverage"
     ],
     tags: ["ERP", "Mobile", "Finance"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "Mobile", "Web", "Regression"],
     whatITest: ["Finance", "HR", "Procurement", "Inventory"],
     modules: ["Finance", "HR", "Procurement", "Inventory"],
@@ -266,7 +258,7 @@ export const projectsData = [
     summary: "Mobile/web application covered in QA testing engagements.",
     keyContributions: ["Mobile/web functional QA"],
     tags: ["Mobile", "Web"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "Mobile", "Web"],
     whatITest: ["Mobile App Flows", "Web Flows"],
     modules: ["Mobile app flows", "Web flows"],
@@ -276,23 +268,22 @@ export const projectsData = [
     techStack: ["Manual QA", "Mobile Testing"]
   },
   {
-    id: "ryze",
-    title: "Ryze",
+    id: "ecommerce-platform",
+    title: "E-commerce Platform",
     categoryKey: "ecommerce",
     categoryBadge: "E-commerce",
-    summary: "E-commerce website for Ryze monitors — product catalog and reseller network (ryzebiz.com).",
+    summary: "E-commerce web platform covering product catalog, storefront, and reseller-related flows.",
     keyContributions: [
       "Product catalog QA",
-      "Reseller network flow checks"
+      "Storefront and reseller flow checks"
     ],
     tags: ["E-commerce", "Web"],
-    role: "Associate QA Engineer",
+    role: "QA Associate",
     testingTypes: ["Manual", "Web"],
     whatITest: ["Product Catalog", "Reseller Network", "Storefront"],
-    link: "https://ryzebiz.com",
     modules: ["Product catalog", "Reseller network", "Storefront"],
     detailedContributions: [
-      "Tested e-commerce flows for Ryze monitors including catalog and reseller network."
+      "Tested e-commerce catalog, storefront, and reseller-related flows across web."
     ],
     techStack: ["Manual QA", "Web Testing"]
   }
@@ -460,8 +451,8 @@ export const currentlyBuilding = [
   },
   {
     title: "QA Engineering Practices",
-    stack: "Test design · maintainability · CI awareness",
-    desc: "Strengthening test architecture, maintainability, CI/CD awareness, and automation strategy."
+    stack: "Test maintainability · Test structure · Automation strategy",
+    desc: "Strengthening test architecture, maintainability, test structure, and automation strategy."
   }
 ];
 
@@ -495,7 +486,7 @@ export const githubProjects = [
 
 export const educationList = [
   {
-    year: "2020 – 2025",
+    year: "2020 – 2024",
     degree: "B.Sc. Computer Science & Information Technology",
     school: "Deerwalk Institute of Technology, Tribhuvan University",
     location: "Kathmandu, Nepal"
@@ -558,7 +549,7 @@ export const certificationsList = [
     id: "csit-degree",
     title: "B.Sc. Computer Science & Information Technology",
     issuer: "Deerwalk Institute of Technology, Tribhuvan University",
-    year: "2020 – 2025",
+    year: "2020 – 2024",
     badge: "Academic Degree",
     skills: ["Software Engineering", "QA Fundamentals", "Database Systems"],
     description: "Undergraduate degree in computer science and information technology."
@@ -601,7 +592,7 @@ export const qaGovernanceGates = [
   { title: "Test", desc: "Execute functional, regression, smoke, sanity, UI, API, and exploratory testing." },
   { title: "Investigate", desc: "Is the issue UI, API, data, permission, workflow, or integration related? Document evidence." },
   { title: "Verify", desc: "Retest the fix and surrounding functionality for regressions." },
-  { title: "Improve", desc: "Identify coverage gaps that can make the next release safer." }
+  { title: "Improve", desc: "Identify coverage gaps that can improve coverage and reduce the risk of regressions in future releases." }
 ];
 
 export const qaThinking = {
@@ -613,7 +604,7 @@ export const qaThinking = {
     { title: "Test", desc: "Execute scenarios across UI, API, and real-world workflows." },
     { title: "Investigate", desc: "Is the issue UI, API, data, permission, workflow, or integration related?" },
     { title: "Verify", desc: "Retest the fix and surrounding functionality." },
-    { title: "Improve", desc: "Identify gaps that can make the next release safer." }
+    { title: "Improve", desc: "Identify gaps that can improve coverage and reduce the risk of regressions in future releases." }
   ]
 };
 
@@ -626,7 +617,7 @@ export const postmanEndpoints = [
     url: 'https://demo.qa-sample.local/v1/attendance/check-in',
     headers: { 'Authorization': 'Bearer <sample-token>', 'Content-Type': 'application/json' },
     reqBody: {
-      employee_id: "EMP-2025-089",
+      employee_id: "EMP-DEMO-001",
       shift_code: "NIGHT_SHIFT_A",
       timestamp: "2026-08-13T09:00:00Z",
       geo_location: { lat: 27.7172, lng: 85.3240 }
@@ -682,7 +673,7 @@ export const postmanEndpoints = [
     url: 'https://demo.qa-sample.local/v1/payroll/calculate-tax',
     headers: { 'Authorization': 'Bearer <sample-token>', 'Content-Type': 'application/json' },
     reqBody: {
-      employee_id: "EMP-2025-089",
+      employee_id: "EMP-DEMO-001",
       gross_annual_salary: 1200000,
       ssf_contribution: 132000,
       marital_status: "SINGLE"

@@ -25,7 +25,7 @@ export function About() {
             <p className="about-lead-text">{personalInfo.aboutLead}</p>
 
             {personalInfo.aboutParagraphs.slice(1).map((paragraph) => (
-              <p key={paragraph.slice(0, 40)} className="about-lead-text" style={{ marginTop: '0.85rem' }}>
+              <p key={paragraph.slice(0, 48)} className="about-lead-text" style={{ marginTop: '0.85rem' }}>
                 {paragraph}
               </p>
             ))}
