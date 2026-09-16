@@ -15,11 +15,13 @@
 | GitHub automation repos | `githubProjects` |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
-| Downloadable PDF | `public/SimranTamrakar.pdf` — official uploaded CV (do not stub-regenerate) |
+| Downloadable PDF | `public/SimranTamrakar.pdf` — regenerate with `python3 generate_cv_pdf.py` (mirrors View CV; clickable tel/mailto/Github/LinkedIn/Portfolio) |
 | View CV | `ResumeModal.jsx` mirrors official CV data (`cvProfessionalSummary`, `cvEducationList`, `cvExtraActivities`, `cvSkillCategories`) |
 | Layout tokens / 4-col grids | `src/index.css` |
 | Icons | `src/components/icons.jsx` |
 
+CV header contact order (View + Download): phone | email | Github | LinkedIn | Portfolio. LinkedIn = `personalInfo.linkedin`.
+
 Contact links on site: phone, email, GitHub, LinkedIn only (no secondary portfolio/repo URLs).
 
-**Positioning:** Hero = Software Quality Assurance Engineer; employment title = QA Associate; B.Sc. dates = 2020–2024; gallery = 1–2 professional photos.
+**Positioning:** Hero = Software Quality Assurance Engineer; CV title = Associate QA Engineer; B.Sc. CSIT = 2020–2025 (Deerwalk only on CV); gallery = 1–2 professional photos.

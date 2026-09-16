@@ -9,6 +9,8 @@ header:
     link: mailto:simrantamrakar77@gmail.com
   - text: <span class="iconify" data-icon="tabler:brand-github"></span> Github
     link: https://github.com/Simran-Tamrakar7
+  - text: <span class="iconify" data-icon="tabler:brand-linkedin"></span> LinkedIn
+    link: https://www.linkedin.com/in/simran-tamrakar-1aa84b349/
   - text: <span class="iconify" data-icon="charm:person"></span> Portfolio
     link: https://simran-tamrakar-portfolio.vercel.app/
 ---

@@ -88,6 +88,8 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span aria-hidden="true">|</span>
                 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Github</a>
                 <span aria-hidden="true">|</span>
+                <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="cv-inline-link">LinkedIn</a>
+                <span aria-hidden="true">|</span>
                 <a href={personalInfo.portfolio} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Portfolio</a>
               </div>
             </div>
