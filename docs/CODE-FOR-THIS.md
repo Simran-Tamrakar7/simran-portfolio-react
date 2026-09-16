@@ -10,12 +10,12 @@
 | Case studies | `qaCaseStudies` |
 | Playground (cases / API demo / triage) | `sampleTestCases`, `postmanEndpoints` |
 | Skills (site) | `skillCategories`, `testingTechniques` |
-| Skills (CV view / PDF) | `cvSkillCategories` |
+| Skills (CV view / PDF) | `cvSkillCategories` — keep View CV & `generate_cv_pdf.py` in sync |
 | Currently Building | `currentlyBuilding` |
 | GitHub automation repos | `githubProjects` |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
-| Downloadable PDF | `public/SimranTamrakar.pdf` |
+| Downloadable PDF | `public/SimranTamrakar.pdf` (regen: `python3 generate_cv_pdf.py`) |
 | Layout tokens / 4-col grids | `src/index.css` |
 | Icons | `src/components/icons.jsx` |
 
