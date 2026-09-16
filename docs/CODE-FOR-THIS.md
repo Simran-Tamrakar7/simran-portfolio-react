@@ -6,8 +6,12 @@
 | --- | --- |
 | Profile / CV copy | `src/data/portfolioData.js` |
 | What I Bring | `fourPillars` |
-| QA at a Glance / Approach / Thinking | `impactMetrics`, `qaGovernanceGates`, `qaThinking` |
-| Skills (no ethos filler) | `skillCategories` |
+| QA Scope & Approach | `impactMetrics`, `qaGovernanceGates`, `qaThinking` |
+| Case studies | `qaCaseStudies` |
+| Playground (cases / API demo / triage) | `sampleTestCases`, `postmanEndpoints` |
+| Skills & techniques | `skillCategories`, `testingTechniques` |
+| Currently Building | `currentlyBuilding` |
+| GitHub automation repos | `githubProjects` |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
 | Downloadable PDF | `public/SimranTamrakar.pdf` |
@@ -15,3 +19,5 @@
 | Icons | `src/components/icons.jsx` |
 
 Contact links on site: phone, email, GitHub, LinkedIn only (no secondary portfolio/repo URLs).
+
+**Positioning:** Hero = Software Quality Assurance Engineer; employment title = Associate QA Engineer.

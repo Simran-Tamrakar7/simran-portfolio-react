@@ -15,7 +15,7 @@ header:
 
 ## Professional Summary
 
-QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently expanding into test automation with Playwright and Cypress.
+QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently developing practical test automation skills with Playwright and Cypress.
 
 ## Education
 

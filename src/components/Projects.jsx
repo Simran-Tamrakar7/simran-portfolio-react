@@ -29,12 +29,13 @@ export function Projects({ onOpenModal }) {
       <div className="container section-container">
         <div className="section-header center reveal-up">
           <span className="section-subtitle">APPLICATIONS TESTED</span>
-          <h2 className="section-title">Featured Projects & Applications Tested</h2>
-          <p className="section-description">App and web platforms where I've contributed QA across the testing lifecycle — from requirements to release validation.</p>
+          <h2 className="section-title">Applications Tested</h2>
+          <p className="section-description">
+            Product → role → what I tested. Quick scan for recruiters; open details for fuller QA contributions.
+          </p>
           <div className="title-bar"></div>
         </div>
 
-        {/* Filter buttons */}
         <div className="project-filters reveal-up">
           {filterButtons.map(btn => (
             <button
@@ -47,24 +48,39 @@ export function Projects({ onOpenModal }) {
           ))}
         </div>
 
-        {/* Projects Grid */}
         <div className="projects-grid">
           {filteredProjects.map((project) => (
             <div key={project.id} className="project-card glass-card reveal-scale stagger-card">
               <div className="project-card-header">
                 <span className="project-category-badge">{project.categoryBadge}</span>
                 <h3 className="project-title">{project.title}</h3>
+                <p style={{ fontSize: '0.8rem', color: 'var(--accent-teal)', fontWeight: '600', margin: '0.35rem 0 0' }}>
+                  My Role: {project.role}
+                </p>
               </div>
               <p className="project-summary">{project.summary}</p>
 
-              <div className="project-contributions">
-                <span className="contrib-label">Key Contributions:</span>
-                <ul>
-                  {project.keyContributions.map((contrib, idx) => (
-                    <li key={idx}>{contrib}</li>
-                  ))}
-                </ul>
-              </div>
+              {project.testingTypes?.length > 0 && (
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <span className="contrib-label">Testing:</span>
+                  <div className="pill-cloud" style={{ marginTop: '0.35rem' }}>
+                    {project.testingTypes.map((t) => (
+                      <span key={t} className="pill">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {project.whatITest?.length > 0 && (
+                <div style={{ marginBottom: '0.85rem' }}>
+                  <span className="contrib-label">What I Test:</span>
+                  <div className="pill-cloud" style={{ marginTop: '0.35rem' }}>
+                    {project.whatITest.map((t) => (
+                      <span key={t} className="pill">{t}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <div className="project-footer">
                 <div className="project-tags">
@@ -72,10 +88,7 @@ export function Projects({ onOpenModal }) {
                     <span key={tIdx}>{tag}</span>
                   ))}
                 </div>
-                <button
-                  className="btn-text"
-                  onClick={() => onOpenModal(project)}
-                >
+                <button className="btn-text" onClick={() => onOpenModal(project)}>
                   Details <span>→</span>
                 </button>
               </div>

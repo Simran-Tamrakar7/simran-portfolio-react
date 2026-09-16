@@ -8,7 +8,6 @@ import { Pillars } from './components/Pillars';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { ProjectModal } from './components/ProjectModal';
-import Certifications from './components/Certifications';
 import ResumeModal from './components/ResumeModal';
 import ScrollToTop from './components/ScrollToTop';
 import { Skills } from './components/Skills';
@@ -18,7 +17,10 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Toast } from './components/Toast';
 import { KeyImpact } from './components/KeyImpact';
+import { CaseStudies } from './components/CaseStudies';
 import { InteractiveQASuite } from './components/InteractiveQASuite';
+import { AutomationJourney } from './components/AutomationJourney';
+import { GithubProjects } from './components/GithubProjects';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
@@ -60,11 +62,13 @@ export default function App() {
         <About />
         <Pillars />
         <KeyImpact />
+        <CaseStudies />
         <InteractiveQASuite />
         <Projects onOpenModal={(project) => setSelectedProject(project)} />
         <Experience />
         <Skills />
-        <Certifications />
+        <AutomationJourney />
+        <GithubProjects />
         <EducationExtra />
         <CtaBanner
           onOpenResume={() => setIsResumeOpen(true)}

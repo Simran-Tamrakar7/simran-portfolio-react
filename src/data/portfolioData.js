@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "QA Engineer",
   heroRoles: ["Software Quality Assurance Engineer"],
   tagline: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows.",
-  automationNote: "Currently expanding into test automation with Playwright and Cypress, building on a strong foundation in manual and API testing.",
+  automationNote: "Currently developing practical test automation skills with Playwright and Cypress, building on a strong foundation in manual and API testing.",
   email: "simrantamrakar77@gmail.com",
   phone: "+9779843707272",
   phoneDisplay: "+977 9843707272",
@@ -13,11 +13,11 @@ export const personalInfo = {
   status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: Software Quality Assurance",
   aboutLead: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
-  professionalSummary: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently expanding into test automation with Playwright and Cypress.",
+  professionalSummary: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently developing practical test automation skills with Playwright and Cypress.",
   aboutParagraphs: [
     "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
     "Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows.",
-    "Currently expanding into test automation with Playwright and Cypress, building on a strong foundation in manual and API testing."
+    "Currently developing practical test automation skills with Playwright and Cypress, building on a strong foundation in manual and API testing."
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
@@ -155,6 +155,8 @@ export const projectsData = [
     ],
     tags: ["HRM", "Regression", "Workflow QA", "API"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
+    whatITest: ["Employee Management", "Attendance", "Leave", "Payroll", "Approval Workflows", "Roles & Permissions", "Mobile App", "Web App", "API"],
     modules: ["Employee Management", "Attendance", "Leave", "Payroll", "Onboarding / Offboarding", "Appraisal"],
     detailedContributions: [
       "Performed end-to-end functional and regression testing across core HRM modules.",
@@ -180,6 +182,8 @@ export const projectsData = [
     ],
     tags: ["Mobile", "Sales", "Regression", "API"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
+    whatITest: ["Orders", "Shop Visits", "Routes", "Inventory", "TADA", "Expenses", "Attendance", "Reports", "Role-based Access"],
     modules: ["Shop / route management", "Order flow", "Inventory", "TADA / expenses", "Attendance", "Reporting"],
     detailedContributions: [
       "Tested sales, shop visit, route, order, inventory, and field-service workflows.",
@@ -204,6 +208,8 @@ export const projectsData = [
     ],
     tags: ["Approvals", "Sales", "Roles"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "Regression", "UI"],
+    whatITest: ["Expense Approvals", "Travel Approvals", "ASM/DCM Roles", "Approval Chains"],
     modules: ["Expense workflows", "Travel workflows", "Supervisor approval chains"],
     detailedContributions: [
       "Tested supervisor approval workflows for ASM/DCM roles.",
@@ -224,6 +230,8 @@ export const projectsData = [
     ],
     tags: ["Finance", "Dashboard"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "UI"],
+    whatITest: ["Financial Dashboard", "Reporting Surfaces"],
     modules: ["Financial dashboard views", "Reporting surfaces"],
     detailedContributions: [
       "Performed QA on financial dashboard application flows and reporting surfaces."
@@ -242,6 +250,8 @@ export const projectsData = [
     ],
     tags: ["ERP", "Mobile", "Finance"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "Mobile", "Web", "Regression"],
+    whatITest: ["Finance", "HR", "Procurement", "Inventory"],
     modules: ["Finance", "HR", "Procurement", "Inventory"],
     detailedContributions: [
       "Tested CQNoval ERP flows across finance, HR, procurement, and inventory on mobile and web."
@@ -257,6 +267,8 @@ export const projectsData = [
     keyContributions: ["Mobile/web functional QA"],
     tags: ["Mobile", "Web"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "Mobile", "Web"],
+    whatITest: ["Mobile App Flows", "Web Flows"],
     modules: ["Mobile app flows", "Web flows"],
     detailedContributions: [
       "Executed functional QA on ESpOT mobile and web application flows."
@@ -275,6 +287,8 @@ export const projectsData = [
     ],
     tags: ["E-commerce", "Web"],
     role: "Associate QA Engineer",
+    testingTypes: ["Manual", "Web"],
+    whatITest: ["Product Catalog", "Reseller Network", "Storefront"],
     link: "https://ryzebiz.com",
     modules: ["Product catalog", "Reseller network", "Storefront"],
     detailedContributions: [
@@ -286,32 +300,19 @@ export const projectsData = [
 
 export const skillCategories = [
   {
-    title: "Testing",
+    title: "QA",
     highlight: true,
     skills: [
       "Functional Testing",
       "Regression Testing",
-      "Smoke & Sanity Testing",
-      "Integration Testing",
       "UAT",
       "Exploratory Testing",
+      "API Testing",
       "UI Testing",
-      "Cross-browser Testing",
-      "Cross-device Testing",
-      "Boundary Value Analysis",
-      "Black-box Testing"
-    ]
-  },
-  {
-    title: "API & Data",
-    highlight: true,
-    skills: [
-      "Postman",
-      "REST API Testing",
-      "Request/Response Validation",
-      "Status Code Validation",
-      "Payload Validation",
-      "Basic SQL"
+      "Mobile Testing",
+      "Smoke & Sanity",
+      "Integration Testing",
+      "Cross-browser / Cross-device"
     ]
   },
   {
@@ -325,15 +326,34 @@ export const skillCategories = [
     ]
   },
   {
-    title: "Tools",
+    title: "API",
+    highlight: true,
+    skills: [
+      "Postman",
+      "REST API",
+      "JSON",
+      "Request/Response Validation",
+      "Status Codes",
+      "Payload Checks"
+    ]
+  },
+  {
+    title: "Management",
     highlight: true,
     skills: [
       "Jira",
       "ClickUp",
-      "Asana",
-      "Git / GitHub",
+      "Asana"
+    ]
+  },
+  {
+    title: "Supporting",
+    skills: [
+      "Git",
+      "GitHub",
       "Android Studio",
-      "ADB"
+      "ADB",
+      "Basic SQL"
     ]
   },
   {
@@ -345,6 +365,131 @@ export const skillCategories = [
       "Finance",
       "E-commerce"
     ]
+  }
+];
+
+/** Techniques I can explain in an interview — no filler techniques */
+export const testingTechniques = [
+  "Positive Testing",
+  "Negative Testing",
+  "Boundary Value Analysis",
+  "Equivalence Partitioning",
+  "Exploratory Testing",
+  "Role & Permission Testing",
+  "Workflow Testing",
+  "Regression Testing"
+];
+
+export const qaCaseStudies = [
+  {
+    id: "approvals",
+    number: "01",
+    title: "Approval Workflow Testing",
+    problem: "Complex approval workflows required different behavior based on user roles and hierarchy.",
+    approach: [
+      "Reviewed role and permission requirements.",
+      "Created positive and negative scenarios for each approval stage.",
+      "Tested unauthorized modification attempts.",
+      "Verified behavior across different hierarchy levels.",
+      "Retested fixes and performed regression around affected workflows."
+    ],
+    tags: ["Permissions", "Role Hierarchy", "Approval Flow", "Edge Cases", "Regression"]
+  },
+  {
+    id: "api-ui",
+    number: "02",
+    title: "API vs UI Data Validation",
+    problem: "Displayed application data did not always match the corresponding API response.",
+    approach: [
+      "Reproduced the discrepancy through the UI.",
+      "Identified the corresponding API endpoint.",
+      "Compared request parameters and response payload.",
+      "Checked whether the issue originated from API data, frontend mapping, or filtering.",
+      "Documented evidence for developer investigation.",
+      "Verified the fix through API + UI retesting."
+    ],
+    tags: ["Postman", "API Testing", "Data Validation", "Debugging", "Defect Investigation"]
+  },
+  {
+    id: "regression",
+    number: "03",
+    title: "Mobile & Web Regression",
+    problem: "Changes released across web and mobile applications required validation without breaking existing workflows.",
+    approach: [
+      "Reviewed changed functionality.",
+      "Identified impacted modules.",
+      "Executed targeted regression.",
+      "Checked different devices/browser combinations.",
+      "Verified critical user journeys.",
+      "Performed smoke/sanity validation after fixes."
+    ],
+    tags: ["Regression", "Mobile QA", "Web QA", "Cross-platform Testing"]
+  }
+];
+
+export const sampleTestCases = {
+  feature: "Employee Attendance",
+  filters: ["All", "Positive", "Negative", "Boundary", "Role-based", "API"],
+  cases: [
+    { id: "TC-001", scenario: "Valid check-in within permitted location", expected: "Attendance recorded successfully", type: "Positive" },
+    { id: "TC-002", scenario: "Check-in without location permission", expected: "Validation message shown; check-in blocked", type: "Negative" },
+    { id: "TC-003", scenario: "Duplicate check-in for the same shift", expected: "Duplicate prevented with clear message", type: "Negative" },
+    { id: "TC-004", scenario: "Check-in for invalid / inactive employee", expected: "Request rejected", type: "Negative" },
+    { id: "TC-005", scenario: "Check-in just outside permitted geo-fence", expected: "Location validation triggered", type: "Boundary" },
+    { id: "TC-006", scenario: "Employee without attendance permission attempts check-in", expected: "Access denied based on role", type: "Role-based" },
+    { id: "TC-007", scenario: "POST attendance API with valid payload", expected: "200/201 with attendance id in response", type: "API" },
+    { id: "TC-008", scenario: "POST attendance API with missing employee_id", expected: "4xx validation error", type: "API" }
+  ]
+};
+
+export const currentlyBuilding = [
+  {
+    title: "Test Automation — Playwright",
+    stack: "Playwright · Python · pytest",
+    desc: "Building reusable E2E tests, fixtures, assertions, locators, and page-object structures."
+  },
+  {
+    title: "Cypress",
+    stack: "Cypress · JavaScript",
+    desc: "Building E2E testing knowledge and understanding Cypress's testing workflow through practice projects."
+  },
+  {
+    title: "API Automation",
+    stack: "Postman → automated checks",
+    desc: "Moving from manual Postman validation toward automated API checks."
+  },
+  {
+    title: "QA Engineering Practices",
+    stack: "Test design · maintainability · CI awareness",
+    desc: "Strengthening test architecture, maintainability, CI/CD awareness, and automation strategy."
+  }
+];
+
+/** Real GitHub learning repos only — no invented Playwright framework link */
+export const githubProjects = [
+  {
+    id: "cypress-learning",
+    title: "Cypress Learning",
+    tech: ["Cypress", "JavaScript"],
+    bullets: [
+      "E2E testing practice",
+      "Assertions and fixtures",
+      "Commands and test organization",
+      "Building familiarity with Cypress workflow"
+    ],
+    url: "https://github.com/Simran-Tamrakar7/Cypress-Learning"
+  },
+  {
+    id: "mac-cypress",
+    title: "Mac Cypress Automation",
+    tech: ["Cypress", "JavaScript"],
+    bullets: [
+      "Hands-on Cypress setup on macOS",
+      "Early automation practice",
+      "Exploring assertions and selectors",
+      "Learning maintainable test structure"
+    ],
+    url: "https://github.com/Simran-Tamrakar7/Mac-Cypress_Automation"
   }
 ];
 
@@ -450,20 +595,22 @@ export const impactMetrics = [
 
 /** My QA Approach — real lifecycle, not “zero defect delivery” */
 export const qaGovernanceGates = [
-  { title: "Understand Requirements", desc: "Review requirements, workflows, roles, validations, and edge cases." },
-  { title: "Design Coverage", desc: "Create positive, negative, boundary, role-based, and integration scenarios." },
-  { title: "Execute Testing", desc: "Perform functional, regression, smoke, sanity, UI, API, and exploratory testing." },
-  { title: "Investigate & Report", desc: "Document reproducible defects with expected/actual results, evidence, and relevant technical information." },
-  { title: "Verify Fixes", desc: "Retest resolved issues and perform regression around affected areas." },
-  { title: "Validate Releases", desc: "Perform appropriate smoke, sanity, regression, and UAT checks before release." }
+  { title: "Understand", desc: "What is the feature supposed to do? Review requirements, workflows, roles, and validations." },
+  { title: "Question", desc: "What could go wrong? What assumptions or gaps exist in the requirement?" },
+  { title: "Design", desc: "Create positive, negative, boundary, role-based, and integration scenarios." },
+  { title: "Test", desc: "Execute functional, regression, smoke, sanity, UI, API, and exploratory testing." },
+  { title: "Investigate", desc: "Is the issue UI, API, data, permission, workflow, or integration related? Document evidence." },
+  { title: "Verify", desc: "Retest the fix and surrounding functionality for regressions." },
+  { title: "Improve", desc: "Identify coverage gaps that can make the next release safer." }
 ];
 
 export const qaThinking = {
-  motto: "Understand → Question → Test → Investigate → Verify → Improve",
+  motto: "Understand → Question → Design → Test → Investigate → Verify → Improve",
   steps: [
     { title: "Understand", desc: "What is the feature supposed to do?" },
     { title: "Question", desc: "What could go wrong? What assumptions exist?" },
-    { title: "Test", desc: "Positive, negative, boundary, role-based, and real-world scenarios." },
+    { title: "Design", desc: "Plan positive, negative, boundary, role-based, and integration coverage." },
+    { title: "Test", desc: "Execute scenarios across UI, API, and real-world workflows." },
     { title: "Investigate", desc: "Is the issue UI, API, data, permission, workflow, or integration related?" },
     { title: "Verify", desc: "Retest the fix and surrounding functionality." },
     { title: "Improve", desc: "Identify gaps that can make the next release safer." }
@@ -476,8 +623,8 @@ export const postmanEndpoints = [
     name: 'POST /api/v1/hrms/attendance/check-in',
     module: 'Bizlevate HRMS',
     method: 'POST',
-    url: 'https://api.bizlevate.com/v1/attendance/check-in',
-    headers: { 'Authorization': 'Bearer eyJhbGciOi...', 'Content-Type': 'application/json' },
+    url: 'https://demo.qa-sample.local/v1/attendance/check-in',
+    headers: { 'Authorization': 'Bearer <sample-token>', 'Content-Type': 'application/json' },
     reqBody: {
       employee_id: "EMP-2025-089",
       shift_code: "NIGHT_SHIFT_A",
@@ -504,13 +651,13 @@ export const postmanEndpoints = [
     name: 'POST /api/v1/tada/expenses/reimburse',
     module: 'TADA Expense Management',
     method: 'POST',
-    url: 'https://api.bizlevate.com/v1/tada/expenses/reimburse',
-    headers: { 'Authorization': 'Bearer eyJhbGciOi...', 'Content-Type': 'application/json' },
+    url: 'https://demo.qa-sample.local/v1/tada/expenses/reimburse',
+    headers: { 'Authorization': 'Bearer <sample-token>', 'Content-Type': 'application/json' },
     reqBody: {
       claim_id: "CLM-8812",
       amount_npr: 4500,
       category: "TRAVEL_MEALS",
-      receipt_urls: ["https://cdn.tada.app/receipts/rec_8812.png"]
+      receipt_urls: ["https://demo.qa-sample.local/receipts/sample.png"]
     },
     resStatus: 201,
     resStatusText: "CREATED",
@@ -532,8 +679,8 @@ export const postmanEndpoints = [
     name: 'PUT /api/v1/payroll/calculate-tax (Boundary Test)',
     module: 'Bizlevate Payroll',
     method: 'PUT',
-    url: 'https://api.bizlevate.com/v1/payroll/calculate-tax',
-    headers: { 'Authorization': 'Bearer eyJhbGciOi...', 'Content-Type': 'application/json' },
+    url: 'https://demo.qa-sample.local/v1/payroll/calculate-tax',
+    headers: { 'Authorization': 'Bearer <sample-token>', 'Content-Type': 'application/json' },
     reqBody: {
       employee_id: "EMP-2025-089",
       gross_annual_salary: 1200000,

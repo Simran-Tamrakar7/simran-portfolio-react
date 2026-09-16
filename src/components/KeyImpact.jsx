@@ -8,9 +8,9 @@ export function KeyImpact() {
       <div className="container section-container">
         <div className="section-header center reveal-up">
           <span className="section-subtitle">SCOPE & CONTRIBUTION</span>
-          <h2 className="section-title">QA Experience at a Glance</h2>
+          <h2 className="section-title">QA Scope & Experience</h2>
           <p className="section-description">
-            Credible scope across domains, platforms, workflows, and collaboration — not invented KPIs.
+            Domains, platforms, and workflows I've actually tested — scope over invented metrics.
           </p>
           <div className="title-bar"></div>
         </div>
@@ -37,41 +37,24 @@ export function KeyImpact() {
           })}
         </div>
 
-        <div className="glass-card reveal-up card-padded" style={{ borderRadius: 'var(--radius-lg)', background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-lg)', marginBottom: '2rem' }}>
+        <div className="glass-card reveal-up card-padded" style={{ borderRadius: 'var(--radius-lg)', background: 'var(--bg-secondary)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-lg)' }}>
           <div style={{ textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: '0.8rem', color: 'var(--accent-teal)', fontWeight: '700', marginBottom: '0.5rem' }}>
             QA LIFECYCLE
           </div>
-          <h3 style={{ fontSize: '1.35rem', fontWeight: '700', marginBottom: '1.25rem' }}>
+          <h3 style={{ fontSize: '1.35rem', fontWeight: '700', marginBottom: '0.5rem' }}>
             My QA Approach
           </h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 'var(--space-5)' }}>
+          <p style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
+            {qaThinking.motto}
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 'var(--space-5)' }}>
             {qaGovernanceGates.map((gate, idx) => (
               <div key={gate.title} className="card-padded-sm" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--accent-teal)' }}>
                   {String(idx + 1).padStart(2, '0')}
                 </span>
                 <h4 style={{ fontSize: '0.95rem', margin: '0.3rem 0', fontWeight: '700' }}>{gate.title}</h4>
-                <p style={{ fontSize: '0.825rem', color: 'var(--text-secondary)' }}>{gate.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="glass-card reveal-up card-padded" style={{ borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
-          <div style={{ textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: '0.8rem', color: 'var(--accent-teal)', fontWeight: '700', marginBottom: '0.5rem' }}>
-            QA MINDSET
-          </div>
-          <h3 style={{ fontSize: '1.35rem', fontWeight: '700', marginBottom: '0.5rem' }}>
-            How I Think About Quality
-          </h3>
-          <p style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '1.25rem' }}>
-            {qaThinking.motto}
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 'var(--space-5)' }}>
-            {qaThinking.steps.map((step) => (
-              <div key={step.title} className="card-padded-sm" style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-md)' }}>
-                <h4 style={{ fontSize: '0.95rem', margin: '0 0 0.35rem', fontWeight: '700' }}>{step.title}</h4>
-                <p style={{ fontSize: '0.825rem', color: 'var(--text-secondary)', margin: 0 }}>{step.desc}</p>
+                <p style={{ fontSize: '0.825rem', color: 'var(--text-secondary)', margin: 0 }}>{gate.desc}</p>
               </div>
             ))}
           </div>

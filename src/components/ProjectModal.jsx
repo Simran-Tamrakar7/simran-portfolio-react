@@ -58,6 +58,28 @@ export function ProjectModal({ project, onClose }) {
           <p>{project.summary}</p>
         </div>
 
+        {project.testingTypes?.length > 0 && (
+          <div className="modal-body-section">
+            <h4>Testing</h4>
+            <div className="pill-cloud">
+              {project.testingTypes.map((t) => (
+                <span key={t} className="pill">{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {project.whatITest?.length > 0 && (
+          <div className="modal-body-section">
+            <h4>What I Test</h4>
+            <div className="pill-cloud">
+              {project.whatITest.map((t) => (
+                <span key={t} className="pill">{t}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
         <div className="modal-body-section">
           <h4>Key Modules Covered</h4>
           <ul className="modal-bullet-list">

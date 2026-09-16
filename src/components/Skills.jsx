@@ -1,28 +1,27 @@
 import React, { useState } from 'react';
-import { skillCategories } from '../data/portfolioData';
+import { skillCategories, testingTechniques } from '../data/portfolioData';
 import { SKILL_CAT_ICONS } from './icons';
 
 export function Skills() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filterTabs = ['All', 'Testing', 'API & Data', 'Automation', 'Tools', 'Domain'];
+  const filterTabs = ['All', 'QA', 'Automation', 'API', 'Management', 'Supporting', 'Domain'];
 
   const filteredCategories = skillCategories.filter(cat => {
     const title = cat.title.toLowerCase();
     let matchesTab = true;
-    if (activeFilter === 'Testing') matchesTab = title === 'testing';
-    else if (activeFilter === 'API & Data') matchesTab = title.includes('api');
+    if (activeFilter === 'QA') matchesTab = title === 'qa';
     else if (activeFilter === 'Automation') matchesTab = title.includes('automation');
-    else if (activeFilter === 'Tools') matchesTab = title === 'tools';
+    else if (activeFilter === 'API') matchesTab = title === 'api';
+    else if (activeFilter === 'Management') matchesTab = title.includes('management');
+    else if (activeFilter === 'Supporting') matchesTab = title.includes('supporting');
     else if (activeFilter === 'Domain') matchesTab = title.includes('domain');
 
     let matchesSearch = true;
     if (searchQuery.trim() !== '') {
       const q = searchQuery.toLowerCase();
-      const catMatches = cat.title.toLowerCase().includes(q);
-      const skillMatches = cat.skills.some(s => s.toLowerCase().includes(q));
-      matchesSearch = catMatches || skillMatches;
+      matchesSearch = cat.title.toLowerCase().includes(q) || cat.skills.some(s => s.toLowerCase().includes(q));
     }
 
     return matchesTab && matchesSearch;
@@ -32,24 +31,23 @@ export function Skills() {
     <section id="skills" className="section-padding skills-section">
       <div className="container section-container">
         <div className="section-header center reveal-up">
-          <span className="section-subtitle">SKILLS MATRIX</span>
-          <h2 className="section-title">Tools & QA Capabilities</h2>
+          <span className="section-subtitle">QA SKILLS & TOOLS</span>
+          <h2 className="section-title">Skills & Tools</h2>
           <p className="section-description">
-            Strong now in manual and API testing; actively developing Playwright and Cypress automation.
+            What I use day to day — separated so recruiters can scan QA, API, automation, and tools quickly.
           </p>
           <div className="title-bar"></div>
         </div>
 
-        <div className="glass-card reveal-up card-padded" style={{ marginBottom: '2.5rem', borderRadius: 'var(--radius-lg)', background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(59, 130, 246, 0.05) 100%)', border: '1px solid rgba(45, 212, 191, 0.25)' }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-teal)', display: 'block', marginBottom: '0.5rem' }}>
-            Test Automation — Developing
+        <div className="glass-card reveal-up card-padded" style={{ marginBottom: '2.5rem', borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
+          <span style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-teal)', display: 'block', marginBottom: '0.75rem' }}>
+            Testing Techniques I Use
           </span>
-          <p style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
-            Playwright · Cypress · Python · JavaScript
-          </p>
-          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.55', margin: 0 }}>
-            Currently building practical automation projects with Playwright and Cypress, focusing on reusable test structures, locators, assertions, fixtures, API integration, and maintainable E2E tests.
-          </p>
+          <div className="pill-cloud">
+            {testingTechniques.map((t) => (
+              <span key={t} className="pill highlight-pill">{t}</span>
+            ))}
+          </div>
         </div>
 
         <div className="reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
@@ -95,7 +93,7 @@ export function Skills() {
           </div>
         </div>
 
-        <div className="skills-wrapper" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--grid-gap-main)', marginBottom: '1rem' }}>
+        <div className="skills-wrapper" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 'var(--grid-gap-main)' }}>
           {filteredCategories.length > 0 ? (
             filteredCategories.map((cat, idx) => {
               const CatIcon = SKILL_CAT_ICONS[cat.title];

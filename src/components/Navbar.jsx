@@ -9,7 +9,7 @@ export function Navbar({ theme, toggleTheme, onOpenResume }) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ['about', 'pillars', 'key-impact', 'experience', 'projects', 'skills', 'education', 'contact'];
+      const sections = ['about', 'pillars', 'key-impact', 'case-studies', 'projects', 'experience', 'skills', 'education', 'contact'];
       let current = 'hero';
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -28,9 +28,9 @@ export function Navbar({ theme, toggleTheme, onOpenResume }) {
   const navLinks = [
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Capabilities', href: '#pillars', id: 'pillars' },
-    { name: 'Impact', href: '#key-impact', id: 'key-impact' },
-    { name: 'Experience', href: '#experience', id: 'experience' },
-    { name: 'Projects', href: '#projects', id: 'projects' },
+    { name: 'Scope', href: '#key-impact', id: 'key-impact' },
+    { name: 'Cases', href: '#case-studies', id: 'case-studies' },
+    { name: 'Apps', href: '#projects', id: 'projects' },
     { name: 'Skills', href: '#skills', id: 'skills' },
   ];
 
