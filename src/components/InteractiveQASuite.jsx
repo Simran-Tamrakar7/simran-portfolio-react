@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { postmanEndpoints, gherkinSpecs } from '../data/portfolioData';
+import { postmanEndpoints } from '../data/portfolioData';
 
 export function InteractiveQASuite() {
-  const [activeTab, setActiveTab] = useState('postman'); // 'postman', 'bug-simulator', 'gherkin'
-  
-  // Postman State
+  const [activeTab, setActiveTab] = useState('postman');
+
   const [selectedApi, setSelectedApi] = useState(postmanEndpoints[0]);
   const [apiExecuting, setApiExecuting] = useState(false);
   const [apiResult, setApiResult] = useState(null);
 
-  // Bug Simulator State
   const [bugForm, setBugForm] = useState({
     title: 'Attendance Shift Overlap Boundary Error on Midnight Check-in',
     module: 'Bizlevate HRMS',
@@ -29,14 +27,14 @@ export function InteractiveQASuite() {
 
   const handleSimulateBugTriage = (e) => {
     e.preventDefault();
-    setBugLifecycle({ stage: 1, logs: ['[01] 📝 Logging defect in ClickUp & Jira board...'] });
+    setBugLifecycle({ stage: 1, logs: ['[01] Logging defect in ClickUp & Jira board...'] });
 
     setTimeout(() => {
       setBugLifecycle({
         stage: 2,
         logs: [
-          '[01] 📝 Logging defect in ClickUp & Jira board...',
-          '[02] 🔍 Root Cause Analysis: DevTools payload mismatch identified.'
+          '[01] Logging defect in ClickUp & Jira board...',
+          '[02] Investigation: DevTools payload mismatch identified.'
         ]
       });
     }, 600);
@@ -45,9 +43,9 @@ export function InteractiveQASuite() {
       setBugLifecycle({
         stage: 3,
         logs: [
-          '[01] 📝 Logging defect in ClickUp & Jira board...',
-          '[02] 🔍 Root Cause Analysis: DevTools payload mismatch identified.',
-          '[03] Developer Assigned: Hotfix patch committed to QA Staging.'
+          '[01] Logging defect in ClickUp & Jira board...',
+          '[02] Investigation: DevTools payload mismatch identified.',
+          '[03] Developer assigned: fix committed to QA staging.'
         ]
       });
     }, 1200);
@@ -56,10 +54,10 @@ export function InteractiveQASuite() {
       setBugLifecycle({
         stage: 4,
         logs: [
-          '[01] 📝 Logging defect in ClickUp & Jira board...',
-          '[02] 🔍 Root Cause Analysis: DevTools payload mismatch identified.',
-          '[03] Developer Assigned: Hotfix patch committed to QA Staging.',
-          '✔ [04] Re-test Passed: Zero P0 defect leakage confirmed! Closed.'
+          '[01] Logging defect in ClickUp & Jira board...',
+          '[02] Investigation: DevTools payload mismatch identified.',
+          '[03] Developer assigned: fix committed to QA staging.',
+          '[04] Re-test passed — defect closed after verification.'
         ]
       });
     }, 1800);
@@ -71,14 +69,13 @@ export function InteractiveQASuite() {
         <div className="section-header text-center reveal-up">
           <span className="section-subtitle">INTERACTIVE QA PLAYGROUND</span>
           <h2 className="section-title">
-            Test Automation & <span className="gradient-text">API Testing Suite</span>
+            API Testing & <span className="gradient-text">Defect Triage</span>
           </h2>
           <p className="section-description">
-            Explore live API verification, defect triage workflows, and Gherkin test specifications in real-time.
+            Explore sample API verification and a defect triage workflow — illustrative of how I work with Postman and bug tracking.
           </p>
         </div>
 
-        {/* Tab Controls */}
         <div className="tab-buttons reveal-up" style={{ display: 'flex', justifyContent: 'center', gap: '0.75rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
           <button
             className={`tab-btn ${activeTab === 'postman' ? 'active' : ''}`}
@@ -92,15 +89,8 @@ export function InteractiveQASuite() {
           >
             Interactive Bug Triage
           </button>
-          <button
-            className={`tab-btn ${activeTab === 'gherkin' ? 'active' : ''}`}
-            onClick={() => setActiveTab('gherkin')}
-          >
-            Gherkin Test Specs
-          </button>
         </div>
 
-        {/* Tab 1: Postman API Inspector */}
         {activeTab === 'postman' && (
           <div className="glass-card card-padded reveal-up" style={{ borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '1.5rem' }}>
@@ -119,154 +109,95 @@ export function InteractiveQASuite() {
               </div>
             </div>
 
-            <div style={{ background: 'rgba(0,0,0,0.3)', padding: '1rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontFamily: 'monospace', fontSize: '0.9rem', color: 'var(--text-primary)', wordBreak: 'break-all' }}>
-                <span className="badge-tech" style={{ background: selectedApi.method === 'POST' ? 'rgba(168, 85, 247, 0.2)' : 'rgba(45, 212, 191, 0.2)', color: selectedApi.method === 'POST' ? 'var(--accent-purple)' : 'var(--accent-teal)', fontWeight: '700' }}>
-                  {selectedApi.method}
-                </span>
-                <span>{selectedApi.url}</span>
-              </div>
-              <button
-                onClick={handleExecuteApi}
-                disabled={apiExecuting}
-                className="btn btn-primary"
-                style={{ padding: '0.45rem 1.25rem', fontSize: '0.85rem' }}
-              >
-                {apiExecuting ? '⏳ Sending Request...' : '▶ Send Request'}
-              </button>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-              {/* Request Payload */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
               <div>
-                <h4 style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  JSON Request Body & Headers
-                </h4>
-                <pre style={{ background: '#0a0d14', color: '#a7f3d0', padding: '1rem', borderRadius: 'var(--radius-md)', fontSize: '0.8rem', overflowX: 'auto', border: '1px solid rgba(255,255,255,0.08)', height: '200px' }}>
-                  {JSON.stringify(selectedApi.reqBody, null, 2)}
-                </pre>
-              </div>
+                <h4 style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>REQUEST</h4>
+                <pre style={{ background: '#090d16', color: '#cbd5e1', padding: '1rem', borderRadius: 'var(--radius-sm)', fontSize: '0.8rem', overflowX: 'auto', border: '1px solid rgba(255,255,255,0.06)' }}>
+{`${selectedApi.method} ${selectedApi.url}
 
-              {/* Response Payload */}
-              <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
-                  <h4 style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Response Data
-                  </h4>
-                  {apiResult && (
-                    <span style={{ fontSize: '0.8rem', color: '#10b981', fontWeight: '700' }}>
-                      Status: {selectedApi.resStatus} {selectedApi.resStatusText} ({selectedApi.resTimeMs}ms)
-                    </span>
-                  )}
-                </div>
-                <pre style={{ background: '#0a0d14', color: apiResult ? '#60a5fa' : '#9ca3af', padding: '1rem', borderRadius: 'var(--radius-md)', fontSize: '0.8rem', overflowX: 'auto', border: '1px solid rgba(255,255,255,0.08)', height: '200px' }}>
-                  {apiResult ? JSON.stringify(apiResult, null, 2) : '// Click "Send Request" to observe API execution response'}
+Headers:
+${JSON.stringify(selectedApi.headers, null, 2)}
+
+Body:
+${JSON.stringify(selectedApi.reqBody, null, 2)}`}
                 </pre>
+                <button
+                  className="btn btn-primary"
+                  onClick={handleExecuteApi}
+                  disabled={apiExecuting}
+                  style={{ marginTop: '1rem' }}
+                >
+                  {apiExecuting ? 'Sending…' : 'Send Request'}
+                </button>
+              </div>
+              <div>
+                <h4 style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>RESPONSE</h4>
+                {apiResult ? (
+                  <pre style={{ background: '#090d16', color: '#10b981', padding: '1rem', borderRadius: 'var(--radius-sm)', fontSize: '0.8rem', overflowX: 'auto', border: '1px solid rgba(255,255,255,0.06)' }}>
+{`HTTP ${selectedApi.resStatus} ${selectedApi.resStatusText} (${selectedApi.resTimeMs}ms)
+
+${JSON.stringify(apiResult, null, 2)}`}
+                  </pre>
+                ) : (
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                    Click Send Request to see a sample response and assertion notes.
+                  </p>
+                )}
               </div>
             </div>
           </div>
         )}
 
-        {/* Tab 2: Interactive Bug Simulator */}
         {activeTab === 'bug-simulator' && (
           <div className="glass-card card-padded reveal-up" style={{ borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
-            <form onSubmit={handleSimulateBugTriage} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            <form onSubmit={handleSimulateBugTriage} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
               <div>
-                <div className="form-group" style={{ marginBottom: '1rem' }}>
-                  <label className="form-label">Defect Title</label>
-                  <input
-                    type="text"
-                    className="form-input"
-                    value={bugForm.title}
-                    onChange={(e) => setBugForm({ ...bugForm, title: e.target.value })}
-                    required
-                  />
-                </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-                  <div className="form-group">
-                    <label className="form-label">Module</label>
-                    <select
-                      className="form-input"
-                      value={bugForm.module}
-                      onChange={(e) => setBugForm({ ...bugForm, module: e.target.value })}
-                    >
-                      <option value="Bizlevate HRMS">Bizlevate HRMS</option>
-                      <option value="TADA Expense">TADA Expense</option>
-                      <option value="SalesMania ERP">SalesMania ERP</option>
-                      <option value="PrimeSales360">PrimeSales360</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Defect Severity</label>
-                    <select
-                      className="form-input"
-                      value={bugForm.severity}
-                      onChange={(e) => setBugForm({ ...bugForm, severity: e.target.value })}
-                    >
-                      <option value="P0 Critical">P0 Critical</option>
-                      <option value="P1 Major">P1 Major</option>
-                      <option value="P2 Minor">P2 Minor</option>
-                    </select>
-                  </div>
-                </div>
-                <div className="form-group" style={{ marginBottom: '1rem' }}>
-                  <label className="form-label">Steps to Reproduce</label>
-                  <textarea
-                    className="form-input"
-                    rows="3"
-                    value={bugForm.steps}
-                    onChange={(e) => setBugForm({ ...bugForm, steps: e.target.value })}
-                  />
-                </div>
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.35rem' }}>Title</label>
+                <input
+                  value={bugForm.title}
+                  onChange={(e) => setBugForm({ ...bugForm, title: e.target.value })}
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-primary)' }}
+                />
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.35rem' }}>Module</label>
+                <input
+                  value={bugForm.module}
+                  onChange={(e) => setBugForm({ ...bugForm, module: e.target.value })}
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-primary)' }}
+                />
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.35rem' }}>Severity</label>
+                <input
+                  value={bugForm.severity}
+                  onChange={(e) => setBugForm({ ...bugForm, severity: e.target.value })}
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-primary)' }}
+                />
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.35rem' }}>Steps to Reproduce</label>
+                <textarea
+                  value={bugForm.steps}
+                  onChange={(e) => setBugForm({ ...bugForm, steps: e.target.value })}
+                  rows={5}
+                  style={{ width: '100%', padding: '0.6rem', marginBottom: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', background: 'var(--bg-card)', color: 'var(--text-primary)' }}
+                />
                 <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
                   Log Bug & Trigger Triage Pipeline
                 </button>
               </div>
-
-              {/* Triage Log Output */}
-              <div style={{ background: '#090d16', padding: '1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid rgba(45, 212, 191, 0.2)' }}>
-                <h4 style={{ fontSize: '0.9rem', fontWeight: '700', color: 'var(--accent-teal)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span className="status-dot"></span> Automated Defect Lifecycle Pipeline
-                </h4>
+              <div>
+                <h4 style={{ fontSize: '0.9rem', fontWeight: '700', marginBottom: '1rem' }}>Triage Lifecycle</h4>
                 {bugLifecycle ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                    {bugLifecycle.logs.map((log, index) => (
-                      <div key={index} style={{ fontSize: '0.85rem', fontFamily: 'monospace', color: log.includes('Closed') ? '#10b981' : 'var(--text-primary)', background: 'rgba(255,255,255,0.03)', padding: '0.5rem 0.75rem', borderRadius: 'var(--radius-sm)' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    {bugLifecycle.logs.map((log, i) => (
+                      <p key={i} style={{ fontSize: '0.85rem', color: log.includes('Re-test') ? '#10b981' : 'var(--text-secondary)', margin: 0 }}>
                         {log}
-                      </div>
+                      </p>
                     ))}
                   </div>
                 ) : (
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', fontStyle: 'italic', marginTop: '2rem', textAlign: 'center' }}>
-                    Fill out the defect form on the left and click "Log Bug & Trigger Triage Pipeline" to watch state progression.
+                    Fill out the defect form and click Log Bug to watch a sample triage progression.
                   </p>
                 )}
               </div>
             </form>
-          </div>
-        )}
-
-        {/* Tab 3: Gherkin Test Specs */}
-        {activeTab === 'gherkin' && (
-          <div className="glass-card card-padded reveal-up" style={{ borderRadius: 'var(--radius-lg)', border: '1px solid var(--border-color)' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
-              {gherkinSpecs.map((spec) => (
-                <div key={spec.id} style={{ background: 'rgba(0,0,0,0.3)', padding: '1.25rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
-                  <span style={{ fontSize: '0.75rem', fontWeight: '700', color: 'var(--accent-purple)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    Gherkin Test Specification
-                  </span>
-                  <h3 style={{ fontSize: '1.1rem', fontWeight: '700', margin: '0.4rem 0 0.75rem 0', color: 'var(--text-primary)' }}>
-                    {spec.feature}
-                  </h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontStyle: 'italic' }}>
-                    {spec.userStory}
-                  </p>
-                  <pre style={{ background: '#090d16', color: '#cbd5e1', padding: '1rem', borderRadius: 'var(--radius-sm)', fontSize: '0.8rem', overflowX: 'auto', border: '1px solid rgba(255,255,255,0.06)', lineHeight: '1.5' }}>
-                    {spec.gherkin}
-                  </pre>
-                </div>
-              ))}
-            </div>
           </div>
         )}
       </div>

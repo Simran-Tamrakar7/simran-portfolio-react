@@ -44,7 +44,7 @@ export function Hero({ onCopyEmail, onOpenResume }) {
           '✔ [PASS] 200 OK — Auth & Authorization Tokens (14ms)',
           '✔ [PASS] Boundary Value Analysis — 100k Payload Intact',
           '✔ [PASS] UI Roster & Dashboard Cross-Browser Sanity',
-          '[SUCCESS] ZERO P0 Defect Leakage Verified!'
+          '[SUCCESS] Suite checks passed — ready for review'
         ]
       });
     }, 2400);
@@ -80,6 +80,11 @@ export function Hero({ onCopyEmail, onOpenResume }) {
           <p className="hero-tagline">
             {personalInfo.tagline}
           </p>
+          {personalInfo.automationNote && (
+            <p className="hero-tagline" style={{ marginTop: '0.75rem', opacity: 0.92 }}>
+              {personalInfo.automationNote}
+            </p>
+          )}
 
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">

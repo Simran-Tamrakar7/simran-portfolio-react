@@ -9,7 +9,7 @@ export function Projects({ onOpenModal }) {
     { label: 'HRM', value: 'hrm' },
     { label: 'Sales', value: 'sales' },
     { label: 'ERP', value: 'erp' },
-    { label: 'Banking', value: 'banking' },
+    { label: 'Finance', value: 'finance' },
     { label: 'Mobile', value: 'mobile' },
     { label: 'E-commerce', value: 'ecommerce' },
   ];
@@ -30,7 +30,7 @@ export function Projects({ onOpenModal }) {
         <div className="section-header center reveal-up">
           <span className="section-subtitle">APPLICATIONS TESTED</span>
           <h2 className="section-title">Featured Projects & Applications Tested</h2>
-          <p className="section-description">App and web platforms where I've led QA, client coordination, and project management across the testing lifecycle.</p>
+          <p className="section-description">App and web platforms where I've contributed QA across the testing lifecycle — from requirements to release validation.</p>
           <div className="title-bar"></div>
         </div>
 

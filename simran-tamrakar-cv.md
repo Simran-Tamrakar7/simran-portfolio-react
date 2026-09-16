@@ -15,7 +15,7 @@ header:
 
 ## Professional Summary
 
-QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.
+QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently expanding into test automation with Playwright and Cypress.
 
 ## Education
 
@@ -43,9 +43,9 @@ SEE / Schooling
   ~ Infocom Solutions Pvt. Ltd.
   ~ 08/2025 – Present
 
-- Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.
-- Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.
-- Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards.
+- Designed and executed functional, regression, integration, UI, and API test cases across HRM, ERP, sales, and finance applications.
+- Investigated and documented defects with clear reproduction steps, expected vs. actual results, and supporting evidence; collaborated with developers through resolution and retesting.
+- Supported test planning, requirement clarification, and release validation so features met agreed business and quality expectations.
 
 **QA Engineer Intern**
   ~ Infocom Solutions Pvt. Ltd.
@@ -57,10 +57,10 @@ SEE / Schooling
 
 ## Featured Projects & Applications Tested
 
-- **Bizlevate & Bizlevate v2** — HRM system (Employee Management, Attendance, Leave, Payroll, Onboarding/Offboarding, Appraisal)
-- **PrimeSales 360** — Field sales app for Sales Executives/Officers
+- **Bizlevate HRM** — Multi-tenant HRM (employee, attendance, leave, payroll, onboarding/offboarding, appraisal)
+- **PrimeSales 360** — Field sales app (routes, orders, inventory, TADA, role-based workflows)
 - **Salesmania** — Supervisor approval app for ASM/DCM roles
-- **TREMS** — Banking/financial dashboard application
+- **TREMS** — Financial dashboard application
 - **CQNoval** — Mobile/web ERP for finance, HR, procurement, inventory
 - **ESpOT** — Mobile/web application
 - **Ryze (ryzebiz.com)** — E-commerce website for Ryze monitors

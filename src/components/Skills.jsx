@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import { skillCategories, coreValues, softSkills } from '../data/portfolioData';
-import { ETHOS_ICONS, SKILL_CAT_ICONS } from './icons';
+import { skillCategories } from '../data/portfolioData';
+import { SKILL_CAT_ICONS } from './icons';
 
 export function Skills() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filterTabs = ['All', 'Testing & QA', 'Tools', 'Domain', 'Foundations'];
+  const filterTabs = ['All', 'Testing', 'API & Data', 'Automation', 'Tools', 'Domain'];
 
   const filteredCategories = skillCategories.filter(cat => {
     const title = cat.title.toLowerCase();
     let matchesTab = true;
-    if (activeFilter === 'Testing & QA') matchesTab = title.includes('testing methodologies') || title.includes('qa types');
-    else if (activeFilter === 'Tools') matchesTab = title.includes('tools') || title.includes('defect');
+    if (activeFilter === 'Testing') matchesTab = title === 'testing';
+    else if (activeFilter === 'API & Data') matchesTab = title.includes('api');
+    else if (activeFilter === 'Automation') matchesTab = title.includes('automation');
+    else if (activeFilter === 'Tools') matchesTab = title === 'tools';
     else if (activeFilter === 'Domain') matchesTab = title.includes('domain');
-    else if (activeFilter === 'Foundations') matchesTab = title.includes('foundations');
 
     let matchesSearch = true;
     if (searchQuery.trim() !== '') {
@@ -31,31 +32,24 @@ export function Skills() {
     <section id="skills" className="section-padding skills-section">
       <div className="container section-container">
         <div className="section-header center reveal-up">
-          <span className="section-subtitle">SKILLS MATRIX & COMPETENCIES</span>
-          <h2 className="section-title">Tools & QA Core Capabilities</h2>
-          <p className="section-description">A categorized, filterable overview of technical skills, QA methodologies, and tools I use daily.</p>
+          <span className="section-subtitle">SKILLS MATRIX</span>
+          <h2 className="section-title">Tools & QA Capabilities</h2>
+          <p className="section-description">
+            Strong now in manual and API testing; actively developing Playwright and Cypress automation.
+          </p>
           <div className="title-bar"></div>
         </div>
 
         <div className="glass-card reveal-up card-padded" style={{ marginBottom: '2.5rem', borderRadius: 'var(--radius-lg)', background: 'linear-gradient(135deg, rgba(45, 212, 191, 0.08) 0%, rgba(59, 130, 246, 0.05) 100%)', border: '1px solid rgba(45, 212, 191, 0.25)' }}>
-          <div className="metric-grid" style={{ textAlign: 'center' }}>
-            <div>
-              <span style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--color-primary)', display: 'block' }}>100+</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Test Cases / Module</span>
-            </div>
-            <div>
-              <span style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--color-primary)', display: 'block' }}>API Ready</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Postman Endpoint Testing</span>
-            </div>
-            <div>
-              <span style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--color-primary)', display: 'block' }}>Zero P0</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Critical Bugs Leaked</span>
-            </div>
-            <div>
-              <span style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--color-primary)', display: 'block' }}>30% Faster</span>
-              <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', fontWeight: '600' }}>Defect Resolution Turnaround</span>
-            </div>
-          </div>
+          <span style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-teal)', display: 'block', marginBottom: '0.5rem' }}>
+            Test Automation — Developing
+          </span>
+          <p style={{ fontSize: '1rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+            Playwright · Cypress · Python · JavaScript
+          </p>
+          <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.55', margin: 0 }}>
+            Currently building practical automation projects with Playwright and Cypress, focusing on reusable test structures, locators, assertions, fixtures, API integration, and maintainable E2E tests.
+          </p>
         </div>
 
         <div className="reveal-up" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
@@ -101,7 +95,7 @@ export function Skills() {
           </div>
         </div>
 
-        <div className="skills-wrapper" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--grid-gap-main)', marginBottom: '3rem' }}>
+        <div className="skills-wrapper" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--grid-gap-main)', marginBottom: '1rem' }}>
           {filteredCategories.length > 0 ? (
             filteredCategories.map((cat, idx) => {
               const CatIcon = SKILL_CAT_ICONS[cat.title];
@@ -141,50 +135,6 @@ export function Skills() {
               No matching skills found for "{searchQuery}".
             </div>
           )}
-        </div>
-
-        <div className="reveal-up" style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--border-color)' }}>
-          <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-            <span className="section-subtitle">ETHOS & WORK ETHIC</span>
-            <h3 style={{ fontSize: '1.75rem', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
-              Core Values & Soft Skills
-            </h3>
-          </div>
-
-          <div className="ethos-grid" style={{ marginBottom: '2rem' }}>
-            {coreValues.map((val, idx) => {
-              const EthosIcon = ETHOS_ICONS[idx % ETHOS_ICONS.length];
-              return (
-                <div key={idx} className="glass-card stagger-card card-padded-sm" style={{ borderRadius: 'var(--radius-md)' }}>
-                  <div style={{ color: 'var(--color-primary)', marginBottom: '0.5rem' }}>
-                    <EthosIcon size={18} />
-                  </div>
-                  <h4 style={{ fontWeight: '700', fontSize: '1.05rem', color: 'var(--text-primary)', marginBottom: '0.35rem' }}>
-                    {val.title}
-                  </h4>
-                  <p style={{ fontSize: '0.825rem', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
-                    {val.desc}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="glass-card card-padded" style={{ borderRadius: 'var(--radius-md)', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.8rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-teal)', display: 'block', marginBottom: '0.75rem' }}>
-              Key Interpersonal Proficiencies
-            </span>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem' }}>
-              {softSkills.map((sk, idx) => (
-                <span
-                  key={idx}
-                  className="pill"
-                >
-                  {sk.name}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

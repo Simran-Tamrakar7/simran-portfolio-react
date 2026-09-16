@@ -38,15 +38,6 @@ export function About() {
                 </li>
               ))}
             </ul>
-
-            <div className="stats-row">
-              {personalInfo.stats.map((stat, i) => (
-                <div key={i} className="stat-item">
-                  <span className="stat-number">{stat.number}</span>
-                  <span className="stat-label">{stat.label}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="about-portrait-content reveal-right">

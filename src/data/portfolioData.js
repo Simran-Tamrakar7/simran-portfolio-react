@@ -1,8 +1,9 @@
 export const personalInfo = {
   name: "Simran Tamrakar",
   title: "QA Engineer",
-  heroRoles: ["QA Engineer"],
-  tagline: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
+  heroRoles: ["Software Quality Assurance Engineer"],
+  tagline: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows.",
+  automationNote: "Currently expanding into test automation with Playwright and Cypress, building on a strong foundation in manual and API testing.",
   email: "simrantamrakar77@gmail.com",
   phone: "+9779843707272",
   phoneDisplay: "+977 9843707272",
@@ -11,96 +12,103 @@ export const personalInfo = {
   portfolio: "https://simran-tamrakar-portfolio.vercel.app/",
   status: "Available for QA Engineer Roles",
   aboutHeading: "Primary Focus: Software Quality Assurance",
-  aboutLead: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management.",
-  professionalSummary: "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
+  aboutLead: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
+  professionalSummary: "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows. Currently expanding into test automation with Playwright and Cypress.",
   aboutParagraphs: [
-    "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management.",
-    "Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
-    "At Infocom Solutions, I design and execute test cases, track defects with developers through resolution, and support release validation across HRM, ERP, sales, and banking applications."
+    "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, finance, and e-commerce domains.",
+    "Experienced in functional, regression, API, UI, UAT, cross-platform, and exploratory testing, with a strong focus on requirement analysis, defect investigation, and end-to-end business workflows.",
+    "Currently expanding into test automation with Playwright and Cypress, building on a strong foundation in manual and API testing."
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
-    { label: "Currently", value: "Infocom Solutions [ISPL]" },
+    { label: "Current Role", value: "Associate QA Engineer" },
     { label: "Studied at", value: "Deerwalk Institute of Technology, Tribhuvan University" },
-    { label: "Focus", value: "QA Engineer · Manual · API · Mobile" }
+    { label: "Focus", value: "Manual Testing · API Testing · Web & Mobile QA · Test Automation" }
   ],
   productStrategy: {
     discovery: "Requirement Analysis",
-    design: "Test Case Design",
+    design: "Test Coverage Design",
     quality: "Manual & API Testing",
     acceleration: "Release Validation"
   },
   lifecycleChips: [
-    "01 Manual Testing",
-    "02 API Testing",
-    "03 Regression & UAT",
-    "04 Defect Management"
-  ],
-  stats: [
-    { number: "100+", label: "Test Cases / Module Sprint" },
-    { number: "Zero P0", label: "Critical Bugs Leaked to Prod" },
-    { number: "100%", label: "End-to-End QA Ownership" }
+    "01 Understand",
+    "02 Design Coverage",
+    "03 Execute Testing",
+    "04 Investigate & Verify"
   ]
 };
 
 export const fourPillars = [
   {
-    id: "qa",
+    id: "mindset",
     number: "01",
     iconBg: "bg-teal",
-    title: "Hands-on QA Experience",
-    description: "Functional, regression, UI/UX, API, and cross-platform testing across web and mobile.",
+    title: "Quality Mindset",
+    description: "I look beyond happy-path scenarios to identify edge cases, unexpected behavior, validation gaps, and workflow inconsistencies.",
     badge: "Core Focus",
     highlight: true,
-    list: [
-      "Web and mobile functional, regression, UI/UX & cross-platform testing",
-      "Attention to detail — catch inconsistencies before they reach users",
-      "Mobile QA alongside web applications",
-      "Growing automation with Playwright and Cypress"
-    ]
+    list: []
+  },
+  {
+    id: "requirements",
+    number: "02",
+    iconBg: "bg-blue",
+    title: "Product & Requirement Understanding",
+    description: "I analyze requirements from a testing perspective and translate business workflows into practical test scenarios — positive, negative, boundary, role-based, and integration cases.",
+    badge: "Core Focus",
+    highlight: true,
+    list: []
+  },
+  {
+    id: "execution",
+    number: "03",
+    iconBg: "bg-purple",
+    title: "Hands-on QA Execution",
+    description: "Experience across functional, regression, smoke, sanity, integration, UI, UAT, exploratory, cross-browser, and cross-device testing for web and mobile applications.",
+    badge: "Core Focus",
+    list: []
   },
   {
     id: "api",
-    number: "02",
-    iconBg: "bg-blue",
-    title: "Defects & API Testing",
-    description: "Reproduce issues, identify impact, and verify backend behavior with clear, actionable reports.",
+    number: "04",
+    iconBg: "bg-amber",
+    title: "API & Data Validation",
+    description: "Hands-on API testing with Postman — request/response validation, status codes, payload verification, authentication checks, and comparing API behavior with frontend results.",
     badge: "Core Focus",
-    highlight: true,
-    list: [
-      "Strong defect analysis, reproduction, and impact reporting",
-      "API testing in Postman — request/response and backend verification",
-      "Root-cause investigation via APIs, data, logs, and related flows",
-      "Data validation — UI vs API/backend where applicable"
-    ]
+    list: []
   },
   {
     id: "defects",
-    number: "03",
-    iconBg: "bg-purple",
-    title: "Requirements & Collaboration",
-    description: "Translate business needs into practical tests and drive issues to resolution with the team.",
-    badge: "Core Focus",
-    list: [
-      "Turn requirements into test scenarios and edge cases",
-      "Spot incomplete, ambiguous, or inconsistent requirements",
-      "Cross-functional work with developers, product, and stakeholders",
-      "Multi-role / permission, approval-flow, and client-facing clarity"
-    ]
+    number: "05",
+    iconBg: "bg-teal",
+    title: "Defect Investigation",
+    description: "I focus on reproducible, developer-friendly defects with clear steps, expected vs. actual results, evidence, and relevant logs or API information.",
+    list: []
   },
   {
-    id: "release",
-    number: "04",
+    id: "workflows",
+    number: "06",
+    iconBg: "bg-blue",
+    title: "Business Workflow Testing",
+    description: "Experience testing multi-step workflows involving roles, approvals, attendance, leave, expenses, TADA, sales, inventory, payroll, and other interconnected business processes.",
+    list: []
+  },
+  {
+    id: "collab",
+    number: "07",
+    iconBg: "bg-purple",
+    title: "Cross-functional Collaboration",
+    description: "Comfortable working with developers, product teams, and stakeholders to clarify requirements, discuss defects, verify fixes, and support releases.",
+    list: []
+  },
+  {
+    id: "growth",
+    number: "08",
     iconBg: "bg-amber",
-    title: "Process, Mindset & Ownership",
-    description: "Documentation, test planning, release readiness, and a product-minded approach to quality.",
-    badge: "Core Focus",
-    list: [
-      "QA docs: scenarios, bug reports, task tracking, meeting notes",
-      "End-to-end, business-flow, edge-case, risk-based & regression thinking",
-      "Test planning and release-readiness support",
-      "Ownership, continuous learning, and automation built on manual QA"
-    ]
+    title: "Continuous Growth",
+    description: "Currently strengthening automation skills with Playwright and Cypress while building on existing manual and API testing experience.",
+    list: []
   }
 ];
 
@@ -112,11 +120,11 @@ export const experiences = [
     period: "August 2025 – Present",
     current: true,
     bullets: [
-      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
-      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
-      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
+      "Design and execute functional, regression, integration, UI, and API test cases across HRM, ERP, sales, and finance applications.",
+      "Investigate and document defects with clear reproduction steps, expected vs. actual results, and supporting evidence; collaborate with developers through resolution and retesting.",
+      "Support test planning, requirement clarification, and release validation so features meet agreed business and quality expectations."
     ],
-    tags: ["Quality Assurance", "Manual Testing", "API Testing", "Regression", "Defect Tracking"]
+    tags: ["Manual Testing", "API Testing", "Regression", "Defect Tracking", "Release Validation"]
   },
   {
     id: 2,
@@ -127,7 +135,7 @@ export const experiences = [
     bullets: [
       "Executed functional, regression, and UI testing to identify and document software defects.",
       "Created and maintained test cases based on functional requirements and user stories.",
-      "Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality."
+      "Collaborated with developers to reproduce bugs, verify fixes, and improve product quality."
     ],
     tags: ["Functional Testing", "UI Testing", "Bug Reporting", "Test Cases"]
   }
@@ -136,61 +144,90 @@ export const experiences = [
 export const projectsData = [
   {
     id: "bizlevate",
-    title: "Bizlevate & Bizlevate v2",
+    title: "Bizlevate HRM",
     categoryKey: "hrm",
     categoryBadge: "HRM",
-    summary: "HRM system covering Employee Management, Attendance, Leave, Payroll, Onboarding/Offboarding, and Appraisal.",
+    summary: "Multi-tenant HR management platform covering employee management, attendance, leave, payroll, onboarding/offboarding, appraisal, and organizational workflows.",
     keyContributions: [
-      "End-to-end QA across core HRM modules",
-      "Workflow & regression coverage for Bizlevate and v2",
-      "Client coordination across the testing lifecycle"
+      "End-to-end functional and regression testing across core HRM modules",
+      "Role, permission, and approval workflow validation",
+      "API validation and release support"
     ],
-    tags: ["HRM", "Regression", "Workflow QA"],
-    role: "QA Engineer",
+    tags: ["HRM", "Regression", "Workflow QA", "API"],
+    role: "Associate QA Engineer",
     modules: ["Employee Management", "Attendance", "Leave", "Payroll", "Onboarding / Offboarding", "Appraisal"],
     detailedContributions: [
-      "Led QA across Bizlevate HRMS modules and v2 comparisons.",
-      "Covered attendance, leave, payroll, onboarding/offboarding, and appraisal workflows."
+      "Performed end-to-end functional and regression testing across core HRM modules.",
+      "Tested employee roles, permissions, approval workflows, and organization-specific behavior.",
+      "Validated attendance, leave, payroll, onboarding, and appraisal workflows.",
+      "Tested web and mobile application behavior across supported devices and browsers.",
+      "Performed API validation using Postman for application workflows.",
+      "Investigated defects, documented reproducible scenarios, and collaborated with developers through resolution.",
+      "Supported requirement clarification and release validation."
     ],
-    techStack: ["Manual QA", "Postman", "ClickUp", "Jira"]
+    techStack: ["Manual QA", "Postman", "ClickUp", "Jira", "Mobile Testing"]
   },
   {
     id: "primesales",
     title: "PrimeSales 360",
     categoryKey: "sales mobile",
     categoryBadge: "Field Sales",
-    summary: "Field sales app for Sales Executives/Officers (SESO).",
-    keyContributions: ["Shop/route and order flow QA", "Floor stock validation", "Live services testing"],
-    tags: ["Mobile", "Sales", "SESO"],
-    role: "QA Engineer",
-    modules: ["Shop / route management", "Order flow", "Floor stock", "Live services"],
-    detailedContributions: ["Tested field sales flows for SESO roles across shop, route, order, and stock paths."],
-    techStack: ["Manual QA", "Mobile Testing", "ClickUp"]
+    summary: "Field-sales application supporting sales representatives and distribution workflows.",
+    keyContributions: [
+      "Sales, shop visit, route, order, and inventory workflow QA",
+      "Role-based behavior across sales and supervisory roles",
+      "API and frontend/backend discrepancy investigation"
+    ],
+    tags: ["Mobile", "Sales", "Regression", "API"],
+    role: "Associate QA Engineer",
+    modules: ["Shop / route management", "Order flow", "Inventory", "TADA / expenses", "Attendance", "Reporting"],
+    detailedContributions: [
+      "Tested sales, shop visit, route, order, inventory, and field-service workflows.",
+      "Validated role-based behavior across sales and supervisory roles.",
+      "Tested TADA, expenses, attendance, and reporting workflows.",
+      "Performed regression testing across mobile and web changes.",
+      "Validated API responses and investigated discrepancies between frontend and backend data.",
+      "Reported and tracked defects through resolution and verified fixes before release."
+    ],
+    techStack: ["Manual QA", "Mobile Testing", "Postman", "ClickUp"]
   },
   {
     id: "salesmania",
     title: "Salesmania",
     categoryKey: "sales",
     categoryBadge: "Approvals",
-    summary: "Supervisor approval app for ASM/DCM roles.",
-    keyContributions: ["Expense and travel approval QA", "ASM/DCM role validation", "Field-level defect discovery"],
-    tags: ["Approvals", "Sales", "Defects"],
-    role: "QA Engineer",
+    summary: "Supervisor approval app for ASM/DCM roles covering expense and travel workflows.",
+    keyContributions: [
+      "Expense and travel approval QA",
+      "ASM/DCM role validation",
+      "Field-level defect discovery"
+    ],
+    tags: ["Approvals", "Sales", "Roles"],
+    role: "Associate QA Engineer",
     modules: ["Expense workflows", "Travel workflows", "Supervisor approval chains"],
-    detailedContributions: ["Tested supervisor approval workflows for ASM/DCM roles."],
+    detailedContributions: [
+      "Tested supervisor approval workflows for ASM/DCM roles.",
+      "Validated expense and travel approval chains and role-based access.",
+      "Documented and tracked field-level defects through resolution."
+    ],
     techStack: ["Manual QA", "UI Testing", "Jira"]
   },
   {
     id: "trems",
     title: "TREMS",
-    categoryKey: "banking",
-    categoryBadge: "Banking / Finance",
-    summary: "Banking/financial dashboard application.",
-    keyContributions: ["Dashboard QA", "Financial UI validation"],
-    tags: ["Banking", "Dashboard"],
-    role: "QA Engineer",
+    categoryKey: "finance",
+    categoryBadge: "Finance",
+    summary: "Financial dashboard application for reporting and operational views.",
+    keyContributions: [
+      "Dashboard and financial UI validation",
+      "Reporting surface checks"
+    ],
+    tags: ["Finance", "Dashboard"],
+    role: "Associate QA Engineer",
     modules: ["Financial dashboard views", "Reporting surfaces"],
-    detailedContributions: ["Performed QA on banking/financial dashboard application flows."],
+    detailedContributions: [
+      "Performed QA on financial dashboard application flows and reporting surfaces."
+    ],
     techStack: ["Manual QA", "ClickUp"]
   },
   {
@@ -199,11 +236,16 @@ export const projectsData = [
     categoryKey: "erp mobile",
     categoryBadge: "ERP",
     summary: "Mobile/web ERP application for finance, HR, procurement, and inventory.",
-    keyContributions: ["Finance / HR / procurement / inventory QA", "Mobile and web coverage"],
+    keyContributions: [
+      "Finance / HR / procurement / inventory QA",
+      "Mobile and web coverage"
+    ],
     tags: ["ERP", "Mobile", "Finance"],
-    role: "QA Engineer",
+    role: "Associate QA Engineer",
     modules: ["Finance", "HR", "Procurement", "Inventory"],
-    detailedContributions: ["Tested CQNoval ERP flows across finance, HR, procurement, and inventory on mobile and web."],
+    detailedContributions: [
+      "Tested CQNoval ERP flows across finance, HR, procurement, and inventory on mobile and web."
+    ],
     techStack: ["Manual QA", "Mobile Testing"]
   },
   {
@@ -214,9 +256,11 @@ export const projectsData = [
     summary: "Mobile/web application covered in QA testing engagements.",
     keyContributions: ["Mobile/web functional QA"],
     tags: ["Mobile", "Web"],
-    role: "QA Engineer",
+    role: "Associate QA Engineer",
     modules: ["Mobile app flows", "Web flows"],
-    detailedContributions: ["Executed QA on ESpOT mobile and web application flows."],
+    detailedContributions: [
+      "Executed functional QA on ESpOT mobile and web application flows."
+    ],
     techStack: ["Manual QA", "Mobile Testing"]
   },
   {
@@ -225,100 +269,83 @@ export const projectsData = [
     categoryKey: "ecommerce",
     categoryBadge: "E-commerce",
     summary: "E-commerce website for Ryze monitors — product catalog and reseller network (ryzebiz.com).",
-    keyContributions: ["Product catalog QA", "Reseller network flow checks"],
+    keyContributions: [
+      "Product catalog QA",
+      "Reseller network flow checks"
+    ],
     tags: ["E-commerce", "Web"],
-    role: "QA Engineer",
+    role: "Associate QA Engineer",
     link: "https://ryzebiz.com",
     modules: ["Product catalog", "Reseller network", "Storefront"],
-    detailedContributions: ["Tested e-commerce flows for Ryze monitors including catalog and reseller network."],
+    detailedContributions: [
+      "Tested e-commerce flows for Ryze monitors including catalog and reseller network."
+    ],
     techStack: ["Manual QA", "Web Testing"]
   }
 ];
 
 export const skillCategories = [
   {
-    title: "Testing Methodologies & QA Types",
+    title: "Testing",
     highlight: true,
     skills: [
-      "Manual Web & Mobile Testing",
-      "Functional & System Testing",
-      "Regression & Smoke Testing",
-      "Sanity & Integration Testing",
+      "Functional Testing",
+      "Regression Testing",
+      "Smoke & Sanity Testing",
+      "Integration Testing",
       "UAT",
-      "Black Box & Exploratory Testing",
+      "Exploratory Testing",
+      "UI Testing",
+      "Cross-browser Testing",
+      "Cross-device Testing",
       "Boundary Value Analysis",
-      "Cross-Browser/Cross-Platform Testing",
-      "Postman API Testing",
-      "Basic Performance Testing (JMeter)"
+      "Black-box Testing"
     ]
   },
   {
-    title: "Defect Management & QA Tools",
+    title: "API & Data",
     highlight: true,
     skills: [
-      "ClickUp",
-      "Asana",
-      "Jira",
       "Postman",
-      "Git/GitHub/GitLab",
-      "Cypress (E2E — Beginner)",
-      "Playwright (E2E — Beginner)",
-      "JMeter",
-      "Basic SQL",
-      "Android Studio & ADB"
-    ]
-  },
-  {
-    title: "Domain Knowledge",
-    highlight: true,
-    skills: [
-      "HRMS",
-      "ERP",
-      "Sales & Distribution Systems",
-      "Banking/FinTech Dashboards"
-    ]
-  },
-  {
-    title: "Foundations",
-    skills: [
-      "Python (Intermediate)",
-      "HTML5/CSS3",
-      "JavaScript",
+      "REST API Testing",
+      "Request/Response Validation",
+      "Status Code Validation",
+      "Payload Validation",
       "Basic SQL"
     ]
+  },
+  {
+    title: "Automation",
+    highlight: true,
+    skills: [
+      "Playwright — Beginner",
+      "Cypress — Beginner",
+      "Python",
+      "JavaScript"
+    ]
+  },
+  {
+    title: "Tools",
+    highlight: true,
+    skills: [
+      "Jira",
+      "ClickUp",
+      "Asana",
+      "Git / GitHub",
+      "Android Studio",
+      "ADB"
+    ]
+  },
+  {
+    title: "Domain Exposure",
+    skills: [
+      "HRM",
+      "ERP",
+      "Sales & Distribution",
+      "Finance",
+      "E-commerce"
+    ]
   }
-];
-
-export const coreValues = [
-  {
-    title: "End-to-End Mindset",
-    desc: "Follow a feature from requirement → implementation → testing → bug fixing → retesting."
-  },
-  {
-    title: "Business-Flow Thinking",
-    desc: "Test how modules work together rather than checking screens in isolation."
-  },
-  {
-    title: "Edge Cases & Risk",
-    desc: "Probe unusual, incomplete, or invalid inputs and focus effort where impact is highest."
-  },
-  {
-    title: "Product Ownership",
-    desc: "Treat quality as more than finding bugs — understand impact on the product and users."
-  }
-];
-
-export const softSkills = [
-  { name: "Real-world Scenario Testing" },
-  { name: "Regression Awareness" },
-  { name: "Release Readiness" },
-  { name: "Root-cause Investigation" },
-  { name: "Requirement Gap Spotting" },
-  { name: "Test Planning" },
-  { name: "Continuous Improvement" },
-  { name: "Automation Transition" },
-  { name: "Fast Learning / Adaptability" },
-  { name: "Client-facing Communication" }
 ];
 
 export const educationList = [
@@ -376,11 +403,11 @@ export const certificationsList = [
   {
     id: "qa-competency",
     title: "Software Quality Assurance & API Testing",
-    issuer: "Primary Specialization",
+    issuer: "Primary Focus",
     year: "Active Practice",
-    badge: "Primary Specialization",
-    skills: ["Manual Testing", "Postman API Testing", "ClickUp/Asana/Jira", "UAT Sign-off"],
-    description: "Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & TADA."
+    badge: "Primary Focus",
+    skills: ["Manual Testing", "Postman API Testing", "ClickUp / Asana / Jira", "Release Validation"],
+    description: "Test planning, defect investigation, Postman API verification, and UAT / release validation across HRM and related enterprise apps."
   },
   {
     id: "csit-degree",
@@ -388,25 +415,60 @@ export const certificationsList = [
     issuer: "Deerwalk Institute of Technology, Tribhuvan University",
     year: "2020 – 2025",
     badge: "Academic Degree",
-    skills: ["Software Engineering", "QA Fundamentals", "Database Systems", "API Architecture"],
+    skills: ["Software Engineering", "QA Fundamentals", "Database Systems"],
     description: "Undergraduate degree in computer science and information technology."
   }
 ];
 
+/** Scope & contribution cards — credible over invented KPIs */
 export const impactMetrics = [
-  { value: "Zero P0", label: "Critical Bugs Leaked", detail: "No critical defects leaked to production across HRMS & TADA releases, backed by boundary value analysis, sanity testing, and UAT sign-off gates." },
-  { value: "100+", label: "Test Cases / Module", detail: "Test cases designed per module sprint, covering positive/negative scenarios, multi-tier approval workflows, and edge cases ahead of developer handoff." },
-  { value: "30%", label: "Faster Defect Resolution", detail: "Driven by reproducible bug reports (steps, logs, screenshots) and clear collaboration with developers." },
-  { value: "100%", label: "API Endpoint QA", detail: "Status codes, response times, schema validation, and financial payload checks for TADA & Payroll." }
+  {
+    title: "Multiple Application Domains",
+    detail: "Tested applications across HRM, ERP, sales & distribution, finance, e-commerce, and field-sales workflows."
+  },
+  {
+    title: "Web & Mobile Coverage",
+    detail: "Hands-on testing across web and mobile applications, including functional, regression, UI, cross-browser, and cross-device validation."
+  },
+  {
+    title: "API Testing",
+    detail: "Used Postman to validate API requests, responses, status codes, payloads, authentication, and API-backed application workflows."
+  },
+  {
+    title: "Complex Business Workflows",
+    detail: "Tested workflows involving roles and permissions, approval hierarchies, attendance, leave, expenses, TADA, payroll, inventory, orders, and sales processes."
+  },
+  {
+    title: "Defect Lifecycle",
+    detail: "Experienced in identifying, documenting, tracking, retesting, and closing defects in collaboration with development teams."
+  },
+  {
+    title: "Automation Growth",
+    detail: "Building practical test automation skills with Playwright and Cypress alongside existing manual QA experience."
+  }
 ];
 
+/** My QA Approach — real lifecycle, not “zero defect delivery” */
 export const qaGovernanceGates = [
-  { title: "Requirement QA", desc: "SRS ambiguity review & boundary condition mapping" },
-  { title: "Test Suite Design", desc: "Positive & negative scenario coverage" },
-  { title: "API QA", desc: "Endpoint payload, status code & auth verification (Postman)" },
-  { title: "Defect Triage", desc: "ClickUp logs with steps, screenshots & logs" },
-  { title: "Release Signoff", desc: "Smoke, sanity & UAT signoff before release" }
+  { title: "Understand Requirements", desc: "Review requirements, workflows, roles, validations, and edge cases." },
+  { title: "Design Coverage", desc: "Create positive, negative, boundary, role-based, and integration scenarios." },
+  { title: "Execute Testing", desc: "Perform functional, regression, smoke, sanity, UI, API, and exploratory testing." },
+  { title: "Investigate & Report", desc: "Document reproducible defects with expected/actual results, evidence, and relevant technical information." },
+  { title: "Verify Fixes", desc: "Retest resolved issues and perform regression around affected areas." },
+  { title: "Validate Releases", desc: "Perform appropriate smoke, sanity, regression, and UAT checks before release." }
 ];
+
+export const qaThinking = {
+  motto: "Understand → Question → Test → Investigate → Verify → Improve",
+  steps: [
+    { title: "Understand", desc: "What is the feature supposed to do?" },
+    { title: "Question", desc: "What could go wrong? What assumptions exist?" },
+    { title: "Test", desc: "Positive, negative, boundary, role-based, and real-world scenarios." },
+    { title: "Investigate", desc: "Is the issue UI, API, data, permission, workflow, or integration related?" },
+    { title: "Verify", desc: "Retest the fix and surrounding functionality." },
+    { title: "Improve", desc: "Identify gaps that can make the next release safer." }
+  ]
+};
 
 export const postmanEndpoints = [
   {
@@ -495,70 +557,29 @@ export const postmanEndpoints = [
   }
 ];
 
-export const gherkinSpecs = [
-  {
-    id: 'spec-1',
-    feature: 'Bizlevate HRMS — Shift Roster & Geo-Fenced Check-In',
-    userStory: 'As an Employee, I want to record my attendance via geo-fencing so that my shift hours are logged accurately.',
-    gherkin: `FEATURE: Attendance Geo-Fenced Validation
-
-  SCENARIO: Employee checks in within office GPS coordinates
-    GIVEN the employee is within 50 meters of Head Office (27.7172, 85.3240)
-    AND the employee shift is active for "DAY_SHIFT_A"
-    WHEN the employee clicks "Check In" on mobile app
-    THEN the API should respond with HTTP 200 OK
-    AND the attendance log should record "ON_TIME"
-    AND a notification should trigger to the HR Roster Dashboard.
-
-  SCENARIO: Employee checks in outside geo-fence (Boundary Edge Case)
-    GIVEN the employee GPS distance is 150 meters (greater than 50m limit)
-    WHEN the employee clicks "Check In"
-    THEN the API should reject with HTTP 422 Unprocessable Entity
-    AND the UI should display prompt: "Location out of office bounds. Request Remote Access."`
-  },
-  {
-    id: 'spec-2',
-    feature: 'TADA Travel & Expense — Multi-Tier Approval Chain',
-    userStory: 'As a Team Lead, I want to review expense claims exceeding NPR 5,000 so that financial limits are enforced.',
-    gherkin: `FEATURE: Expense Claim Multi-Tier Approval Threshold
-
-  SCENARIO: Claim amount under NPR 5,000 (Single Approval)
-    GIVEN an employee submits a travel claim of NPR 3,500
-    WHEN the claim is submitted
-    THEN it requires approval ONLY from Line Manager (Tier 1).
-
-  SCENARIO: Claim amount equals or exceeds NPR 5,000 (Tier 2 Approval Escalation)
-    GIVEN an employee submits a travel claim of NPR 12,000
-    WHEN the claim is submitted
-    THEN the status sets to "PENDING_TIER_2_FINANCE"
-    AND Finance Admin receives an escalation email trigger.`
-  }
-];
-
 export const testimonials = [
   {
     id: 1,
-    quote: "Simran possesses an exceptional eye for detail and end-to-end quality ownership. Her Postman API testing and structured ClickUp bug reports helped our team catch edge cases early in Bizlevate HRMS, achieving zero P0 defect leaks to production.",
+    quote: "Simran brings a careful eye for edge cases and clear defect reports. Her Postman checks and structured bug notes helped the team catch workflow issues earlier in Bizlevate HRMS.",
     author: "Senior QA Lead & Product Manager",
     org: "Infocom Solutions / Bizlevate HRMS",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-    tag: "Quality Assurance & Leadership"
+    tag: "Quality Assurance"
   },
   {
     id: 2,
-    quote: "Working with Simran is a breeze for developers. Her bug reports are always 100% reproducible, complete with step-by-step notes, screenshots, and exact API contract payload mismatches. It saves us hours of triage.",
+    quote: "Her bug reports are easy for developers to act on — clear steps, screenshots, and API details when relevant. That cuts down triage time.",
     author: "Lead Full-Stack Developer",
     org: "Enterprise Software Division",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
-    tag: "Defect Management & API Verification"
+    tag: "Defect Management"
   },
   {
     id: 3,
-    quote: "Simran helps translate ambiguous requirements into clear, testable acceptance criteria and keeps release validation focused on business and quality standards.",
+    quote: "Simran helps translate ambiguous requirements into clear, testable scenarios and keeps release validation focused on business workflows and quality expectations.",
     author: "Agile Scrum Master",
     org: "ERP & TADA Platforms",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
     tag: "Requirement Analysis & Release Validation"
   }
 ];
-

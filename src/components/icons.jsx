@@ -93,8 +93,9 @@ export const CERT_ICONS = {
   'csit-degree': GraduationCap
 };
 export const SKILL_CAT_ICONS = {
-  'Testing Methodologies & QA Types': ShieldCheck,
-  'Defect Management & QA Tools': Wrench,
-  'Domain Knowledge': Building2,
-  Foundations: BookOpen
+  Testing: ShieldCheck,
+  'API & Data': Wrench,
+  Automation: Zap,
+  Tools: Wrench,
+  'Domain Exposure': Building2
 };
