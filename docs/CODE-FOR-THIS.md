@@ -15,7 +15,8 @@
 | GitHub automation repos | `githubProjects` |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
-| Downloadable PDF | `public/SimranTamrakar.pdf` (regen: `python3 generate_cv_pdf.py`) |
+| Downloadable PDF | `public/SimranTamrakar.pdf` — official uploaded CV (do not stub-regenerate) |
+| View CV | `ResumeModal.jsx` mirrors official CV data (`cvProfessionalSummary`, `cvEducationList`, `cvExtraActivities`, `cvSkillCategories`) |
 | Layout tokens / 4-col grids | `src/index.css` |
 | Icons | `src/components/icons.jsx` |
 

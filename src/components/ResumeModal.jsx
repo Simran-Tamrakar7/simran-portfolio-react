@@ -2,17 +2,20 @@ import React from 'react';
 import {
   personalInfo,
   experiences,
-  projectsData,
   cvSkillCategories,
   cvEducationList,
-  extraActivities,
+  cvExtraActivities,
+  cvProfessionalSummary,
   languagesList
 } from '../data/portfolioData';
 
+/**
+ * View CV mirrors official public/SimranTamrakar.pdf content.
+ * Download serves that same PDF file.
+ */
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
-  // Same file regenerated from this view's data — View CV and Download CV stay identical
   const handleDownloadPDF = () => {
     const link = document.createElement('a');
     link.href = '/SimranTamrakar.pdf';
@@ -85,8 +88,6 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <span aria-hidden="true">|</span>
                 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Github</a>
                 <span aria-hidden="true">|</span>
-                <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="cv-inline-link">LinkedIn</a>
-                <span aria-hidden="true">|</span>
                 <a href={personalInfo.portfolio} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Portfolio</a>
               </div>
             </div>
@@ -94,14 +95,14 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={sectionTitle}>Professional Summary</h3>
               <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', margin: 0, lineHeight: '1.55' }}>
-                {personalInfo.professionalSummary}
+                {cvProfessionalSummary}
               </p>
             </div>
 
             <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
               <h3 style={sectionTitle}>Education</h3>
               {cvEducationList.map((edu, idx) => (
-                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: idx < cvEducationList.length - 1 ? '0.65rem' : 0 }}>
+                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
                   <div>
                     <div style={{ fontWeight: '700', fontSize: '0.95rem', color: 'var(--text-primary)' }}>{edu.school}</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{edu.degree} — {edu.location}</div>
@@ -134,35 +135,10 @@ export default function ResumeModal({ isOpen, onClose }) {
               </div>
             </div>
 
-            <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
-              <h3 style={sectionTitle}>Featured Projects & Applications Tested</h3>
-              <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--text-secondary)', fontSize: '0.875rem', lineHeight: '1.5' }}>
-                {projectsData.map((proj) => (
-                  <li key={proj.id} style={{ marginBottom: '0.35rem' }}>
-                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{proj.title}</span>
-                    {' — '}
-                    {proj.summary}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
-              <h3 style={sectionTitle}>Skills</h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                {cvSkillCategories.map((cat, idx) => (
-                  <div key={idx} style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
-                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{cat.title}: </span>
-                    <span style={{ color: 'var(--text-secondary)' }}>{cat.skills.join(', ')}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={sectionTitle}>Leadership and Extra Curricular Activities</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                {extraActivities.map((act, idx) => (
+                {cvExtraActivities.map((act, idx) => (
                   <div key={idx} style={{ pageBreakInside: 'avoid' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
                       <div style={{ fontWeight: '700', fontSize: '0.9rem', color: 'var(--text-primary)' }}>
@@ -177,10 +153,21 @@ export default function ResumeModal({ isOpen, onClose }) {
             </div>
 
             <div style={{ marginBottom: '0.25rem', pageBreakInside: 'avoid' }}>
-              <h3 style={sectionTitle}>Languages</h3>
-              <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.45' }}>
-                {languagesList.map(l => `${l.name} — ${l.level}`).join('; ')}
-              </p>
+              <h3 style={sectionTitle}>Skills</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                {cvSkillCategories.map((cat, idx) => (
+                  <div key={idx} style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
+                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{cat.title}: </span>
+                    <span style={{ color: 'var(--text-secondary)' }}>{cat.skills.join(', ')}</span>
+                  </div>
+                ))}
+                <div style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
+                  <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>Languages: </span>
+                  <span style={{ color: 'var(--text-secondary)' }}>
+                    {languagesList.map(l => `${l.name} (${l.level})`).join(', ')}
+                  </span>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -188,11 +175,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
         <div className="modal-footer">
           <button className="btn btn-secondary" onClick={onClose}>Close</button>
-          <button
-            className="btn btn-primary"
-            onClick={handleDownloadPDF}
-            style={{ gap: '0.4rem' }}
-          >
+          <button className="btn btn-primary" onClick={handleDownloadPDF} style={{ gap: '0.4rem' }}>
             Download CV
           </button>
         </div>

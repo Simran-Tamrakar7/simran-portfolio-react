@@ -21,8 +21,8 @@ export const personalInfo = {
   ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
-    { label: "Current Role", value: "QA Associate" },
-    { label: "Education", value: "B.Sc. Computer Science & Information Technology" },
+    { label: "Current Role", value: "Associate QA Engineer" },
+    { label: "Education", value: "B.Sc. CSIT" },
     { label: "Focus", value: "Manual Testing · API Testing · Web & Mobile QA · Test Automation" }
   ],
   productStrategy: {
@@ -107,14 +107,14 @@ export const fourPillars = [
 export const experiences = [
   {
     id: 1,
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     company: "Infocom Solutions Pvt. Ltd.",
-    period: "August 2025 – Present",
+    period: "08/2025 - Present",
     current: true,
     bullets: [
-      "Analyze requirements and business workflows and design test coverage for functional, regression, integration, UI, and API testing across HRM, ERP, sales, and finance applications.",
-      "Investigate and document defects with clear reproduction steps, expected vs. actual results, supporting evidence, and relevant technical information; collaborate with developers through resolution and retesting.",
-      "Support test planning, requirement clarification, regression validation, and release validation across web and mobile applications."
+      "Designed and executed functional, regression, integration, and API test cases to ensure product quality and reliability.",
+      "Identified, documented, and tracked defects using bug-tracking tools, collaborating with developers through resolution and verification.",
+      "Participated in test planning, requirement analysis, and release validation to ensure features met business and quality standards."
     ],
     tags: ["Manual Testing", "API Testing", "Regression", "Defect Tracking", "Release Validation"]
   },
@@ -122,12 +122,12 @@ export const experiences = [
     id: 2,
     role: "QA Engineer Intern",
     company: "Infocom Solutions Pvt. Ltd.",
-    period: "March 2025 – August 2025",
+    period: "03/2025 - 08/2025",
     current: false,
     bullets: [
       "Executed functional, regression, and UI testing to identify and document software defects.",
       "Created and maintained test cases based on functional requirements and user stories.",
-      "Collaborated with developers to reproduce defects, verify fixes, and improve product quality."
+      "Collaborated with developers to reproduce bugs, verify fixes, and improve overall product quality."
     ],
     tags: ["Functional Testing", "UI Testing", "Bug Reporting", "Test Cases"]
   }
@@ -146,7 +146,7 @@ export const projectsData = [
       "API validation and release support"
     ],
     tags: ["HRM", "Regression", "Workflow QA", "API"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
     whatITest: ["Employee Management", "Attendance", "Leave", "Payroll", "Approval Workflows", "Roles & Permissions", "Mobile App", "Web App", "API"],
     modules: ["Employee Management", "Attendance", "Leave", "Payroll", "Onboarding / Offboarding", "Appraisal"],
@@ -173,7 +173,7 @@ export const projectsData = [
       "API and frontend/backend discrepancy investigation"
     ],
     tags: ["Mobile", "Sales", "Regression", "API"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "API", "Regression", "Mobile", "Web"],
     whatITest: ["Orders", "Shop Visits", "Routes", "Inventory", "TADA", "Expenses", "Attendance", "Reports", "Role-based Access"],
     modules: ["Shop / route management", "Order flow", "Inventory", "TADA / expenses", "Attendance", "Reporting"],
@@ -199,7 +199,7 @@ export const projectsData = [
       "Field-level defect discovery"
     ],
     tags: ["Approvals", "Sales", "Roles"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "Regression", "UI"],
     whatITest: ["Expense Approvals", "Travel Approvals", "ASM/DCM Roles", "Approval Chains"],
     modules: ["Expense workflows", "Travel workflows", "Supervisor approval chains"],
@@ -221,7 +221,7 @@ export const projectsData = [
       "Reporting surface checks"
     ],
     tags: ["Finance", "Dashboard"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "UI"],
     whatITest: ["Financial Dashboard", "Reporting Surfaces"],
     modules: ["Financial dashboard views", "Reporting surfaces"],
@@ -241,7 +241,7 @@ export const projectsData = [
       "Mobile and web coverage"
     ],
     tags: ["ERP", "Mobile", "Finance"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "Mobile", "Web", "Regression"],
     whatITest: ["Finance", "HR", "Procurement", "Inventory"],
     modules: ["Finance", "HR", "Procurement", "Inventory"],
@@ -258,7 +258,7 @@ export const projectsData = [
     summary: "Mobile/web application covered in QA testing engagements.",
     keyContributions: ["Mobile/web functional QA"],
     tags: ["Mobile", "Web"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "Mobile", "Web"],
     whatITest: ["Mobile App Flows", "Web Flows"],
     modules: ["Mobile app flows", "Web flows"],
@@ -278,7 +278,7 @@ export const projectsData = [
       "Storefront and reseller flow checks"
     ],
     tags: ["E-commerce", "Web"],
-    role: "QA Associate",
+    role: "Associate QA Engineer",
     testingTypes: ["Manual", "Web"],
     whatITest: ["Product Catalog", "Reseller Network", "Storefront"],
     modules: ["Product catalog", "Reseller network", "Storefront"],
@@ -539,7 +539,7 @@ export const githubProjects = [
 
 export const educationList = [
   {
-    year: "2020 – 2024",
+    year: "2020 – 2025",
     degree: "B.Sc. Computer Science & Information Technology",
     school: "Deerwalk Institute of Technology, Tribhuvan University",
     location: "Kathmandu, Nepal"
@@ -561,8 +561,8 @@ export const educationList = [
 /** CV-only education (site Education section still uses educationList) */
 export const cvEducationList = [
   {
-    year: "2020 – 2024",
-    degree: "B.Sc. Computer Science & Information Technology",
+    year: "2020 - 2025",
+    degree: "Bsc. CSIT",
     school: "Deerwalk Institute of Technology, Tribhuvan University",
     location: "Kathmandu, Nepal"
   }
@@ -593,9 +593,35 @@ export const extraActivities = [
 ];
 
 export const languagesList = [
-  { name: "English", level: "Professional Working Proficiency", fillPercentage: "90%" },
-  { name: "Nepali", level: "Native / Bilingual", fillPercentage: "100%" },
-  { name: "Hindi", level: "Professional Working Proficiency", fillPercentage: "85%" }
+  { name: "Nepali", level: "Native", fillPercentage: "100%" },
+  { name: "English", level: "Fluent", fillPercentage: "90%" },
+  { name: "Hindi", level: "Fluent", fillPercentage: "85%" }
+];
+
+/** Official CV summary — matches SimranTamrakar.pdf */
+export const cvProfessionalSummary =
+  "QA Engineer with experience in manual testing, API testing, web and mobile application testing, and defect management. Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.";
+
+/** Leadership copy as on official CV */
+export const cvExtraActivities = [
+  {
+    role: "Teaching Fellowship",
+    org: "Deerwalk Teaching Fellowship Program",
+    date: "08/2024",
+    desc: "Conducted computer literacy and foundational IT sessions for students, fostering technical awareness."
+  },
+  {
+    role: "Event Logistics",
+    org: "Deerwalk Job Fair",
+    date: "03/2023 & 03/2024",
+    desc: "Facilitated company onboarding, student registration, and event operations for technology recruitment fairs."
+  },
+  {
+    role: "President",
+    org: "DWIT Social Service Club",
+    date: "07/2022 - 07/2023",
+    desc: "Led community initiatives, blood donation drives, educational outreach, and coordinated student volunteers."
+  }
 ];
 
 export const certificationsList = [
@@ -612,7 +638,7 @@ export const certificationsList = [
     id: "csit-degree",
     title: "B.Sc. Computer Science & Information Technology",
     issuer: "Deerwalk Institute of Technology, Tribhuvan University",
-    year: "2020 – 2024",
+    year: "2020 – 2025",
     badge: "Academic Degree",
     skills: ["Software Engineering", "QA Fundamentals", "Database Systems"],
     description: "Undergraduate degree in computer science and information technology."
