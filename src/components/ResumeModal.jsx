@@ -1,11 +1,19 @@
 import React from 'react';
-import { personalInfo, experiences, cvSkillCategories, educationList, extraActivities, languagesList } from '../data/portfolioData';
+import {
+  personalInfo,
+  experiences,
+  projectsData,
+  cvSkillCategories,
+  educationList,
+  extraActivities,
+  languagesList
+} from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
+  // Same file regenerated from this view's data — View CV and Download CV stay identical
   const handleDownloadPDF = () => {
-    // Official CV PDF: public/SimranTamrakar.pdf (same content as uploaded SimranTamrakar.pdf)
     const link = document.createElement('a');
     link.href = '/SimranTamrakar.pdf';
     link.download = 'SimranTamrakar.pdf';
@@ -36,7 +44,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           <div>
             <span className="section-subtitle">Official Curriculum Vitae</span>
             <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: 0 }}>
-              {personalInfo.name} — Interactive CV
+              {personalInfo.name} — CV
             </h2>
           </div>
           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
@@ -78,6 +86,8 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <a href={personalInfo.github} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Github</a>
                 <span aria-hidden="true">|</span>
                 <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="cv-inline-link">LinkedIn</a>
+                <span aria-hidden="true">|</span>
+                <a href={personalInfo.portfolio} target="_blank" rel="noopener noreferrer" className="cv-inline-link">Portfolio</a>
               </div>
             </div>
 
@@ -91,7 +101,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
               <h3 style={sectionTitle}>Education</h3>
               {educationList.map((edu, idx) => (
-                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: idx < educationList.length - 1 ? '0.65rem' : 0 }}>
                   <div>
                     <div style={{ fontWeight: '700', fontSize: '0.95rem', color: 'var(--text-primary)' }}>{edu.school}</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{edu.degree} — {edu.location}</div>
@@ -124,6 +134,31 @@ export default function ResumeModal({ isOpen, onClose }) {
               </div>
             </div>
 
+            <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
+              <h3 style={sectionTitle}>Featured Projects & Applications Tested</h3>
+              <ul style={{ paddingLeft: '1.25rem', margin: 0, color: 'var(--text-secondary)', fontSize: '0.875rem', lineHeight: '1.5' }}>
+                {projectsData.map((proj) => (
+                  <li key={proj.id} style={{ marginBottom: '0.35rem' }}>
+                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{proj.title}</span>
+                    {' — '}
+                    {proj.summary}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
+              <h3 style={sectionTitle}>Skills</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                {cvSkillCategories.map((cat, idx) => (
+                  <div key={idx} style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
+                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{cat.title}: </span>
+                    <span style={{ color: 'var(--text-secondary)' }}>{cat.skills.join(', ')}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={sectionTitle}>Leadership and Extra Curricular Activities</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
@@ -141,22 +176,11 @@ export default function ResumeModal({ isOpen, onClose }) {
               </div>
             </div>
 
-            <div style={{ marginBottom: '1.25rem', pageBreakInside: 'avoid' }}>
-              <h3 style={sectionTitle}>Skills</h3>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                {cvSkillCategories.map((cat, idx) => (
-                  <div key={idx} style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
-                    <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{cat.title}: </span>
-                    <span style={{ color: 'var(--text-secondary)' }}>{cat.skills.join(', ')}</span>
-                  </div>
-                ))}
-                <div style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
-                  <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>Languages: </span>
-                  <span style={{ color: 'var(--text-secondary)' }}>
-                    {languagesList.map(l => `${l.name} (${l.level})`).join(', ')}
-                  </span>
-                </div>
-              </div>
+            <div style={{ marginBottom: '0.25rem', pageBreakInside: 'avoid' }}>
+              <h3 style={sectionTitle}>Languages</h3>
+              <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: '1.45' }}>
+                {languagesList.map(l => `${l.name} — ${l.level}`).join('; ')}
+              </p>
             </div>
 
           </div>
