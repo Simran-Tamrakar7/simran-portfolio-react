@@ -558,6 +558,16 @@ export const educationList = [
   }
 ];
 
+/** CV-only education (site Education section still uses educationList) */
+export const cvEducationList = [
+  {
+    year: "2020 – 2024",
+    degree: "B.Sc. Computer Science & Information Technology",
+    school: "Deerwalk Institute of Technology, Tribhuvan University",
+    location: "Kathmandu, Nepal"
+  }
+];
+
 export const extraActivities = [
   {
     badge: "Mentorship",

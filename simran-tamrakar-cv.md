@@ -25,18 +25,6 @@ QA Engineer with hands-on experience testing web and mobile applications across 
 B.Sc. Computer Science & Information Technology
   ~ 2020 – 2024
 
-**Kathmandu Secondary School**
-  ~ Kathmandu, Nepal
-
-+2 Science
-  ~ 2019 – 2020
-
-**KMC School (Kathmandu Model School)**
-  ~ Kathmandu, Nepal
-
-SEE / Schooling
-  ~ Until 2018
-
 ## Experience
 
 **QA Associate**

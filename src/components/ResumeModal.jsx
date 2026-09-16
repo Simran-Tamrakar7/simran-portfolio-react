@@ -4,7 +4,7 @@ import {
   experiences,
   projectsData,
   cvSkillCategories,
-  educationList,
+  cvEducationList,
   extraActivities,
   languagesList
 } from '../data/portfolioData';
@@ -71,14 +71,14 @@ export default function ResumeModal({ isOpen, onClose }) {
         <div className="modal-body-scroll" style={{ maxHeight: '72vh', overflowY: 'auto', paddingRight: '0.5rem' }}>
           <div id="printable-cv-document" className="cv-document-export" style={{ background: 'var(--bg-card)', padding: '1.5rem', borderRadius: 'var(--radius-md)', color: 'var(--text-primary)' }}>
 
-            <div style={{ borderBottom: '2px solid var(--accent-teal)', paddingBottom: '1rem', marginBottom: '1.25rem' }}>
+            <div style={{ borderBottom: '2px solid var(--accent-teal)', paddingBottom: '1rem', marginBottom: '1.25rem', textAlign: 'center' }}>
               <h1 style={{ fontSize: '1.8rem', fontWeight: '800', margin: 0, color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
                 {personalInfo.name}
               </h1>
               <h2 style={{ fontSize: '1.05rem', color: 'var(--accent-teal)', fontWeight: '600', margin: '0.25rem 0 0.65rem 0' }}>
                 {personalInfo.title}
               </h2>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', display: 'flex', flexWrap: 'wrap', gap: '0.35rem 0.65rem', alignItems: 'center' }}>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', display: 'flex', flexWrap: 'wrap', gap: '0.35rem 0.65rem', alignItems: 'center', justifyContent: 'center' }}>
                 <a href={`tel:${personalInfo.phone}`} className="cv-inline-link">{personalInfo.phoneDisplay}</a>
                 <span aria-hidden="true">|</span>
                 <a href={`mailto:${personalInfo.email}`} className="cv-inline-link">{personalInfo.email}</a>
@@ -100,8 +100,8 @@ export default function ResumeModal({ isOpen, onClose }) {
 
             <div style={{ marginBottom: '1.5rem', pageBreakInside: 'avoid' }}>
               <h3 style={sectionTitle}>Education</h3>
-              {educationList.map((edu, idx) => (
-                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: idx < educationList.length - 1 ? '0.65rem' : 0 }}>
+              {cvEducationList.map((edu, idx) => (
+                <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: idx < cvEducationList.length - 1 ? '0.65rem' : 0 }}>
                   <div>
                     <div style={{ fontWeight: '700', fontSize: '0.95rem', color: 'var(--text-primary)' }}>{edu.school}</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{edu.degree} — {edu.location}</div>

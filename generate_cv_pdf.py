@@ -22,11 +22,17 @@ def clean(t: str) -> str:
     )
 
 
-# Keep in sync with src/data/portfolioData.js (View CV)
+# Keep in sync with src/data/portfolioData.js + ResumeModal (View CV)
 CV = {
     "name": "Simran Tamrakar",
     "title": "QA Engineer",
-    "contact": "+977 9843707272  |  simrantamrakar77@gmail.com  |  Github  |  LinkedIn  |  Portfolio",
+    "links": [
+        {"label": "+977 9843707272", "url": "tel:+9779843707272"},
+        {"label": "simrantamrakar77@gmail.com", "url": "mailto:simrantamrakar77@gmail.com"},
+        {"label": "Github", "url": "https://github.com/Simran-Tamrakar7"},
+        {"label": "LinkedIn", "url": "https://www.linkedin.com/in/simran-tamrakar-1aa84b349/"},
+        {"label": "Portfolio", "url": "https://simran-tamrakar-portfolio.vercel.app/"},
+    ],
     "summary": (
         "QA Engineer with hands-on experience testing web and mobile applications across HRM, ERP, sales, "
         "finance, and e-commerce domains. Experienced in functional, regression, API, UI, UAT, cross-platform, "
@@ -38,16 +44,6 @@ CV = {
             "school": "Deerwalk Institute of Technology, Tribhuvan University",
             "degree": "B.Sc. Computer Science & Information Technology - Kathmandu, Nepal",
             "year": "2020 - 2024",
-        },
-        {
-            "school": "Kathmandu Secondary School",
-            "degree": "+2 Science - Kathmandu, Nepal",
-            "year": "2019 - 2020",
-        },
-        {
-            "school": "KMC School (Kathmandu Model School)",
-            "degree": "SEE / Schooling - Kathmandu, Nepal",
-            "year": "Until 2018",
         },
     ],
     "experience": [
@@ -130,16 +126,6 @@ def build():
     pdf.set_left_margin(16)
     pdf.set_right_margin(16)
 
-    def h1(t):
-        pdf.set_font("Helvetica", "B", 18)
-        pdf.set_text_color(20, 20, 20)
-        pdf.cell(0, 8, clean(t), new_x="LMARGIN", new_y="NEXT")
-
-    def h2(t):
-        pdf.set_font("Helvetica", "", 11)
-        pdf.set_text_color(13, 148, 136)
-        pdf.cell(0, 6, clean(t), new_x="LMARGIN", new_y="NEXT")
-
     def section(t):
         pdf.ln(3)
         pdf.set_font("Helvetica", "B", 11)
@@ -185,12 +171,48 @@ def build():
         pdf.write(4.8, clean(text))
         pdf.ln(6)
 
-    h1(CV["name"])
-    h2(CV["title"])
-    pdf.set_font("Helvetica", "", 9)
-    pdf.set_text_color(70, 70, 70)
-    pdf.multi_cell(178, 4.5, clean(CV["contact"]))
-    pdf.ln(1)
+    def centered_header():
+        pdf.set_font("Helvetica", "B", 18)
+        pdf.set_text_color(20, 20, 20)
+        pdf.cell(0, 8, clean(CV["name"]), align="C", new_x="LMARGIN", new_y="NEXT")
+
+        pdf.set_font("Helvetica", "", 11)
+        pdf.set_text_color(13, 148, 136)
+        pdf.cell(0, 6, clean(CV["title"]), align="C", new_x="LMARGIN", new_y="NEXT")
+        pdf.ln(1)
+
+        # Centered contact row with clickable links
+        pdf.set_font("Helvetica", "", 9)
+        sep = "  |  "
+        parts = []
+        for i, item in enumerate(CV["links"]):
+            parts.append(item)
+            if i < len(CV["links"]) - 1:
+                parts.append({"label": sep, "url": None})
+
+        total_w = 0.0
+        for part in parts:
+            total_w += pdf.get_string_width(clean(part["label"]))
+
+        page_w = pdf.w - pdf.l_margin - pdf.r_margin
+        start_x = pdf.l_margin + max(0, (page_w - total_w) / 2)
+        pdf.set_x(start_x)
+        y = pdf.get_y()
+
+        for part in parts:
+            label = clean(part["label"])
+            w = pdf.get_string_width(label)
+            if part["url"]:
+                pdf.set_text_color(13, 148, 136)
+                pdf.set_x(pdf.get_x())
+                pdf.cell(w, 5, label, link=part["url"])
+            else:
+                pdf.set_text_color(70, 70, 70)
+                pdf.cell(w, 5, label)
+        pdf.set_y(y + 6)
+        pdf.ln(2)
+
+    centered_header()
 
     section("Professional Summary")
     body(CV["summary"])
