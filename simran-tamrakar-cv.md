@@ -65,9 +65,15 @@ SEE / Schooling
 - **ESpOT** — Mobile/web application
 - **E-commerce Platform** — Catalog, storefront, and reseller-related web flows
 
-## Specializations
+## Skills
 
-- **Software Quality Assurance & API Testing** — Test plan creation, bug triage workflows, Postman API contract verification, UAT execution across HRMS & related enterprise apps.
+**Manual Testing:** Functional Testing, Regression Testing, Smoke Testing, Sanity Testing, UAT Testing, Web & Mobile Application Testing, Test Case Design, Test Case Documentation, Test Plan, Test Strategy, Requirement Analysis, RTM, Bug Reporting, Defect Lifecycle Management, Cross-Browser Testing, Cross-Device Testing
+
+**Automation and API Testing:** Playwright, Cypress, Postman, API Testing, JMeter
+
+**Tools and Platforms:** JIRA, ClickUp, Git, Android Studio, ADB, MS Office
+
+**Methodologies:** Agile, Scrum
 
 ## Leadership and Extra Curricular Activities
 

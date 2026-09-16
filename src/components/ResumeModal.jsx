@@ -1,5 +1,5 @@
 import React from 'react';
-import { personalInfo, experiences, skillCategories, educationList, extraActivities, languagesList } from '../data/portfolioData';
+import { personalInfo, experiences, cvSkillCategories, educationList, extraActivities, languagesList } from '../data/portfolioData';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -144,7 +144,7 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div style={{ marginBottom: '1.25rem', pageBreakInside: 'avoid' }}>
               <h3 style={sectionTitle}>Skills</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                {skillCategories.map((cat, idx) => (
+                {cvSkillCategories.map((cat, idx) => (
                   <div key={idx} style={{ fontSize: '0.85rem', lineHeight: '1.45' }}>
                     <span style={{ fontWeight: '700', color: 'var(--text-primary)' }}>{cat.title}: </span>
                     <span style={{ color: 'var(--text-secondary)' }}>{cat.skills.join(', ')}</span>

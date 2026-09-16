@@ -359,6 +359,59 @@ export const skillCategories = [
   }
 ];
 
+/** Skills block for Interactive CV / downloadable CV wording */
+export const cvSkillCategories = [
+  {
+    title: "Manual Testing",
+    skills: [
+      "Functional Testing",
+      "Regression Testing",
+      "Smoke Testing",
+      "Sanity Testing",
+      "UAT Testing",
+      "Web & Mobile Application Testing",
+      "Test Case Design",
+      "Test Case Documentation",
+      "Test Plan",
+      "Test Strategy",
+      "Requirement Analysis",
+      "RTM",
+      "Bug Reporting",
+      "Defect Lifecycle Management",
+      "Cross-Browser Testing",
+      "Cross-Device Testing"
+    ]
+  },
+  {
+    title: "Automation and API Testing",
+    skills: [
+      "Playwright",
+      "Cypress",
+      "Postman",
+      "API Testing",
+      "JMeter"
+    ]
+  },
+  {
+    title: "Tools and Platforms",
+    skills: [
+      "JIRA",
+      "ClickUp",
+      "Git",
+      "Android Studio",
+      "ADB",
+      "MS Office"
+    ]
+  },
+  {
+    title: "Methodologies",
+    skills: [
+      "Agile",
+      "Scrum"
+    ]
+  }
+];
+
 /** Techniques I can explain in an interview — no filler techniques */
 export const testingTechniques = [
   "Positive Testing",

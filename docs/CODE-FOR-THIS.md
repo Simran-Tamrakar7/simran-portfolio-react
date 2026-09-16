@@ -9,7 +9,8 @@
 | QA Scope & Approach | `impactMetrics`, `qaGovernanceGates`, `qaThinking` |
 | Case studies | `qaCaseStudies` |
 | Playground (cases / API demo / triage) | `sampleTestCases`, `postmanEndpoints` |
-| Skills & techniques | `skillCategories`, `testingTechniques` |
+| Skills (site) | `skillCategories`, `testingTechniques` |
+| Skills (CV view / PDF) | `cvSkillCategories` |
 | Currently Building | `currentlyBuilding` |
 | GitHub automation repos | `githubProjects` |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
