@@ -18,24 +18,6 @@ export const personalInfo = {
     "Skilled in test case design, regression testing, requirement analysis, and release validation, with hands-on experience across Agile/Scrum environments and enterprise HRM, ERP, sales, and banking applications.",
     "At Infocom Solutions, I design and execute test cases, track defects with developers through resolution, and support release validation across HRM, ERP, sales, and banking applications."
   ],
-  aboutHighlights: [
-    {
-      title: "Manual & Functional Testing",
-      desc: "Functional, regression, integration, UI, and UAT testing across web and mobile applications."
-    },
-    {
-      title: "API Testing",
-      desc: "Postman-based API verification for endpoint contracts, payloads, and status codes."
-    },
-    {
-      title: "Defect Management",
-      desc: "Documenting and tracking defects with clear reproduction steps through resolution and verification."
-    },
-    {
-      title: "Release Validation",
-      desc: "Test planning, requirement analysis, and release validation so features meet business and quality standards."
-    }
-  ],
   aboutFacts: [
     { label: "Based in", value: "Kathmandu, Nepal" },
     { label: "Currently", value: "Infocom Solutions [ISPL]" },
