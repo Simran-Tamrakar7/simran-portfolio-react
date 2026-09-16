@@ -11,27 +11,35 @@
 
 export const profilePhotos = [
   {
-    id: 'avatar',
-    url: '/images/profile/simran-avatar.png',
+    id: 'scarf-portrait',
+    url: '/images/profile/simran-scarf.png',
     title: 'Simran Tamrakar',
     tag: 'Kathmandu, Nepal',
-    description: 'Portrait avatar for Simran Tamrakar.',
+    description: 'Portrait with glasses and plaid scarf.',
     alt: 'Simran Tamrakar, QA Engineer'
   },
   {
-    id: 'temple-wheels',
-    url: '/images/profile/simran-temple.jpg',
+    id: 'outdoor-balcony',
+    url: '/images/profile/simran-outdoor.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Outdoor portrait on a balcony amid trees.',
+    alt: 'Simran Tamrakar, QA Engineer, outdoor portrait'
+  },
+  {
+    id: 'braid-portrait',
+    url: '/images/profile/simran-braid.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Portrait with braid and glasses.',
+    alt: 'Simran Tamrakar, QA Engineer'
+  },
+  {
+    id: 'temple-courtyard',
+    url: '/images/profile/simran-temple-courtyard.png',
     title: 'Patan Golden Temple',
     tag: 'Kathmandu, Nepal',
-    description: 'Standing at Patan Golden Temple (Hiranya Varna Mahavihar) in Nepal surrounded by traditional Buddhist prayer wheels.',
+    description: 'At Patan Golden Temple with prayer wheels.',
     alt: 'Simran Tamrakar, QA Engineer, at Patan Golden Temple'
-  },
-  {
-    id: 'scarf-portrait',
-    url: '/images/profile/simran-portrait.jpg',
-    title: 'Simran Tamrakar',
-    tag: 'Kathmandu, Nepal',
-    description: 'Warm Ghibli-inspired portrait of Simran with spectacles and cozy winter scarf.',
-    alt: 'Simran Tamrakar, QA Engineer'
   }
 ];
