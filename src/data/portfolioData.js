@@ -66,58 +66,58 @@ export const fourPillars = [
     id: "qa",
     number: "01",
     iconBg: "bg-teal",
-    title: "Manual & Functional Testing",
-    description: "Core QA execution across web and mobile applications.",
+    title: "Hands-on QA Experience",
+    description: "Functional, regression, UI/UX, API, and cross-platform testing across web and mobile.",
     badge: "Core Focus",
     highlight: true,
     list: [
-      "Functional, regression, smoke, sanity & UAT testing",
-      "UI testing and cross-browser / cross-device checks",
-      "Boundary value analysis & edge-case design",
-      "Black box and exploratory testing"
+      "Web and mobile functional, regression, UI/UX & cross-platform testing",
+      "Attention to detail — catch inconsistencies before they reach users",
+      "Mobile QA alongside web applications",
+      "Growing automation with Playwright and Cypress"
     ]
   },
   {
     id: "api",
     number: "02",
     iconBg: "bg-blue",
-    title: "API Testing",
-    description: "Contract and payload verification with Postman.",
+    title: "Defects & API Testing",
+    description: "Reproduce issues, identify impact, and verify backend behavior with clear, actionable reports.",
     badge: "Core Focus",
     highlight: true,
     list: [
-      "Postman API testing",
-      "Status code and payload checks",
-      "Integration testing support",
-      "Release validation for API-backed features"
+      "Strong defect analysis, reproduction, and impact reporting",
+      "API testing in Postman — request/response and backend verification",
+      "Root-cause investigation via APIs, data, logs, and related flows",
+      "Data validation — UI vs API/backend where applicable"
     ]
   },
   {
     id: "defects",
     number: "03",
     iconBg: "bg-purple",
-    title: "Defect Management",
-    description: "Clear bug reports from discovery through verification.",
+    title: "Requirements & Collaboration",
+    description: "Translate business needs into practical tests and drive issues to resolution with the team.",
     badge: "Core Focus",
     list: [
-      "Defect tracking in ClickUp, Asana & Jira",
-      "Reproducible steps, screenshots & logs",
-      "Collaboration with developers through resolution",
-      "Regression verification after fixes"
+      "Turn requirements into test scenarios and edge cases",
+      "Spot incomplete, ambiguous, or inconsistent requirements",
+      "Cross-functional work with developers, product, and stakeholders",
+      "Multi-role / permission, approval-flow, and client-facing clarity"
     ]
   },
   {
     id: "release",
     number: "04",
     iconBg: "bg-amber",
-    title: "Test Planning & Release Validation",
-    description: "Aligning test coverage with requirements and release gates.",
+    title: "Process, Mindset & Ownership",
+    description: "Documentation, test planning, release readiness, and a product-minded approach to quality.",
     badge: "Core Focus",
     list: [
-      "Test plan and test case design",
-      "Requirement analysis for testable acceptance",
-      "Agile/Scrum sprint collaboration",
-      "Smoke, sanity & UAT sign-off support"
+      "QA docs: scenarios, bug reports, task tracking, meeting notes",
+      "End-to-end, business-flow, edge-case, risk-based & regression thinking",
+      "Test planning and release-readiness support",
+      "Ownership, continuous learning, and automation built on manual QA"
     ]
   }
 ];
@@ -309,30 +309,34 @@ export const skillCategories = [
 
 export const coreValues = [
   {
-    title: "Quality Focus",
-    desc: "Comprehensive testing, boundary analysis, zero-defect releases."
+    title: "End-to-End Mindset",
+    desc: "Follow a feature from requirement → implementation → testing → bug fixing → retesting."
   },
   {
-    title: "Continuous Growth",
-    desc: "Learning automation tools (Cypress, Playwright) and strengthening API testing workflows."
+    title: "Business-Flow Thinking",
+    desc: "Test how modules work together rather than checking screens in isolation."
   },
   {
-    title: "Team Collaboration",
-    desc: "Cross-functional work with developers, PMs, and stakeholders in Agile/Scrum."
+    title: "Edge Cases & Risk",
+    desc: "Probe unusual, incomplete, or invalid inputs and focus effort where impact is highest."
   },
   {
-    title: "Proven Results",
-    desc: "Consistent on-time delivery with zero P0 defect leaks."
+    title: "Product Ownership",
+    desc: "Treat quality as more than finding bugs — understand impact on the product and users."
   }
 ];
 
 export const softSkills = [
-  { name: "Quick Learner" },
-  { name: "Team Player" },
-  { name: "Problem Solving" },
-  { name: "Clear Communication" },
-  { name: "Adaptability" },
-  { name: "Entrepreneurial Mindset" }
+  { name: "Real-world Scenario Testing" },
+  { name: "Regression Awareness" },
+  { name: "Release Readiness" },
+  { name: "Root-cause Investigation" },
+  { name: "Requirement Gap Spotting" },
+  { name: "Test Planning" },
+  { name: "Continuous Improvement" },
+  { name: "Automation Transition" },
+  { name: "Fast Learning / Adaptability" },
+  { name: "Client-facing Communication" }
 ];
 
 export const educationList = [

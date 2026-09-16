@@ -23,7 +23,7 @@ export function Pillars() {
         <div className="section-header center reveal-up">
           <span className="section-subtitle">QA CORE CAPABILITIES</span>
           <h2 className="section-title">What I Bring To The Table</h2>
-          <p className="section-description">Manual testing, API verification, defect management, and release validation — aligned to a QA Engineer profile.</p>
+          <p className="section-description">Hands-on QA across web and mobile, clear defect reporting, API verification, requirement clarity, and an ownership mindset for quality.</p>
           <div className="title-bar"></div>
         </div>
 
