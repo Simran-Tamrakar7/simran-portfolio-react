@@ -5,6 +5,7 @@
 | Content | Source |
 | --- | --- |
 | Profile / CV copy | `src/data/portfolioData.js` |
+| About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
 | Downloadable PDF | `public/SimranTamrakar.pdf` |
 | Layout tokens / 4-col grids | `src/index.css` |

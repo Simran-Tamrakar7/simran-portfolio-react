@@ -41,5 +41,45 @@ export const profilePhotos = [
     tag: 'Kathmandu, Nepal',
     description: 'At Patan Golden Temple with prayer wheels.',
     alt: 'Simran Tamrakar, QA Engineer, at Patan Golden Temple'
+  },
+  {
+    id: 'suit-garden',
+    url: '/images/profile/simran-suit-garden.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Full-length portrait in a charcoal suit against climbing vines.',
+    alt: 'Simran Tamrakar, QA Engineer, in a charcoal suit'
+  },
+  {
+    id: 'yellow-kurta',
+    url: '/images/profile/simran-yellow-kurta.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Portrait in a mustard embroidered kurta.',
+    alt: 'Simran Tamrakar, QA Engineer, in a yellow embroidered kurta'
+  },
+  {
+    id: 'mountain-vista',
+    url: '/images/profile/simran-mountain.png',
+    title: 'Simran Tamrakar',
+    tag: 'Himalaya',
+    description: 'Looking back over a mountain vista in a floral dress.',
+    alt: 'Simran Tamrakar, QA Engineer, in the mountains'
+  },
+  {
+    id: 'golden-scarf',
+    url: '/images/profile/simran-golden-scarf.png',
+    title: 'Simran Tamrakar',
+    tag: 'Kathmandu, Nepal',
+    description: 'Close-up portrait with scarf under golden-hour light.',
+    alt: 'Simran Tamrakar, QA Engineer, golden-hour scarf portrait'
+  },
+  {
+    id: 'darjeeling-bench',
+    url: '/images/profile/simran-darjeeling.png',
+    title: 'Darjeeling',
+    tag: 'Darjeeling, India',
+    description: 'Seated on a park bench by the Darjeeling Municipality sign.',
+    alt: 'Simran Tamrakar, QA Engineer, on a bench in Darjeeling'
   }
 ];
