@@ -4,7 +4,7 @@
 
 | Content | Source |
 | --- | --- |
-| Profile / CV copy | `src/data/portfolioData.js` |
+| Profile / CV copy | `src/data/portfolioData.js` (`fourPillars` = What I Bring; `coreValues` / `softSkills` = ethos) |
 | About photo gallery | `src/data/profilePhotos.js` + `public/images/profile/` |
 | Markdown CV | `simran-tamrakar-cv.md` |
 | Downloadable PDF | `public/SimranTamrakar.pdf` |
