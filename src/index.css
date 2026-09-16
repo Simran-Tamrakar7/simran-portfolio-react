@@ -1038,6 +1038,16 @@ button, input, textarea {
   transform: scale(1);
 }
 
+.portrait-secret-flash {
+  animation: portrait-secret-pulse 0.28s ease;
+}
+
+@keyframes portrait-secret-pulse {
+  0% { filter: brightness(1); }
+  40% { filter: brightness(1.18); }
+  100% { filter: brightness(1); }
+}
+
 @media (max-width: 992px) {
   .about-hero-layout {
     grid-template-columns: 1fr;
